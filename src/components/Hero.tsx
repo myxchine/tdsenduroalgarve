@@ -47,7 +47,7 @@ const Hero = ({
           </h1>
           <p className="text-center text-white pb-4">{subtitle}</p>
           <div className="flex flex-col items-center justify-center space-y-4 w-full p-6 pt-0">
-            <Link href={buttonLink}>
+            <Link href={buttonLink} className="w-full">
               <button
                 className={`bg-tdsRed text-white font-bold px-8 p-2 uppercase hover:bg-tdsRed/80 ${
                   buttonWidth ? buttonWidth : "w-full"
@@ -57,7 +57,7 @@ const Hero = ({
               </button>
             </Link>
             {buttonLink2 ? (
-              <Link href={buttonLink2}>
+              <Link href={buttonLink2} className="w-full">
                 <button className="bg-white text-black font-bold w-full p-2 uppercase hover:bg-white/80">
                   {buttonText2}
                 </button>
