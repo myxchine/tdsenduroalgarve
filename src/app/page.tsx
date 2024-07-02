@@ -12,7 +12,7 @@ export default function Home() {
         buttonText="Off Road Bikes"
         buttonLink="/off-road-bike-rental"
         buttonWidth="w-full"
-        buttonText2="Reserve a spot"
+        buttonText2="Reserve a day"
         buttonLink2="/reserve"
       />
       <Vanilla

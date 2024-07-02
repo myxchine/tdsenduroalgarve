@@ -19,7 +19,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex flex-row items-center justify-between top-0 z-10 left-0 w-full fixed px-6 w-full ">
+    <header className="flex flex-row items-center justify-between top-0 z-10 left-0 w-full absolute px-6 w-full ">
       <section className="flex flex-row items-center justify-between w-full max-w-6xl mx-auto">
         <Link href={"/"}>
           <div className="text-center bg-tdsRed text-white font-tds p-4 text-3xl ">

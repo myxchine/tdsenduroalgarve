@@ -17,12 +17,12 @@ export default function Contact({
   });
 
   const router = useRouter();
-  const category = searchParams.category || "";
-  const riders = searchParams.riders || "1";
+  const category = searchParams.category || updateParams("category", "enduro");
+  const riders = searchParams.riders || updateParams("riders", "1");
 
   function updateParams(param: string, value: string) {
     const newParams = { ...searchParams, [param]: value };
-    router.push(`?${new URLSearchParams(newParams)}`);
+    router.push(`/reserve?${new URLSearchParams(newParams)}`);
   }
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -34,7 +34,7 @@ export default function Contact({
     setIsSubmitting(false);
     setFormText({ name: "", email: "", message: "" });
     window.history.pushState({}, "", ``);
-    router.push(`?riders=1&category=enduro`);
+    router.push(`/reserve?riders=1&category=enduro`);
     setSuccess(true);
   };
 
