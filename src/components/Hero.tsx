@@ -66,7 +66,7 @@ const Hero = ({
                 </button>
               </Link>
             ) : (
-              <div className="h-4"></div>
+              <div className="h-2"></div>
             )}
           </div>
         </div>
