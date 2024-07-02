@@ -41,7 +41,7 @@ const Hero = ({
           <h1
             className={` ${
               titleSize ? "text-" + titleSize : "text-[21px]"
-            } font-bold text-center text-white uppercase p-4 font-tds tracking-wider`}
+            }  text-center text-white uppercase p-4 font-tds tracking-wider`}
           >
             {title}
           </h1>
@@ -52,7 +52,7 @@ const Hero = ({
               className="w-full flex flex-col items-center justify-center"
             >
               <button
-                className={`bg-tdsRed text-white font-bold px-8 p-2 uppercase hover:bg-tdsRed/80 mx-auto ${
+                className={`bg-tdsRed text-white  px-8 p-2 uppercase hover:bg-tdsRed/80 mx-auto font-tds ${
                   buttonWidth ? buttonWidth : "w-full"
                 }`}
               >
@@ -61,7 +61,7 @@ const Hero = ({
             </Link>
             {buttonLink2 ? (
               <Link href={buttonLink2} className="w-full">
-                <button className="bg-white text-black font-bold w-full p-2 uppercase hover:bg-white/80">
+                <button className="bg-white text-black w-full p-2 uppercase hover:bg-white/80 font-tds">
                   {buttonText2}
                 </button>
               </Link>

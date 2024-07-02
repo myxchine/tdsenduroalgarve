@@ -44,7 +44,7 @@ export default function Contact() {
       className="w-full space-y-8 pb-12 p-6 md:py-24 lg:py-32  flex flex-col items-center max-w-xl mx-auto pt-28"
     >
       <div className="gap-2 flex flex-col w-full">
-        <h1 className="text-4xl font-tds sm:text-5xl xl:text-6xl  font-bold ">
+        <h1 className="text-4xl font-tds sm:text-5xl xl:text-6xl  ">
           Contact <span className="text-tdsRed  ">Us</span>
         </h1>
         <p className="max-w-[500px] text-black/60 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">

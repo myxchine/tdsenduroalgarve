@@ -44,7 +44,7 @@ export default function Contact({
       className="w-full space-y-8 pb-12 p-6 md:py-24 lg:py-32 flex flex-col items-center max-w-xl mx-auto pt-28"
     >
       <div className="gap-2 flex flex-col w-full">
-        <h1 className="text-4xl font-tds sm:text-5xl xl:text-6xl font-bold">
+        <h1 className="text-4xl font-tds sm:text-5xl xl:text-6xl ">
           Reserve <span className="text-tdsRed">Now</span>
         </h1>
         <p className="max-w-[500px] text-black/60 md:text-xl lg:text-base xl:text-xl">
@@ -119,7 +119,7 @@ export default function Contact({
           />
           <button
             type="submit"
-            className={`bg-black border border-black text-sm font-medium rounded-md text-white p-2 text-center px-4 w-full max-w-xl ${
+            className={`bg-black border border-black text-sm font-medium rounded-md text-white p-2 text-center px-4 w-full max-w-xl font-tds tracking-wider ${
               isSubmitting ? "opacity-50 cursor-not-allowed" : ""
             }`}
             disabled={isSubmitting}
