@@ -77,32 +77,35 @@ export default function Contact({
             }
             onBlur={(e) => updateParams("email", e.target.value)}
           />
-          <select
-            name="category"
-            className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
-            required
-            value={category}
-            onChange={(e) => updateParams("category", e.target.value)}
-          >
-            {categories.map((category) => (
-              <option key={category.name} value={category.name}>
-                {category.name}
-              </option>
-            ))}
-          </select>
-          <select
-            name="riders"
-            className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
-            required
-            value={riders}
-            onChange={(e) => updateParams("riders", e.target.value)}
-          >
-            <option value="1">1 Rider</option>
-            <option value="2">2 Riders</option>
-            <option value="3">3 Riders</option>
-            <option value="4">4 Riders</option>
-            <option value="5">5 Riders</option>
-          </select>
+          <div className="flex flex-row gap-2">
+            <select
+              name="category"
+              className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
+              required
+              value={category || ""}
+              onChange={(e) => updateParams("category", e.target.value)}
+            >
+              {categories.map((category) => (
+                <option key={category.name} value={category.name}>
+                  {category.name}
+                </option>
+              ))}
+            </select>
+            <select
+              name="riders"
+              className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
+              required
+              value={riders || ""}
+              onChange={(e) => updateParams("riders", e.target.value)}
+            >
+              <option value="1">1 Rider</option>
+              <option value="2">2 Riders</option>
+              <option value="3">3 Riders</option>
+              <option value="4">4 Riders</option>
+              <option value="5">5 Riders</option>
+            </select>
+          </div>
+
           <textarea
             name="message"
             placeholder="Message"

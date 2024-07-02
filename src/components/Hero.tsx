@@ -30,9 +30,9 @@ const Hero = ({
         <Image
           src={image}
           alt="hero"
-          width={1000}
-          height={1000}
-          quality={100}
+          width={800}
+          height={800}
+          quality={80}
           priority={true}
           className="w-full full-screen object-cover max-h-[700px] md:max-h-[1000px] lg:max-h-[1200px]"
         />
@@ -47,9 +47,12 @@ const Hero = ({
           </h1>
           <p className="text-center text-white pb-4">{subtitle}</p>
           <div className="flex flex-col items-center justify-center space-y-4 w-full p-6 pt-0">
-            <Link href={buttonLink} className="w-full">
+            <Link
+              href={buttonLink}
+              className="w-full flex flex-col items-center justify-center"
+            >
               <button
-                className={`bg-tdsRed text-white font-bold px-8 p-2 uppercase hover:bg-tdsRed/80 ${
+                className={`bg-tdsRed text-white font-bold px-8 p-2 uppercase hover:bg-tdsRed/80 mx-auto ${
                   buttonWidth ? buttonWidth : "w-full"
                 }`}
               >

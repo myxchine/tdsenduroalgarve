@@ -29,7 +29,7 @@ export default function BikeRental({ params }: { params: { slug: string } }) {
             {category.bikes.map((bike, index) => (
               <li key={bike.id} className="flex flex-col gap-4">
                 <div className="flex flex-col gap-1">
-                  <div className="text-2xl font-bold text-center flex flex-col uppercase font-tds tracking-wider">
+                  <div className="text-3xl font-bold text-center flex flex-col uppercase font-tds tracking-wider">
                     <p>{bike.name}</p>
                     <p>{bike.packageName}</p>
                   </div>
@@ -45,7 +45,7 @@ export default function BikeRental({ params }: { params: { slug: string } }) {
                       key={packages.id}
                       className="flex flex-col items-center gap-4 justify-center"
                     >
-                      <p className="text-3xl font-bold font-tds tracking-wider relative pl-3">
+                      <p className="text-4xl font-bold font-tds tracking-wider relative pl-3">
                         <span className="text-sm absolute top-1 left-0">€</span>
                         {packages.price}
                         <span className="text-sm font-normal ">/day</span>
@@ -58,7 +58,7 @@ export default function BikeRental({ params }: { params: { slug: string } }) {
                           packages.riders
                         }
                       >
-                        <button className="bg-tdsRed text-white text-sm font-bold py-2 px-4 w-36 uppercase font-tds tracking-wider text-lg">
+                        <button className="bg-tdsRed text-white text font-bold py-2  w-[200px] uppercase font-tds tracking-wider text-lg">
                           {packages.riders}
                           {index === 2 ? "+" : ""}{" "}
                           {packages.riders > 1 ? "riders" : "rider"}
