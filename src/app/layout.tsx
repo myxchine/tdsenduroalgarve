@@ -11,7 +11,7 @@ const inter = Inter({
   variable: "--font-inter",
 });
 const TDS = localFont({
-  src: "./_assets/TDS.otf",
+  src: "./TDS.otf",
   display: "swap",
   variable: "--font-tds",
 });

@@ -1,9 +1,9 @@
-import { categories } from "@/app/_assets/bikes";
+import { data } from "@/server/data";
 import Hero from "@/components/Hero";
 import Link from "next/link";
 import Image from "next/image";
-export default function BikeRental({ params }: { params: { slug: string } }) {
-  const category = categories.find((c) => c.slug === params.slug);
+export default function ToursList({ params }: { params: { slug: string } }) {
+  const category = data.tours.categories.find((c) => c.slug === params.slug);
 
   if (!category) {
     return <div>Category not found</div>;
@@ -25,7 +25,7 @@ export default function BikeRental({ params }: { params: { slug: string } }) {
         <h1 className="text-3xl font-bold uppercase font-tds tracking-wider">
           Packages
         </h1>
-        <div className="flex flex-col items-center justify-center w-full py-8 bg-white  text-black">
+        <div className="flex flex-col items-center justify-center w-full py-8 bg-white  text-black rounded-md">
           <ul className="flex flex-col gap-4">
             {category.bikes.map((bike, index) => (
               <li key={bike.id} className="flex flex-col gap-4">
@@ -59,7 +59,7 @@ export default function BikeRental({ params }: { params: { slug: string } }) {
                           packages.riders
                         }
                       >
-                        <button className="bg-tdsRed text-white text py-2  w-[200px] uppercase font-tds tracking-wider text-lg">
+                        <button className="bg-tdsRed text-white text py-2  w-[200px] uppercase font-tds tracking-wider text-lg rounded">
                           {packages.riders}
                           {index === 2 ? "+" : ""}{" "}
                           {packages.riders > 1 ? "riders" : "rider"}

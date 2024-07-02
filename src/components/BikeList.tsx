@@ -1,11 +1,11 @@
-import { categories } from "@/app/_assets/bikes";
+import { data } from "@/server/data";
 import Image from "next/image";
 import Link from "next/link";
 export default function BikeList() {
   return (
     <div className="flex flex-col items-center justify-center w-full">
       <div className="flex flex-col items-center justify-left gap-8 w-full ">
-        {categories.map((category) => (
+        {data.tours.categories.map((category) => (
           <div
             key={category.id}
             className="flex flex-col items-center justify-left  w-full"

@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { categories } from "@/app/_assets/bikes";
+import { data } from "@/server/data";
 import Link from "next/link";
 export default function Contact({
   searchParams,
@@ -59,7 +59,7 @@ export default function Contact({
               Guided <span className="text-tdsRed">Tour</span> & Rental
             </h2>
             <Link
-              href="/off-road-bike-rental"
+              href="/tours/off-road-enduro-bike-rental"
               className="flex flex-col gap-2 text-xs text/black/60 underline"
             >
               Learn more here
@@ -95,7 +95,7 @@ export default function Contact({
               value={category || ""}
               onChange={(e) => updateParams("category", e.target.value)}
             >
-              {categories.map((category) => (
+              {data.tours.categories.map((category) => (
                 <option key={category.name} value={category.name}>
                   {category.name}
                 </option>

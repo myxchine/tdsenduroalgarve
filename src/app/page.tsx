@@ -1,6 +1,6 @@
 import Hero from "@/components/Hero";
 import Vanilla from "@/components/Vanilla";
-import BikeList from "@/components/BikeList";
+import ToursList from "@/components/ToursList";
 export default function Home() {
   return (
     <main>
@@ -10,18 +10,23 @@ export default function Home() {
         subtitle=""
         titleSize={null}
         buttonText="Off Road Bikes"
-        buttonLink="/off-road-bike-rental"
+        buttonLink="tours/off-road-enduro-bike-rental"
         buttonWidth="w-full"
         buttonText2="Reserve a day"
         buttonLink2="/reserve"
       />
-      <Vanilla
-        title="Relax and enjoy the ride"
-        text="No more preparing your own bike, gear, transport and tracks to ride on."
-        buttonText="Reserve Now"
-        buttonLink="/reserve"
-      />
-      <BikeList />
+      <div className="flex flex-col items-center justify-center w-full gap-6 py-12 pt-6">
+        <ToursList />
+      </div>
     </main>
   );
 }
+
+/*
+<Vanilla
+title="Relax and enjoy the ride"
+text="No more preparing your own bike, gear, transport and tracks to ride on."
+buttonText="Reserve Now"
+buttonLink="/reserve"
+/>
+*/
