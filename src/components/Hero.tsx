@@ -34,10 +34,10 @@ const Hero = ({
           height={1000}
           quality={100}
           priority={true}
-          className="w-full full-screen object-cover max-h-[700px]"
+          className="w-full full-screen object-cover max-h-[700px] md:max-h-[1000px] lg:max-h-[1200px]"
         />
 
-        <div className="absolute bottom-0 left-0 w-full max-w-xl mx-auto">
+        <div className="absolute bottom-0 left-0 w-full max-w-xl mx-auto sm:right-0">
           <h1
             className={` ${
               titleSize ? "text-" + titleSize : "text-[21px]"

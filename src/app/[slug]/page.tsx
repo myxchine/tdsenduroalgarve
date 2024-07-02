@@ -1,6 +1,6 @@
 import { categories } from "@/app/_assets/bikes";
 import Hero from "@/components/Hero";
-
+import Link from "next/link";
 export default function BikeRental({ params }: { params: { slug: string } }) {
   const category = categories.find((c) => c.slug === params.slug);
 
@@ -13,10 +13,10 @@ export default function BikeRental({ params }: { params: { slug: string } }) {
         image={category.image}
         title={category.title}
         titleSize="3xl"
-        subtitle="Starting at 270 euros per day"
+        subtitle="Starting at €270 per day"
         buttonText="Book Now"
         buttonWidth="w-normal"
-        buttonLink={"/reserve?bike=" + category.name}
+        buttonLink={"/reserve?category=" + category.name.toLowerCase()}
         buttonText2={null}
         buttonLink2={null}
       />
@@ -50,11 +50,20 @@ export default function BikeRental({ params }: { params: { slug: string } }) {
                         {packages.price}
                         <span className="text-sm font-normal ">/day</span>
                       </p>
-                      <button className="bg-tdsRed text-white text-sm font-bold py-2 px-4 w-36 uppercase font-tds tracking-wider text-lg">
-                        {packages.riders}
-                        {index === 2 ? "+" : ""}{" "}
-                        {packages.riders > 1 ? "riders" : "rider"}
-                      </button>
+                      <Link
+                        href={
+                          "/reserve?category=" +
+                          category.name.toLowerCase() +
+                          "&riders=" +
+                          packages.riders
+                        }
+                      >
+                        <button className="bg-tdsRed text-white text-sm font-bold py-2 px-4 w-36 uppercase font-tds tracking-wider text-lg">
+                          {packages.riders}
+                          {index === 2 ? "+" : ""}{" "}
+                          {packages.riders > 1 ? "riders" : "rider"}
+                        </button>
+                      </Link>
                     </li>
                   ))}
                 </ul>

@@ -6,13 +6,13 @@ export default function Home() {
     <main>
       <Hero
         image="/images/hero.jpg"
-        title="Enduro tours in Algarve have never been this easy."
+        title="Guided Bike tours and Rentals in Algarve made easy."
         subtitle=""
         titleSize={null}
-        buttonText="Off Road Bike Rental"
+        buttonText="Off Road Bikes"
         buttonLink="/off-road-bike-rental"
         buttonWidth="w-full"
-        buttonText2="Book a tour"
+        buttonText2="Reserve a spot"
         buttonLink2="/reserve"
       />
       <Vanilla

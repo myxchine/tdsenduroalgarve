@@ -19,19 +19,21 @@ const Header = () => {
   };
 
   return (
-    <header className="flex flex-row items-center justify-between top-0 z-10 left-0 w-full fixed px-6">
-      <Link href={"/"}>
-        <div className="text-center bg-red-500 text-white font-tds p-4 text-3xl bg-tdsRed">
-          TDS
+    <header className="flex flex-row items-center justify-between top-0 z-10 left-0 w-full fixed px-6 w-full ">
+      <section className="flex flex-row items-center justify-between w-full max-w-6xl mx-auto">
+        <Link href={"/"}>
+          <div className="text-center bg-tdsRed text-white font-tds p-4 text-3xl ">
+            TDS
+          </div>
+        </Link>
+        <div>
+          <OpenCloseButton
+            isOpen={isOpen}
+            handleOpen={handleOpen}
+            handleClose={handleClose}
+          />
         </div>
-      </Link>
-      <div>
-        <OpenCloseButton
-          isOpen={isOpen}
-          handleOpen={handleOpen}
-          handleClose={handleClose}
-        />
-      </div>
+      </section>
     </header>
   );
 };
@@ -53,7 +55,7 @@ function OpenCloseButton({
     pathname === "/contact" || pathname === "/reserve" ? "black" : "white";
 
   return (
-    <div className="mobile flex items-left justify-left md:hidden">
+    <div className=" flex items-left justify-left md:hidden">
       {!isOpen && (
         <button
           aria-label="Mobile Menu Open"

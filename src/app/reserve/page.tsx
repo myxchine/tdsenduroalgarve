@@ -1,68 +1,69 @@
 "use client";
-
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { categories } from "@/app/_assets/bikes";
 
-export default function Contact() {
+export default function Contact({
+  searchParams,
+}: {
+  searchParams: { [key: string]: string };
+}) {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
+  const [success, setSuccess] = useState(false);
+  const [formText, setFormText] = useState({
+    name: searchParams.name || "",
+    email: searchParams.email || "",
+    message: searchParams.message || "",
   });
 
-  const handleInputChange = (
-    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [event.target.name]: event.target.value,
-    }));
-  };
+  const router = useRouter();
+  const category = searchParams.category || "";
+  const riders = searchParams.riders || "1";
+
+  function updateParams(param: string, value: string) {
+    const newParams = { ...searchParams, [param]: value };
+    router.push(`?${new URLSearchParams(newParams)}`);
+  }
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsSubmitting(true);
 
-    console.log("Form Data:", formData);
-
     // Simulate a 1-second delay
     await new Promise((resolve) => setTimeout(resolve, 1000));
-
     setIsSubmitting(false);
-    setIsSuccess(true);
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+    setFormText({ name: "", email: "", message: "" });
+    window.history.pushState({}, "", ``);
+    router.push(`?riders=1&category=enduro`);
+    setSuccess(true);
   };
 
   return (
     <section
       id="contact"
-      className="w-full space-y-8 pb-12 p-6 md:py-24 lg:py-32  flex flex-col items-center max-w-xl mx-auto pt-28"
+      className="w-full space-y-8 pb-12 p-6 md:py-24 lg:py-32 flex flex-col items-center max-w-xl mx-auto pt-28"
     >
       <div className="gap-2 flex flex-col w-full">
-        <h1 className="text-4xl font-tds sm:text-5xl xl:text-6xl  font-bold ">
-          Reserve <span className="text-tdsRed  ">Now</span>
+        <h1 className="text-4xl font-tds sm:text-5xl xl:text-6xl font-bold">
+          Reserve <span className="text-tdsRed">Now</span>
         </h1>
-        <p className="max-w-[500px] text-black/60 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+        <p className="max-w-[500px] text-black/60 md:text-xl lg:text-base xl:text-xl">
           Ready to book a memorable adventure this holiday season in Algarve,
           Portugal? Contact us to discuss how TDS Enduro Algarve can take you on
           an unforgettable journey.
         </p>
       </div>
-      <div className="mx-auto w-full  space-y-2">
+      <div className="mx-auto w-full space-y-2">
         <form className="flex flex-col gap-4 max-w-xl" onSubmit={handleSubmit}>
           <input
             type="text"
             name="name"
             placeholder="Name"
-            className=" flex-1 p-2 rounded-md border border-gray-300 bg-white "
+            className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
             required
-            value={formData.name}
-            onChange={handleInputChange}
+            value={formText.name}
+            onChange={(e) => setFormText({ ...formText, name: e.target.value })}
+            onBlur={(e) => updateParams("name", e.target.value)}
           />
           <input
             type="email"
@@ -70,16 +71,48 @@ export default function Contact() {
             placeholder="Email"
             className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
             required
-            value={formData.email}
-            onChange={handleInputChange}
+            value={formText.email}
+            onChange={(e) =>
+              setFormText({ ...formText, email: e.target.value })
+            }
+            onBlur={(e) => updateParams("email", e.target.value)}
           />
+          <select
+            name="category"
+            className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
+            required
+            value={category}
+            onChange={(e) => updateParams("category", e.target.value)}
+          >
+            {categories.map((category) => (
+              <option key={category.name} value={category.name}>
+                {category.name}
+              </option>
+            ))}
+          </select>
+          <select
+            name="riders"
+            className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
+            required
+            value={riders}
+            onChange={(e) => updateParams("riders", e.target.value)}
+          >
+            <option value="1">1 Rider</option>
+            <option value="2">2 Riders</option>
+            <option value="3">3 Riders</option>
+            <option value="4">4 Riders</option>
+            <option value="5">5 Riders</option>
+          </select>
           <textarea
             name="message"
             placeholder="Message"
-            className=" flex-1 p-2 rounded-md border border-gray-300 bg-white"
+            className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
             required
-            value={formData.message}
-            onChange={handleInputChange}
+            value={formText.message}
+            onChange={(e) =>
+              setFormText({ ...formText, message: e.target.value })
+            }
+            onBlur={(e) => updateParams("message", e.target.value)}
           />
           <button
             type="submit"
@@ -116,7 +149,7 @@ export default function Contact() {
             )}
           </button>
         </form>
-        {isSuccess && (
+        {success && (
           <div className="text-black/60 pt-4">Form submitted successfully!</div>
         )}
       </div>
