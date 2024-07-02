@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { categories } from "@/app/_assets/bikes";
-
+import Link from "next/link";
 export default function Contact({
   searchParams,
 }: {
@@ -55,6 +55,17 @@ export default function Contact({
       </div>
       <div className="mx-auto w-full space-y-2">
         <form className="flex flex-col gap-4 max-w-xl" onSubmit={handleSubmit}>
+          <div>
+            <h2 className="text-2xl font-tds sm:text-4xl ">
+              Guided <span className="text-tdsRed">Tour</span> & Rental
+            </h2>
+            <Link
+              href="/off-road-bike-rental"
+              className="flex flex-col gap-2 text-xs text/black/60 underline"
+            >
+              Learn more here
+            </Link>
+          </div>
           <input
             type="text"
             name="name"

@@ -4,7 +4,7 @@ export const categories = [
     name: "Enduro",
     slug: "off-road-bike-rental",
     image: "/images/enduro.jpg",
-    title: "KTM Hard enduro  bike tours ALgaRVE",
+    title: "KTM Hard enduro guided bike tours ALgaRVE",
     bikes: [
       {
         id: 1,
@@ -22,7 +22,7 @@ export const categories = [
           "Reliable",
           "Comfortable",
         ],
-        packageName: "rental + tour",
+        packageName: "rental + guided tour",
         packageInfo: "No bike license required off-road.",
         pakcageMaxRiders: 5,
         packages: [

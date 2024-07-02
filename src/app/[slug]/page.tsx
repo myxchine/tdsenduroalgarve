@@ -1,6 +1,7 @@
 import { categories } from "@/app/_assets/bikes";
 import Hero from "@/components/Hero";
 import Link from "next/link";
+import Image from "next/image";
 export default function BikeRental({ params }: { params: { slug: string } }) {
   const category = categories.find((c) => c.slug === params.slug);
 
@@ -45,7 +46,7 @@ export default function BikeRental({ params }: { params: { slug: string } }) {
                       key={packages.id}
                       className="flex flex-col items-center gap-4 justify-center"
                     >
-                      <p className="text-4xl font-bold font-tds tracking-wider relative pl-3">
+                      <p className="text-4xl font-tds tracking-wider relative pl-3">
                         <span className="text-sm absolute top-1 left-0">€</span>
                         {packages.price}
                         <span className="text-sm font-normal ">/day</span>
@@ -58,7 +59,7 @@ export default function BikeRental({ params }: { params: { slug: string } }) {
                           packages.riders
                         }
                       >
-                        <button className="bg-tdsRed text-white text font-bold py-2  w-[200px] uppercase font-tds tracking-wider text-lg">
+                        <button className="bg-tdsRed text-white text py-2  w-[200px] uppercase font-tds tracking-wider text-lg">
                           {packages.riders}
                           {index === 2 ? "+" : ""}{" "}
                           {packages.riders > 1 ? "riders" : "rider"}
@@ -67,6 +68,16 @@ export default function BikeRental({ params }: { params: { slug: string } }) {
                     </li>
                   ))}
                 </ul>
+                <div className="w-full p-4 pt-0">
+                  <Image
+                    src={bike.image}
+                    alt={bike.name}
+                    width={400}
+                    height={400}
+                    priority={true}
+                    className="w-full object-cover"
+                  />
+                </div>
               </li>
             ))}
           </ul>
