@@ -12,8 +12,8 @@ export default function Home() {
         buttonText="Off Road Bike Rental"
         buttonLink="/off-road-bike-rental"
         buttonWidth="w-full"
-        buttonText2="Street Bike Rental"
-        buttonLink2="/street-bike-rental"
+        buttonText2="Book a tour"
+        buttonLink2="/reserve"
       />
       <Vanilla
         title="Relax and enjoy the ride"

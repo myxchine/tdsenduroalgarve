@@ -55,7 +55,7 @@ const Hero = ({
               <Link href={buttonLink}>{buttonText}</Link>
             </button>
             {buttonLink2 ? (
-              <button className="bg-white text-black font-bold w-full p-2 uppercas hover:bg-white/80">
+              <button className="bg-white text-black font-bold w-full p-2 uppercase hover:bg-white/80">
                 <Link href={buttonLink2}>{buttonText2}</Link>
               </button>
             ) : (

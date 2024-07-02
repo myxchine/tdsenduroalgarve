@@ -27,8 +27,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${TDS.variable}`}>
-      <body className="bg-tdsRed">
-        <main className="bg-white">
+      <body>
+        <main>
           <Header />
           {children}
           <Footer />
