@@ -49,8 +49,7 @@ export default function Contact({
         </h1>
         <p className="max-w-[500px] text-black/60 md:text-xl lg:text-base xl:text-xl">
           Ready to book a memorable adventure this holiday season in Algarve,
-          Portugal? Contact us to discuss how TDS Enduro Algarve can take you on
-          an unforgettable journey.
+          Portugal?
         </p>
       </div>
       <div className="mx-auto w-full space-y-2">
