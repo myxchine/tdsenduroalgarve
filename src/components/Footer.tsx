@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center justify-center w-full py-8">
+    <footer className="flex flex-col items-center justify-center w-full py-8 bg-white">
       <div className="flex flex-col items-center justify-between gap-4 text-xs ">
         <p>&copy; 2024 TDS Enduro Algarve. All rights reserved.</p>
         <div className="flex gap-4">

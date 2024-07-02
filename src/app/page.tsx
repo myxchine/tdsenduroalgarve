@@ -8,8 +8,10 @@ export default function Home() {
         image="/images/hero.jpg"
         title="Enduro tours in Algarve have never been this easy."
         subtitle=""
+        titleSize={null}
         buttonText="Off Road Bike Rental"
         buttonLink="/off-road-bike-rental"
+        buttonWidth="w-full"
         buttonText2="Street Bike Rental"
         buttonLink2="/street-bike-rental"
       />
@@ -17,7 +19,7 @@ export default function Home() {
         title="Relax and enjoy the ride"
         text="No more preparing your own bike, gear, transport and tracks to ride on."
         buttonText="Reserve Now"
-        buttonLink="/contact"
+        buttonLink="/reserve"
       />
       <BikeList />
     </main>

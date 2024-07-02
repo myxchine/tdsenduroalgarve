@@ -45,7 +45,7 @@ export default function Contact() {
     >
       <div className="gap-2 flex flex-col w-full">
         <h1 className="text-4xl font-tds sm:text-5xl xl:text-6xl  font-bold ">
-          Contact <span className="text-tdsRed  ">Us</span>
+          Reserve <span className="text-tdsRed  ">Now</span>
         </h1>
         <p className="max-w-[500px] text-black/60 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
           Ready to book a memorable adventure this holiday season in Algarve,

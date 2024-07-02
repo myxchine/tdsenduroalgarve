@@ -4,7 +4,6 @@ import { useState } from "react";
 import { MenuIcon, CloseIcon } from "./icons";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import path from "path";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +19,7 @@ const Header = () => {
   };
 
   return (
-    <header className="flex flex-row items-center justify-between top-0 z-10 left-0 w-full fixed px-4 pl-6">
+    <header className="flex flex-row items-center justify-between top-0 z-10 left-0 w-full fixed px-6">
       <Link href={"/"}>
         <div className="text-center bg-red-500 text-white font-tds p-4 text-3xl bg-tdsRed">
           TDS
@@ -50,7 +49,8 @@ function OpenCloseButton({
 }) {
   const pathname = usePathname();
 
-  const colour = pathname === "/" ? "white" : "black";
+  const colour =
+    pathname === "/contact" || pathname === "/reserve" ? "black" : "white";
 
   return (
     <div className="mobile flex items-left justify-left md:hidden">
@@ -61,8 +61,9 @@ function OpenCloseButton({
           className="flex items-center justify-center p-2"
         >
           <MenuIcon
-            className=" text-2xl h-[24px] w-[24px] flex items-left justify-left "
+            className="   "
             stroke={colour}
+            style={{ transform: "scale(1.5)" }}
           />
         </button>
       )}
@@ -74,8 +75,9 @@ function OpenCloseButton({
           onClick={handleClose}
         >
           <CloseIcon
-            className="p-[3px] text-2xl h-[24px] w-[24px] flex items-left justify-left "
+            className=""
             stroke={colour}
+            style={{ transform: "scale(1.5)" }}
           />
         </button>
       )}

@@ -2,11 +2,15 @@ export const categories = [
   {
     id: 1,
     name: "Enduro",
+    slug: "off-road-bike-rental",
+    image: "/images/enduro.jpg",
+    title: "KTM Hard enduro  bike tours ALgaRVE",
     bikes: [
       {
         id: 1,
         category: "Enduro",
         name: "ktm exc 300 tpi",
+        title: "KTM Hard enduro  bike tours ALgaRVE",
         image: "/images/bikes/enduro.png",
         description:
           "With over 7 of these bad boys in our arsenal and thousands of combined hours in the Algarvian mountians, they have never let us down.",
@@ -24,11 +28,16 @@ export const categories = [
   {
     id: 2,
     name: "Adventure",
+    slug: "adventure-bike-rental",
+    image: "/images/enduro.jpg",
+    title: "KTM Hard enduro  bike tours ALgaRVE",
+
     bikes: [
       {
         id: 2,
         category: "Adventure",
         name: "ktm adv 790 2019",
+
         image: "/images/bikes/adventure.jpg",
         description:
           "Being the most well rounded machine you'll ever come across, feel free to cruise on the highway or explore the beautiful dirt roads of Algarve.",
@@ -46,6 +55,10 @@ export const categories = [
   {
     id: 3,
     name: "Street",
+    slug: "street-bike-rental",
+    image: "/images/enduro.jpg",
+    title: "KTM Hard enduro  bike tours ALgaRVE",
+
     bikes: [
       {
         id: 3,
