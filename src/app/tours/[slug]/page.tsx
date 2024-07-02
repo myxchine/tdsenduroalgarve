@@ -22,15 +22,13 @@ export default function ToursList({ params }: { params: { slug: string } }) {
         buttonLink2={null}
       />
       <section className="flex flex-col items-center justify-center w-full p-6 bg-black text-white gap-6 py-12">
-        <h1 className="text-3xl font-bold uppercase font-tds tracking-wider">
-          Packages
-        </h1>
+        <h1 className="text-3xl uppercase font-tds tracking-wider">Packages</h1>
         <div className="flex flex-col items-center justify-center w-full py-8 bg-white  text-black rounded-md">
           <ul className="flex flex-col gap-4">
             {category.bikes.map((bike, index) => (
               <li key={bike.id} className="flex flex-col gap-4">
                 <div className="flex flex-col gap-1">
-                  <div className="text-3xl font-bold text-center flex flex-col uppercase font-tds tracking-wider">
+                  <div className="text-3xl text-center flex flex-col uppercase font-tds tracking-wider">
                     <p>{bike.name}</p>
                     <p>{bike.packageName}</p>
                   </div>

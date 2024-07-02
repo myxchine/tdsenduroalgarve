@@ -17,8 +17,8 @@ export default function Contact({
   });
 
   const router = useRouter();
-  const category = searchParams.category || updateParams("category", "enduro");
-  const riders = searchParams.riders || updateParams("riders", "1");
+  const category = searchParams.category || "enduro";
+  const riders = searchParams.riders || "1";
 
   function updateParams(param: string, value: string) {
     const newParams = { ...searchParams, [param]: value };
@@ -53,7 +53,10 @@ export default function Contact({
         </p>
       </div>
       <div className="mx-auto w-full space-y-2">
-        <form className="flex flex-col gap-4 max-w-xl" onSubmit={handleSubmit}>
+        <form
+          className="flex flex-col gap-4 max-w-xl border rounded-md p-4 shadow"
+          onSubmit={handleSubmit}
+        >
           <div>
             <h2 className="text-2xl font-tds sm:text-4xl ">
               Guided <span className="text-tdsRed">Tour</span> & Rental
@@ -161,10 +164,17 @@ export default function Contact({
               "Submit"
             )}
           </button>
+          {success && (
+            <div className="text-black/60 pt-0 text-sm w-full text-center">
+              Form submitted successfully!
+            </div>
+          )}
+          {!success && (
+            <div className="text-black/60 pt-0 text-sm w-full text-center">
+              Tell us about yourself.
+            </div>
+          )}
         </form>
-        {success && (
-          <div className="text-black/60 pt-4">Form submitted successfully!</div>
-        )}
       </div>
     </section>
   );
