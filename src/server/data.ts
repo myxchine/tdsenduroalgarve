@@ -29,8 +29,8 @@ export const data = {
             packageInfo: "No bike license required off-road.",
             packageMaxRiders: 5,
             packages: [
-              { id: 1, price: 300, days: 1, riders: 1 },
-              { id: 2, price: 280, days: 1, riders: 2 },
+              { id: 1, price: 330, days: 1, riders: 1 },
+              { id: 2, price: 290, days: 1, riders: 2 },
               { id: 3, price: 270, days: 1, riders: 3 },
             ],
           },

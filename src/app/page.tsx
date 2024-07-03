@@ -1,5 +1,4 @@
 import Hero from "@/components/Hero";
-import Vanilla from "@/components/Vanilla";
 import ToursList from "@/components/ToursList";
 export default function Home() {
   return (
@@ -21,12 +20,3 @@ export default function Home() {
     </main>
   );
 }
-
-/*
-<Vanilla
-title="Relax and enjoy the ride"
-text="No more preparing your own bike, gear, transport and tracks to ride on."
-buttonText="Reserve Now"
-buttonLink="/reserve"
-/>
-*/

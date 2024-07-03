@@ -57,7 +57,7 @@ const Header = () => {
             <Link href={"/"}>
               <div className="font-tds text-xl ">Home</div>
             </Link>
-            <Link href={"/off-road-bike-rental"}>
+            <Link href={"tours/off-road-enduro-bike-rental"}>
               <div className=" font-tds  text-xl ">Off Road Bike Rental</div>
             </Link>
             <Link href={"/reserve"}>
@@ -87,7 +87,11 @@ function OpenCloseButton({
   const pathname = usePathname();
 
   const colour =
-    pathname === "/contact" || pathname === "/reserve" ? "black" : "white";
+    pathname === "/contact" ||
+    pathname === "/reserve" ||
+    pathname === "/tours/off-road-enduro-bike-rental"
+      ? "black"
+      : "white";
 
   return (
     <div className=" flex items-left justify-left md:hidden">
