@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import sendBookingConfirmationEmail from "@/server/email";
 export default function Contact({
   searchParams,
 }: {
@@ -44,6 +45,7 @@ function Form({ searchParams }: { searchParams: { [key: string]: string } }) {
   const [success, setSuccess] = useState(false);
   const [formText, setFormText] = useState({
     name: searchParams.name || "",
+    surname: searchParams.surname || "",
     email: searchParams.email || "",
     verifyEmail: "",
     message: searchParams.message || "",
@@ -55,24 +57,37 @@ function Form({ searchParams }: { searchParams: { [key: string]: string } }) {
 
   function updateParams(param: string, value: string) {
     const newParams = { ...searchParams, [param]: value };
-    router.push(`/reserve?${new URLSearchParams(newParams)}`);
+    router.replace(`/reserve?${new URLSearchParams(newParams)}`, {
+      scroll: false,
+    });
   }
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate a 1-second delay
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await sendBookingConfirmationEmail(
+      formText.name,
+      formText.surname,
+      formText.message,
+      formText.email,
+      riders
+    );
     setIsSubmitting(false);
-    setFormText({ name: "", email: "", message: "", verifyEmail: "" });
+    setFormText({
+      name: "",
+      email: "",
+      message: "",
+      verifyEmail: "",
+      surname: "",
+    });
     window.history.pushState({}, "", ``);
-    router.push(`/reserve?riders=1&category=enduro`);
+    router.replace(`/reserve?riders=1&category=enduro`, { scroll: false });
     setSuccess(true);
   };
   return (
     <form
-      className="flex flex-col gap-4 max-w-xl border rounded-md p-4 shadow"
+      className="flex flex-col gap-4 max-w-xl rounded-md p-4 bg-black/5 "
       onSubmit={handleSubmit}
     >
       <div className="flex flex-col gap-2 pb-2">
@@ -92,6 +107,16 @@ function Form({ searchParams }: { searchParams: { [key: string]: string } }) {
         value={formText.name}
         onChange={(e) => setFormText({ ...formText, name: e.target.value })}
         onBlur={(e) => updateParams("name", e.target.value)}
+      />
+      <input
+        type="text"
+        name="surname"
+        placeholder="Surname"
+        className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
+        required
+        value={formText.surname}
+        onChange={(e) => setFormText({ ...formText, surname: e.target.value })}
+        onBlur={(e) => updateParams("surname", e.target.value)}
       />
       <input
         type="email"
@@ -143,8 +168,8 @@ function Form({ searchParams }: { searchParams: { [key: string]: string } }) {
 
       <textarea
         name="message"
-        placeholder="Details"
-        className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
+        placeholder="Details about dates, riders, shoe/clothing sizes and any other information you would like to share with us."
+        className="p-2 rounded-md border border-gray-300 bg-white h-[150px]"
         required
         value={formText.message}
         onChange={(e) => setFormText({ ...formText, message: e.target.value })}
