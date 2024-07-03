@@ -9,7 +9,7 @@ export default function ToursList({ params }: { params: { slug: string } }) {
     return <div>Category not found</div>;
   }
   return (
-    <section className="flex flex-col items-center justify-center w-full pb-8">
+    <section className="flex flex-col items-center justify-center w-full pb-8 max-w-6xl mx-auto md:px-0">
       <div className="gap-2 flex flex-col w-full pt-28 p-6">
         <h1 className="text-4xl font-tds sm:text-5xl xl:text-6xl tracking-wider uppercase">
           Hard enduro guided bike{" "}

@@ -1,9 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useActionState } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 import Image from "next/image";
-import sendBookingConfirmationEmail from "@/server/email";
+import { newReservation as action } from "@/server/db/utils";
 export default function Contact({
   searchParams,
 }: {
@@ -41,54 +40,12 @@ export default function Contact({
 }
 
 function Form({ searchParams }: { searchParams: { [key: string]: string } }) {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [success, setSuccess] = useState(false);
-  const [formText, setFormText] = useState({
-    name: searchParams.name || "",
-    surname: searchParams.surname || "",
-    email: searchParams.email || "",
-    verifyEmail: "",
-    message: searchParams.message || "",
-  });
+  const [status, submit, isPending] = useActionState(action, null);
 
-  const router = useRouter();
-  const category = searchParams.category || "enduro";
-  const riders = searchParams.riders || "1";
-
-  function updateParams(param: string, value: string) {
-    const newParams = { ...searchParams, [param]: value };
-    router.replace(`/reserve?${new URLSearchParams(newParams)}`, {
-      scroll: false,
-    });
-  }
-
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setIsSubmitting(true);
-
-    await sendBookingConfirmationEmail(
-      formText.name,
-      formText.surname,
-      formText.message,
-      formText.email,
-      riders
-    );
-    setIsSubmitting(false);
-    setFormText({
-      name: "",
-      email: "",
-      message: "",
-      verifyEmail: "",
-      surname: "",
-    });
-    window.history.pushState({}, "", ``);
-    router.replace(`/reserve?riders=1&category=enduro`, { scroll: false });
-    setSuccess(true);
-  };
   return (
     <form
       className="flex flex-col gap-4 max-w-xl rounded-md p-4 bg-black/5 "
-      onSubmit={handleSubmit}
+      action={submit}
     >
       <div className="flex flex-col gap-2 pb-2">
         <h2 className="text-3xl font-tds sm:text-5xl ">
@@ -98,91 +55,16 @@ function Form({ searchParams }: { searchParams: { [key: string]: string } }) {
           Fill in the form below for free so we can discuss your adventure.
         </p>
       </div>
-      <input
-        type="text"
-        name="name"
-        placeholder="Name"
-        className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
-        required
-        value={formText.name}
-        onChange={(e) => setFormText({ ...formText, name: e.target.value })}
-        onBlur={(e) => updateParams("name", e.target.value)}
-      />
-      <input
-        type="text"
-        name="surname"
-        placeholder="Surname"
-        className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
-        required
-        value={formText.surname}
-        onChange={(e) => setFormText({ ...formText, surname: e.target.value })}
-        onBlur={(e) => updateParams("surname", e.target.value)}
-      />
-      <input
-        type="email"
-        name="email"
-        placeholder="Email"
-        className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
-        required
-        value={formText.email}
-        onChange={(e) => setFormText({ ...formText, email: e.target.value })}
-        onBlur={(e) => updateParams("email", e.target.value)}
-      />
-      <input
-        type="email"
-        name="verifyEmail"
-        placeholder="Verify email"
-        className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
-        required
-        value={formText.verifyEmail}
-        onChange={(e) =>
-          setFormText({ ...formText, verifyEmail: e.target.value })
-        }
-      />
-      <div className="flex flex-row gap-2">
-        <select
-          name="category"
-          className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
-          required
-          value={category || ""}
-          onChange={(e) => updateParams("category", e.target.value)}
-        >
-          <option key="KTM EXC-300 TPI" value="ktm_exc_300_tpi">
-            KTM EXC-300
-          </option>
-        </select>
-        <select
-          name="riders"
-          className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
-          required
-          value={riders || ""}
-          onChange={(e) => updateParams("riders", e.target.value)}
-        >
-          <option value="1">1 Rider</option>
-          <option value="2">2 Riders</option>
-          <option value="3">3 Riders</option>
-          <option value="4">4 Riders</option>
-          <option value="5">5 Riders</option>
-        </select>
-      </div>
+      <Inputs searchParams={searchParams} />
 
-      <textarea
-        name="message"
-        placeholder="Details about dates, riders, shoe/clothing sizes and any other information you would like to share with us."
-        className="p-2 rounded-md border border-gray-300 bg-white h-[150px]"
-        required
-        value={formText.message}
-        onChange={(e) => setFormText({ ...formText, message: e.target.value })}
-        onBlur={(e) => updateParams("message", e.target.value)}
-      />
       <button
         type="submit"
-        className={`bg-black border border-black rounded-md text-white p-2 text-center px-4 w-full max-w-xl font-tds tracking-wider ${
-          isSubmitting ? "opacity-50 cursor-not-allowed" : ""
+        className={`bg-black border border-black rounded-md text-white p-2 text-center h-12 px-4 w-full max-w-xl font-tds tracking-wider ${
+          isPending ? "opacity-50 cursor-not-allowed" : ""
         }`}
-        disabled={isSubmitting}
+        disabled={isPending}
       >
-        {isSubmitting ? (
+        {isPending ? (
           <div className="flex justify-center items-center space-x-2">
             <svg
               className="animate-spin h-5 w-5 text-white"
@@ -209,16 +91,106 @@ function Form({ searchParams }: { searchParams: { [key: string]: string } }) {
           "Submit"
         )}
       </button>
-      {success && (
+      {status && (
         <div className="text-black/60 pt-0 text-sm w-full text-center">
           Form submitted successfully!
         </div>
       )}
-      {!success && (
+      {!status && (
         <div className="text-black/60 pt-0 text-sm w-full text-center">
           Let's get in touch.
         </div>
       )}
     </form>
+  );
+}
+function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
+  const router = useRouter();
+
+  const riders = searchParams.riders || "1";
+  const name = searchParams.name || "";
+  const surname = searchParams.surname || "";
+  const email = searchParams.email || "";
+  const verifyEmail = searchParams.verifyEmail || "";
+  const message = searchParams.message || "";
+
+  function updateParams(param: string, value: string) {
+    const newParams = { ...searchParams, [param]: value };
+    router.replace(`/reserve?${new URLSearchParams(newParams)}`, {
+      scroll: false,
+    });
+  }
+
+  return (
+    <>
+      <input
+        type="text"
+        name="name"
+        placeholder="First Name"
+        className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
+        required
+        value={name}
+        onChange={(e) => updateParams("name", e.target.value)}
+      />
+      <input
+        type="text"
+        name="surname"
+        placeholder="Surname"
+        className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
+        required
+        value={surname}
+        onChange={(e) => updateParams("surname", e.target.value)}
+      />
+      <input
+        type="email"
+        name="email"
+        placeholder="Email"
+        className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
+        required
+        value={email}
+        onChange={(e) => updateParams("email", e.target.value)}
+      />
+      <input
+        type="email"
+        name="verifyEmail"
+        placeholder="Verify email"
+        className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
+        required
+        value={verifyEmail}
+        onChange={(e) => updateParams("verifyEmail", e.target.value)}
+      />
+      <div className="flex flex-row gap-2">
+        <select
+          name="category"
+          className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
+        >
+          <option key="KTM EXC-300 TPI" value="ktm_exc_300_tpi">
+            KTM EXC-300
+          </option>
+        </select>
+        <select
+          name="riders"
+          className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
+          required
+          value={riders || ""}
+          onChange={(e) => updateParams("riders", e.target.value)}
+        >
+          <option value="1">1 Rider</option>
+          <option value="2">2 Riders</option>
+          <option value="3">3 Riders</option>
+          <option value="4">4 Riders</option>
+          <option value="5">5 Riders</option>
+        </select>
+      </div>
+
+      <textarea
+        name="message"
+        placeholder="Details about dates, riders, shoe/clothing sizes and any other information you would like to share with us."
+        className="p-2 rounded-md border border-gray-300 bg-white h-[150px]"
+        required
+        value={message}
+        onChange={(e) => updateParams("message", e.target.value)}
+      />
+    </>
   );
 }
