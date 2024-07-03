@@ -7,6 +7,14 @@ import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  const colour =
+    pathname === "/contact" ||
+    pathname === "/reserve" ||
+    pathname === "/tours/off-road-enduro-bike-rental"
+      ? "black"
+      : "white";
 
   const handleOpen = () => {
     setIsOpen(true);
@@ -27,12 +35,56 @@ const Header = () => {
               TDS
             </div>
           </Link>
-          <div>
+          <div className="block md:hidden">
             <OpenCloseButton
               isOpen={isOpen}
               handleOpen={handleOpen}
               handleClose={handleClose}
+              colour={colour}
             />
+          </div>
+
+          <div className="hidden md:block">
+            <div className={`flex flex-row gap-8  text-${colour}`}>
+              <Link href={"/"}>
+                <div
+                  className={`font-tds text-xl ${
+                    pathname === "/" ? "text-tdsRed" : ""
+                  }`}
+                >
+                  Home
+                </div>
+              </Link>
+              <Link href={"tours/off-road-enduro-bike-rental"}>
+                <div
+                  className={`font-tds text-xl ${
+                    pathname === "/tours/off-road-enduro-bike-rental"
+                      ? "text-tdsRed"
+                      : ""
+                  }`}
+                >
+                  Off Road Bike Rental
+                </div>
+              </Link>
+              <Link href={"/reserve"}>
+                <div
+                  className={`font-tds text-xl ${
+                    pathname === "/reserve" ? "text-tdsRed" : ""
+                  }`}
+                >
+                  Reserve
+                </div>
+              </Link>
+              <Link href={"/contact"}>
+                <div
+                  className={`font-tds text-xl ${
+                    pathname === "/contact" ? "text-tdsRed" : ""
+                  }`}
+                >
+                  Contact
+                </div>
+              </Link>
+            </div>
           </div>
         </section>
       )}
@@ -79,20 +131,13 @@ function OpenCloseButton({
   isOpen,
   handleOpen,
   handleClose,
+  colour,
 }: {
   isOpen: boolean;
   handleOpen: () => void;
   handleClose: () => void;
+  colour: string;
 }) {
-  const pathname = usePathname();
-
-  const colour =
-    pathname === "/contact" ||
-    pathname === "/reserve" ||
-    pathname === "/tours/off-road-enduro-bike-rental"
-      ? "black"
-      : "white";
-
   return (
     <div className=" flex items-left justify-left md:hidden">
       {!isOpen && (

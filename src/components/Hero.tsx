@@ -25,7 +25,7 @@ const Hero = ({
   buttonLink2,
 }: HeroProps) => {
   return (
-    <section className="flex flex-col items-center justify-center w-full">
+    <section className="flex flex-col items-center justify-center w-full relative">
       <div className="w-full relative flex flex-col items-center justify-center">
         <Image
           src={image}
@@ -37,38 +37,40 @@ const Hero = ({
           className="w-full full-screen object-cover max-h-[700px] md:max-h-[1000px] lg:max-h-[1200px]"
         />
 
-        <div className="absolute bottom-0 left-0 w-full max-w-xl mx-auto sm:right-0">
-          <h1
-            className={` ${
-              titleSize ? "text-" + titleSize : "text-[21px]"
-            }  text-center text-white uppercase p-4 font-tds tracking-wider`}
-          >
-            {title}
-          </h1>
-          <p className="text-center text-white pb-4">{subtitle}</p>
-          <div className="flex flex-col items-center justify-center space-y-4 w-full p-6 pt-0">
-            <Link
-              href={buttonLink}
-              className="w-full flex flex-col items-center justify-center"
+        <div className="absolute flex flex-col bottom-0 left-0 w-full max-w-6xl  mx-auto sm:right-0 sm:h-screen sm:items-end sm:justify-center  sm:w-screen sm:text-left max-h-[700px] md:max-h-[1000px] lg:max-h-[1200px]">
+          <section className="max-w-xl sm:max-w-md mr-6 right-0">
+            <h1
+              className={` ${
+                titleSize ? "text-" + titleSize : "text-[21px]"
+              }  text-center text-white uppercase p-4 font-tds tracking-wider sm:text-left sm:text-5xl text-balance`}
             >
-              <button
-                className={`bg-tdsRed text-white  px-8 p-2 uppercase hover:bg-tdsRed/80 mx-auto font-tds rounded ${
-                  buttonWidth ? buttonWidth : "w-full"
-                }`}
+              {title}
+            </h1>
+            <p className="text-center text-white pb-4">{subtitle}</p>
+            <div className="flex flex-col items-center justify-center space-y-4 w-full p-6 pt-0">
+              <Link
+                href={buttonLink}
+                className="w-full flex flex-col items-center justify-center"
               >
-                {buttonText}
-              </button>
-            </Link>
-            {buttonLink2 ? (
-              <Link href={buttonLink2} className="w-full">
-                <button className="bg-white text-black w-full p-2 uppercase hover:bg-white/80 font-tds rounded">
-                  {buttonText2}
+                <button
+                  className={`bg-tdsRed text-white  px-8 p-2 uppercase hover:bg-tdsRed/80 mx-auto font-tds rounded ${
+                    buttonWidth ? buttonWidth : "w-full"
+                  }`}
+                >
+                  {buttonText}
                 </button>
               </Link>
-            ) : (
-              <div className="h-2"></div>
-            )}
-          </div>
+              {buttonLink2 ? (
+                <Link href={buttonLink2} className="w-full">
+                  <button className="bg-white text-black w-full p-2 uppercase hover:bg-white/80 font-tds rounded">
+                    {buttonText2}
+                  </button>
+                </Link>
+              ) : (
+                <div className="h-2"></div>
+              )}
+            </div>
+          </section>
         </div>
       </div>
     </section>

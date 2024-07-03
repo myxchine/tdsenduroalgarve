@@ -14,7 +14,7 @@ export default function Home() {
         buttonText2="Reserve a day"
         buttonLink2="/reserve"
       />
-      <div className="flex flex-col items-center justify-center w-full gap-6 py-12 pt-6">
+      <div className="flex flex-col items-center justify-center w-full gap-6 py-12 pt-6 sm:max-w-xl mx-auto  md:max-w-4xl ">
         <ToursList />
       </div>
     </main>

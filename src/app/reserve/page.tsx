@@ -12,7 +12,7 @@ export default function Contact({
   return (
     <section
       id="contact"
-      className="w-full space-y-8 pb-12 p-6 md:py-24 lg:py-32 flex flex-col items-center max-w-xl mx-auto pt-28"
+      className="w-full space-y-8 pb-12 p-6 md:py-24 lg:py-32 flex flex-col items-center max-w-6xl mx-auto pt-28 md:flex-row lg:px-0 sm:gap-8"
     >
       <div className="gap-2 flex flex-col w-full">
         <h1 className="text-4xl font-tds sm:text-5xl xl:text-6xl ">
