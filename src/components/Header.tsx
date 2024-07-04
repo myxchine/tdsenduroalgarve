@@ -63,7 +63,7 @@ const Header = () => {
                       : ""
                   }`}
                 >
-                  Off Road Bike Rental
+                  Tours
                 </div>
               </Link>
               <Link href={"/reserve"}>
@@ -102,6 +102,7 @@ const Header = () => {
                 isOpen={isOpen}
                 handleOpen={handleOpen}
                 handleClose={handleClose}
+                colour={colour}
               />
             </div>
           </div>
@@ -109,8 +110,8 @@ const Header = () => {
             <Link href={"/"}>
               <div className="font-tds text-xl ">Home</div>
             </Link>
-            <Link href={"tours/off-road-enduro-bike-rental"}>
-              <div className=" font-tds  text-xl ">Off Road Bike Rental</div>
+            <Link href={"/tours/off-road-enduro-bike-rental"}>
+              <div className=" font-tds  text-xl ">Tours</div>
             </Link>
             <Link href={"/reserve"}>
               <div className=" font-tds  text-xl ">Reserve</div>

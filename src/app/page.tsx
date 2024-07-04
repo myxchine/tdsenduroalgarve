@@ -5,7 +5,7 @@ export default function Home() {
     <main>
       <Hero
         image="/images/hero.jpg"
-        title="Guided Bike tours and Rentals in Algarve made easy."
+        title="Off Road Bike tours and Rentals in Algarve made easy."
         subtitle=""
         titleSize={null}
         buttonText="Off Road Bikes"
@@ -14,7 +14,7 @@ export default function Home() {
         buttonText2="Reserve a day"
         buttonLink2="/reserve"
       />
-      <div className="flex flex-col items-center justify-center w-full gap-6 py-12 pt-6 sm:max-w-xl mx-auto  md:max-w-4xl ">
+      <div className="flex flex-col items-center justify-center w-full gap-6 py-12 pt-6  mx-auto  md:max-w-6xl ">
         <ToursList />
       </div>
     </main>

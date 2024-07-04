@@ -1,0 +1,45 @@
+import Link from "next/link";
+export default function Packages({ category }: { category: any }) {
+  return (
+    <div className="flex flex-col items-center justify-center w-full  bg-white  text-black rounded-md py-8 gap-4 mt-6 ">
+      <h4 className="text-3xl md:text-5xl   uppercase font-tds tracking-wider w-full">
+        Packages
+      </h4>
+      {category.bikes.map((bike: any, index: number) => (
+        <li key={bike.id} className="flex flex-col gap-4 w-full">
+          <ul className="flex flex-col md:flex-row gap-8 justify-center items-center w-full">
+            {bike.packages.map((packages: any, index: number) => (
+              <li
+                key={packages.id}
+                className="flex flex-col items-center gap-8 justify-center  w-full "
+              >
+                <section className="flex flex-col items-center gap-4 justify-center bg-black/5 rounded-md p-6 w-full">
+                  <p className="text-4xl font-tds tracking-wider relative pl-3">
+                    <span className="text-sm absolute top-1 left-0">€</span>
+                    {packages.price}
+                    <span className="text-sm font-normal ">/day</span>
+                  </p>
+                  <Link
+                    href={
+                      "/reserve?category=" +
+                      category.name.toLowerCase() +
+                      "&riders=" +
+                      packages.riders
+                    }
+                    className="w-full"
+                  >
+                    <button className="bg-tdsRed text-white text py-2   uppercase font-tds tracking-wider text-lg rounded w-full px-8">
+                      Book {packages.riders}
+                      {index === 2 ? "+" : ""}{" "}
+                      {packages.riders > 1 ? "riders" : "rider"}
+                    </button>
+                  </Link>
+                </section>
+              </li>
+            ))}
+          </ul>
+        </li>
+      ))}
+    </div>
+  );
+}

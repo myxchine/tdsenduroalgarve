@@ -37,12 +37,12 @@ const Hero = ({
           className="w-full full-screen object-cover max-h-[700px] md:max-h-[1000px] lg:max-h-[1200px]"
         />
 
-        <div className="absolute flex flex-col bottom-0 left-0 w-full max-w-6xl  mx-auto sm:right-0 sm:h-screen sm:items-end sm:justify-center  sm:w-screen sm:text-left max-h-[700px] md:max-h-[1000px] lg:max-h-[1200px]">
-          <section className="max-w-xl sm:max-w-md mr-6 right-0">
+        <div className="absolute flex flex-col bottom-0 left-0 w-full  md:max-w-6xl  mx-auto md:right-0 md:h-screen md:items-end md:justify-center  md:w-screen md:text-left max-h-[700px] md:max-h-[1000px] lg:max-h-[1200px]">
+          <section className="w-full md:max-w-md right-0">
             <h1
               className={` ${
                 titleSize ? "text-" + titleSize : "text-[21px]"
-              }  text-center text-white uppercase p-4 font-tds tracking-wider sm:text-left sm:text-5xl text-balance`}
+              }  text-center text-white uppercase p-4 font-tds tracking-wider md:text-left md:text-5xl text-balance`}
             >
               {title}
             </h1>
