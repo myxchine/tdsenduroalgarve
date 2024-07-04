@@ -46,7 +46,7 @@ const Hero = ({
             >
               {title}
             </h1>
-            <p className="text-center text-white pb-4">{subtitle}</p>
+            <p className="text-center text-white pb-4 hidden">{subtitle}</p>
             <div className="flex flex-col items-center justify-center space-y-4 w-full p-6 pt-0">
               <Link
                 href={buttonLink}

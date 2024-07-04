@@ -13,7 +13,7 @@ export default function GuideInfo() {
         techniques. Lunch is included in the ride​.
       </p>
       <div className="absolute bottom-0 left-0 right-0 w-full p-6">
-        <Link href={"/bikes/ktm-exc-300"} className="w-full">
+        <Link href={"/guided-tours/off-road-enduro-tour"} className="w-full">
           <button className="flex flex-col w-full p-2 px-4 rounded bg-black text-white font-tds hover:bg-black/80 text-center justify-center items-center ">
             LEARN MORE
           </button>

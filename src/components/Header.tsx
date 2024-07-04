@@ -9,12 +9,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
-  const colour =
-    pathname === "/contact" ||
-    pathname === "/reserve" ||
-    pathname === "/tours/off-road-enduro-bike-rental"
-      ? "black"
-      : "white";
+  const colour = pathname === "/" ? "white" : "black";
 
   const handleOpen = () => {
     setIsOpen(true);
@@ -66,6 +61,15 @@ const Header = () => {
                   Tours
                 </div>
               </Link>
+              <Link href={"/bikes"}>
+                <div
+                  className={`font-tds text-xl ${
+                    pathname === "/bikes" ? "text-tdsRed" : ""
+                  }`}
+                >
+                  Bikes
+                </div>
+              </Link>
               <Link href={"/reserve"}>
                 <div
                   className={`font-tds text-xl ${
@@ -108,16 +112,51 @@ const Header = () => {
           </div>
           <div className="flex flex-col gap-4 py-12 " onClick={handleClose}>
             <Link href={"/"}>
-              <div className="font-tds text-xl ">Home</div>
+              <div
+                className={`font-tds text-xl ${
+                  pathname === "/" ? "text-tdsRed" : ""
+                }`}
+              >
+                Home
+              </div>
             </Link>
-            <Link href={"/tours/off-road-enduro-bike-rental"}>
-              <div className=" font-tds  text-xl ">Tours</div>
+            <Link href={"tours/off-road-enduro-bike-rental"}>
+              <div
+                className={`font-tds text-xl ${
+                  pathname === "/tours/off-road-enduro-bike-rental"
+                    ? "text-tdsRed"
+                    : ""
+                }`}
+              >
+                Tours
+              </div>
+            </Link>
+            <Link href={"/bikes"}>
+              <div
+                className={`font-tds text-xl ${
+                  pathname === "/bikes" ? "text-tdsRed" : ""
+                }`}
+              >
+                Bikes
+              </div>
             </Link>
             <Link href={"/reserve"}>
-              <div className=" font-tds  text-xl ">Reserve</div>
+              <div
+                className={`font-tds text-xl ${
+                  pathname === "/reserve" ? "text-tdsRed" : ""
+                }`}
+              >
+                Reserve
+              </div>
             </Link>
             <Link href={"/contact"}>
-              <div className="  font-tds  text-xl ">Contact</div>
+              <div
+                className={`font-tds text-xl ${
+                  pathname === "/contact" ? "text-tdsRed" : ""
+                }`}
+              >
+                Contact
+              </div>
             </Link>
           </div>
         </section>
