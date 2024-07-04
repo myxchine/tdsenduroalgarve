@@ -9,10 +9,10 @@ export default function ToursList() {
           key={category.id}
           className="flex flex-col items-center justify-left  w-full gap-4 md:gap-8"
         >
-          <div className=" flex flex-col gap-4 p-6 pt-0 tracking-wider w-full">
-            <h3 className="text-3xl md:text-5xl text-left font-tds tracking-wider w-full text-balance">
-              Enduro Bike GUIDED Tour <span className="text-tdsRed">+</span>{" "}
-              Rental
+          <div className=" flex flex-col gap-4 p-6 pt-0  w-full">
+            <h3 className="text-4xl md:text-6xl text-left font-tds w-full text-balance">
+              Enduro Bike <span className="text-tdsRed">tour</span> +{" "}
+              <span className="text-tdsRed">rental</span>
             </h3>
             <h4 className="  text-left text-sm  w-full pl-[1px] text-black/60 md:text-xl">
               Join the fun of riding off road bikes while you're on holiday in

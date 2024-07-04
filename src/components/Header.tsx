@@ -9,7 +9,8 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
-  const colour = pathname === "/" ? "white" : "black";
+  const colour =
+    pathname === "/" || pathname === "/about-tour" ? "white" : "black";
 
   const handleOpen = () => {
     setIsOpen(true);

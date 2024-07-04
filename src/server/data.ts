@@ -35,9 +35,6 @@ export const data = {
                 days: 1,
                 riders: 1,
                 included: [
-                  "KTM EXC 300 TPI",
-
-                  "Full Day Tour Guide",
                   "All protective and riding equipment",
                   "Lunch",
                   "Water and snacks",
@@ -50,8 +47,6 @@ export const data = {
                 days: 1,
                 riders: 2,
                 included: [
-                  "KTM EXC 300 TPI",
-                  "Full Day Tour Guide",
                   "All protective and riding equipment",
                   "Lunch",
                   "Water and snacks",
@@ -64,9 +59,6 @@ export const data = {
                 days: 1,
                 riders: 3,
                 included: [
-                  "KTM EXC 300 TPI",
-
-                  "Full Day Tour Guide",
                   "All protective and riding equipment",
                   "Lunch",
                   "Water and snacks",
