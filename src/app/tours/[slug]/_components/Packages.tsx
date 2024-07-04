@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function Packages({ category }: { category: any }) {
   return (
-    <div className="flex flex-col items-center justify-center w-full  bg-white  text-black rounded-md py-8 gap-4 mt-6 ">
+    <div className="flex flex-col items-center justify-center w-full  bg-white  text-black rounded-md py-8 gap-4 pt-0 ">
       <h4 className="text-3xl md:text-5xl   uppercase font-tds tracking-wider w-full">
         Packages
       </h4>
@@ -11,9 +11,25 @@ export default function Packages({ category }: { category: any }) {
             {bike.packages.map((packages: any, index: number) => (
               <li
                 key={packages.id}
-                className="flex flex-col items-center gap-8 justify-center  w-full "
+                className="flex flex-col items-center gap-8 justify-center  w-full bg-black/5 rounded-md p-6 w-full"
               >
-                <section className="flex flex-col items-center gap-4 justify-center bg-black/5 rounded-md p-6 w-full">
+                <section className="flex flex-col w-full gap-4">
+                  <h2 className="text-xl font-tds">
+                    {packages.riders} {packages.riders > 1 ? "riders" : "rider"}{" "}
+                    / Includes
+                  </h2>
+                  <ul className="flex flex-col gap-1 justify-center items-center w-full">
+                    {packages.included.map((included: any, index: number) => (
+                      <li
+                        key={included.id}
+                        className="flex flex-col items-center gap-8 justify-center  w-full text-left"
+                      >
+                        <p className="w-full text-sm ">- {included}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+                <section className="flex flex-col items-end gap-4 justify-center w-full">
                   <p className="text-4xl font-tds tracking-wider relative pl-3">
                     <span className="text-sm absolute top-1 left-0">€</span>
                     {packages.price}
