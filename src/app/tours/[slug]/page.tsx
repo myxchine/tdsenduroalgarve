@@ -11,7 +11,7 @@ export default function ToursList({ params }: { params: { slug: string } }) {
     redirect("/tours/off-road-enduro-bike-rental");
   }
   return (
-    <section className="flex flex-col items-center justify-center w-full pb-8 max-w-6xl mx-auto md:px-0">
+    <section className="flex flex-col items-center justify-center w-full pb-8 max-w-6xl mx-auto xl:px-0">
       <Title />
       <section className=" p-6 md:p-0 w-full flex flex-col ">
         <section className=" w-full flex flex-col md:flex-row">

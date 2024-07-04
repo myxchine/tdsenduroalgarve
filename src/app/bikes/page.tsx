@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Bikes() {
   return (
-    <div className="flex flex-col items-start gap-8 pt-32 p-6 max-w-6xl mx-auto md:px-0">
+    <div className="flex flex-col items-start gap-8 pt-32 p-6 max-w-6xl mx-auto xl:px-0">
       <div className="flex flex-col gap-2 w-full">
         <h1 className="text-4xl font-tds">
           Our <span className="text-tdsRed">Bikes</span> at TDS

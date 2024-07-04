@@ -11,7 +11,7 @@ export default function Contact({
   return (
     <section
       id="contact"
-      className="w-full gap-16 pb-12 p-6 md: md:py-24 lg:py-32 flex flex-col items-center max-w-6xl mx-auto pt-28 md:flex-row lg:px-0 sm:gap-12"
+      className="w-full gap-16 pb-12 p-6 md: md:py-24 lg:py-32 flex flex-col items-center max-w-6xl mx-auto pt-28 md:flex-row xl:px-0 sm:gap-12"
     >
       <div className="gap-4 flex flex-col w-full md:gap-8">
         <h1 className="text-4xl font-tds sm:text-5xl xl:text-6xl text-balance">
