@@ -13,28 +13,7 @@ export default function Contact({
       id="contact"
       className="w-full gap-16 pb-12 p-6 md: md:py-24 lg:py-32 flex flex-col items-center max-w-6xl mx-auto pt-28 md:flex-row xl:px-0 sm:gap-12"
     >
-      <div className="gap-4 flex flex-col w-full md:gap-8">
-        <h1 className="text-4xl font-tds sm:text-5xl xl:text-6xl text-balance">
-          Guided <span className="text-tdsRed">Tour</span> & Rental
-        </h1>
-        <p className="max-w-[500px] text-black/60 md:text-xl lg:text-base xl:text-xl">
-          Ready to book a memorable adventure this holiday season in Algarve,
-          Portugal?
-        </p>
-
-        <Image
-          src="/images/bikes/enduro.png"
-          alt="hero"
-          width={800}
-          height={800}
-          quality={80}
-          priority={true}
-          className="w-full h-auto md:mt-4"
-        />
-      </div>
-      <div className="mx-auto w-full ">
-        <Form searchParams={searchParams} />
-      </div>
+      <Form searchParams={searchParams} />
     </section>
   );
 }
@@ -43,16 +22,14 @@ function Form({ searchParams }: { searchParams: { [key: string]: string } }) {
   const [status, submit, isPending] = useActionState(action, null);
 
   return (
-    <form
-      className="flex flex-col gap-4 max-w-xl rounded-md p-4 bg-black/5 "
-      action={submit}
-    >
+    <form className="flex flex-col gap-4 max-w-xl mx-auto " action={submit}>
       <div className="flex flex-col gap-2 pb-2">
-        <h2 className="text-3xl font-tds sm:text-5xl ">
-          Reserve <span className="text-tdsRed">Now</span>
-        </h2>
-        <p className="text-sm text-black/60">
-          Fill in the form below for free so we can discuss your adventure.
+        <h1 className="text-4xl font-tds sm:text-5xl xl:text-6xl text-balance">
+          Guided <span className="text-tdsRed">Tour</span> & Rental
+        </h1>
+        <p className="max-w-[500px] text-black/60 md:text-xl lg:text-base xl:text-xl">
+          Ready to book a memorable adventure this holiday season in Algarve,
+          Portugal?
         </p>
       </div>
       <Inputs searchParams={searchParams} />

@@ -10,7 +10,9 @@ const Header = () => {
   const pathname = usePathname();
 
   const colour =
-    pathname === "/" || pathname === "/about-tour" ? "white" : "black";
+    pathname === "/" || pathname === "/about-tour" || pathname === "/strategy"
+      ? "white"
+      : "black";
 
   const handleOpen = () => {
     setIsOpen(true);
