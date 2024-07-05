@@ -1,6 +1,14 @@
 import { tours } from "@/server/data";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Guided Tours",
+  description:
+    "An experienced guide through the beautiful Algarve region with bike, gear, transport and even lunch included! The perfect way to explore the region and experience the local culture whether with friends, family or by yourself.",
+};
+
 export default function Tours() {
   return (
     <div className="flex flex-col items-start gap-8 pt-32 p-6 max-w-6xl mx-auto xl:px-0">

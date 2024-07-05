@@ -9,9 +9,9 @@ export default function Title() {
         Portugal
       </h1>
       <p className="max-w-[500px] text-black/60 md:text-xl lg:text-base xl:text-xl">
-        The full day adventure you'll never forget this holiday. We offer the
-        beautiful Algarve experience whilst making sure you have a great time
-        with everything prepared for you.
+        The full day off road motorbike enduro adventure you'll never forget
+        this holiday. We offer the beautiful Algarve experience whilst making
+        sure you have a great time with everything prepared for you.
       </p>
     </div>
   );
