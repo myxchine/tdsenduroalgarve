@@ -35,12 +35,12 @@ export default function AboutTour() {
             techniques. Lunch is included in the ride​.
           </p>
           <Link href={`/bikes/ktm-exc-300`} className="w-full">
-            <button className="flex flex-col w-full max-w-[200px] p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center md:p-4 md:px-8 md:text-lg">
+            <button className="flex flex-col w-full max-w-[300px] p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center md:p-4 md:px-8 md:text-lg">
               Available Packages
             </button>
           </Link>
         </section>
-        <section className="flex flex-col p-6 gap-4">
+        <section className="flex flex-col p-6 gap-4 pb-0">
           <h4 className="text-3xl    uppercase font-tds tracking-wider w-full md:text-5xl">
             Included
           </h4>
@@ -64,11 +64,6 @@ export default function AboutTour() {
             priority={true}
             className="w-full object-cover rounded "
           />
-          <Link href={`/bikes/ktm-exc-300`} className="w-full">
-            <button className="flex flex-col w-full p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center ">
-              View Bike
-            </button>
-          </Link>
         </section>
       </div>
     </section>

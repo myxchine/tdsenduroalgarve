@@ -10,16 +10,16 @@ export default function ToursList() {
           className="flex flex-col items-center justify-left  w-full gap-4 md:gap-8"
         >
           <div className=" flex flex-col gap-4 p-6 pt-0  w-full">
-            <h3 className="text-4xl md:text-6xl text-left font-tds w-full text-balance">
+            <h2 className="text-4xl md:text-6xl text-left font-tds w-full text-balance">
               Enduro Bike <span className="text-tdsRed">tour</span> +{" "}
               <span className="text-tdsRed">rental</span>
-            </h3>
-            <h4 className="  text-left text-sm  w-full pl-[1px] text-black/60 md:text-xl">
+            </h2>
+            <p className="  text-left text-sm  w-full pl-[1px] text-black/60 md:text-xl">
               Join the fun of riding off road bikes while you're on holiday in
               Algarve whether it's with friends, family or by yourself. We
               prepare your bike, gear, transport and route to ride on. All you
               need to do is show up!
-            </h4>
+            </p>
           </div>
 
           {category.bikes.map((bike) => (
@@ -28,9 +28,9 @@ export default function ToursList() {
                 <div className="flex flex-col items-start justify-start  w-full gap-8 ">
                   <section className="  ">
                     <div className="flex flex-col items-start justify-start space-y-4 w-full pt-0 w-full">
-                      <h4 className="text-2xl   md:text-4xl  uppercase font-tds tracking-wider w-full">
+                      <h3 className="text-2xl   md:text-4xl  uppercase font-tds tracking-wider w-full">
                         Full Day Tour
-                      </h4>
+                      </h3>
                       <p className="w-full text-sm text-black/80 md:text-lg">
                         An experienced guide through the beautiful Algarve
                         region with bike, gear, transport and even lunch

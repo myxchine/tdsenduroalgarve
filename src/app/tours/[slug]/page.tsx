@@ -31,13 +31,6 @@ export default async function ToursList({
     <section className="flex flex-col items-center justify-center w-full pb-8 max-w-6xl mx-auto xl:px-0">
       <Title />
       <section className=" p-6 xl:px-0 w-full flex flex-col ">
-        <section className=" w-full flex flex-col md:flex-row hidden">
-          <BikeInfo category={category} />
-          <div className="flex flex-col items-center justify-center space-y-4 w-full py-8 w-full md:w-fit md:px-8">
-            <span className="text-4xl ">+</span>
-          </div>
-          <GuideInfo />
-        </section>
         <Packages category={category} />
       </section>
     </section>
