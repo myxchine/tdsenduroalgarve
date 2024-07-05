@@ -11,8 +11,8 @@ export default function Home() {
         buttonText="Guided Tours & Rentals"
         buttonLink="tours/"
         buttonWidth="w-full"
-        buttonText2="Bikes"
-        buttonLink2="/bikes"
+        buttonText2="Reserve Now"
+        buttonLink2="/reserve"
       />
       <div className="flex flex-col items-center justify-center w-full gap-6 py-12 pt-6  mx-auto  md:max-w-6xl ">
         <ToursList />

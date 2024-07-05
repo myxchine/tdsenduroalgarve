@@ -95,7 +95,9 @@ function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
   function updateParams(param: string, value: string) {
     const newParams = { ...searchParams, [param]: value };
 
-    router.replace(`/reserve?${new URLSearchParams(newParams)}`);
+    router.replace(`/reserve?${new URLSearchParams(newParams)}`, {
+      scroll: false,
+    });
   }
 
   return (
@@ -143,7 +145,6 @@ function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
         className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
         required
         value={formData.verifyEmail}
-        onBlur={(e) => updateParams("verifyEmail", e.target.value)}
         onChange={(e) => {
           setFormData({ ...formData, verifyEmail: e.target.value });
         }}
