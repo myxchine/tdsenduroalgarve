@@ -32,11 +32,17 @@ const Footer = () => {
       <div className="flex flex-col items-center justify-between gap-4 text-xs ">
         <p>&copy; 2024 TDS Enduro Algarve. All rights reserved.</p>
         <div className="flex gap-4">
-          <Link href="#" className="hover:underline" prefetch={false}>
-            Privacy Policy
+          <Link href="/" className="hover:underline " prefetch={false}>
+            Home
           </Link>
-          <Link href="#" className="hover:underline" prefetch={false}>
-            Terms of Service
+          <Link href="/tours" className="hover:underline " prefetch={false}>
+            Tours
+          </Link>
+          <Link href="/bikes" className="hover:underline " prefetch={false}>
+            Bikes
+          </Link>
+          <Link href="/reserve" className="hover:underline " prefetch={false}>
+            Reserve
           </Link>
         </div>
       </div>
