@@ -33,7 +33,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-, "src/app/sitemap.ts", "src/app/sitemap.js"  ],
+, "sitemap.ts", "src/app/sitemap.js"  ],
   "exclude": [
     "node_modules"
   ]
