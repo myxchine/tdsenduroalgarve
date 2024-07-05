@@ -26,15 +26,13 @@ export default async function sendBookingConfirmationEmail(
   const confirmationEmailData: EmailData = {
     sender: { name: customerName, email: customerEmail },
     to: [{ name: "Francisco", email: "michael.dozzantoz@gmail.com" }],
-    subject: `Reservation request from ${customerName} ${customerSurname}`,
+    subject: `TDS reservation request from ${customerName} ${customerSurname}`,
     htmlContent: `<html>
       <head></head>
       <body>
-        <p>Booking request from ${customerName} ${customerSurname} for TDS Enduro Bike Tour,</p>
-        <p>For ${requestedRiders} riders,</p>
-
+        <h1>Booking request from ${customerName} ${customerSurname} for TDS Enduro Bike Tour Algarve,</h1>
+        <h2>For ${requestedRiders} riders</h2>
         <p>${customerMessage}</p>
-      
       </body>
     </html>`,
   };
