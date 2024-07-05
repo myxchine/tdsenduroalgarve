@@ -25,12 +25,12 @@ export default function Packages({ category }: { category: any }) {
                   </h2>
                   <ul className="flex flex-col gap-1 justify-center items-start w-full">
                     <Link href={"/bikes/ktm-exc-300"} className="">
-                      <button className="underline text-tdsRed text-sm">
+                      <button className="underline text-tdsRed text-sm font-bold">
                         KTM EXC 300
                       </button>
                     </Link>
-                    <Link href={"/about-tour"} className="">
-                      <button className="underline text-tdsRed text-sm">
+                    <Link href={"/about-tour"} className="mb-1">
+                      <button className="underline text-tdsRed text-sm font-bold">
                         Full Day Tour
                       </button>
                     </Link>
@@ -44,7 +44,12 @@ export default function Packages({ category }: { category: any }) {
                     ))}
                   </ul>
                 </section>
-                <section className="flex flex-row items-end gap-4 justify-between w-full">
+                <section className="flex flex-col items-end gap-4 justify-between w-full">
+                  <p className="text-4xl font-tds tracking-wider relative pl-3">
+                    <span className="text-sm absolute top-1 left-0">€</span>
+                    {packages.price}
+                    <span className="text-sm font-normal ">/rider</span>
+                  </p>
                   <Link
                     href={
                       "/reserve?category=" +
@@ -55,14 +60,14 @@ export default function Packages({ category }: { category: any }) {
                     className="w-full"
                   >
                     <button className="bg-tdsRed text-white text py-2   uppercase font-tds tracking-wider text-lg rounded w-full px-8">
-                      Reserve
+                      Reserve {packages.riders}{" "}
+                      {packages.riders > 1 ? (
+                        <span className="">riders</span>
+                      ) : (
+                        <span>rider</span>
+                      )}{" "}
                     </button>
                   </Link>
-                  <p className="text-4xl font-tds tracking-wider relative pl-3">
-                    <span className="text-sm absolute top-1 left-0">€</span>
-                    {packages.price}
-                    <span className="text-sm font-normal ">/rider</span>
-                  </p>
                 </section>
               </li>
             ))}

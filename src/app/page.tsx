@@ -8,8 +8,8 @@ export default function Home() {
         title="Off Road Bike tours and Rentals in Algarve made easy."
         subtitle=""
         titleSize={null}
-        buttonText="Tours & Rentals"
-        buttonLink="tours/off-road-enduro-bike-rental"
+        buttonText="Guided Tours & Rentals"
+        buttonLink="tours/"
         buttonWidth="w-full"
         buttonText2="Bikes"
         buttonLink2="/bikes"

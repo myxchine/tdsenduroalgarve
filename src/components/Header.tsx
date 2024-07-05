@@ -53,12 +53,10 @@ const Header = () => {
                   Home
                 </div>
               </Link>
-              <Link href={"tours/off-road-enduro-bike-rental"}>
+              <Link href={"tours/"}>
                 <div
                   className={`font-tds text-xl ${
-                    pathname === "/tours/off-road-enduro-bike-rental"
-                      ? "text-tdsRed"
-                      : ""
+                    pathname === "/tours/" ? "text-tdsRed" : ""
                   }`}
                 >
                   Tours
@@ -123,12 +121,10 @@ const Header = () => {
                 Home
               </div>
             </Link>
-            <Link href={"tours/off-road-enduro-bike-rental"}>
+            <Link href={"tours/"}>
               <div
                 className={`font-tds text-xl ${
-                  pathname === "/tours/off-road-enduro-bike-rental"
-                    ? "text-tdsRed"
-                    : ""
+                  pathname === "/tours/" ? "text-tdsRed" : ""
                 }`}
               >
                 Tours

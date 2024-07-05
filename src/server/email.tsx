@@ -30,7 +30,7 @@ export default async function sendBookingConfirmationEmail(
     htmlContent: `<html>
       <head></head>
       <body>
-        <p>Booking request from ${customerName} ${customerSurname},</p>
+        <p>Booking request from ${customerName} ${customerSurname} for TDS Enduro Bike Tour,</p>
         <p>For ${requestedRiders} riders,</p>
 
         <p>${customerMessage}</p>

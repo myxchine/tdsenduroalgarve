@@ -1,3 +1,5 @@
+import { desc } from "drizzle-orm";
+
 export const data = {
   tours: {
     slug: "tours",
@@ -220,6 +222,30 @@ export const bikes = [
       { id: 1, price: 300, days: 1, riders: 1 },
       { id: 2, price: 280, days: 1, riders: 2 },
       { id: 3, price: 270, days: 1, riders: 3 },
+    ],
+  },
+];
+
+export const tours = [
+  {
+    id: 1,
+    name: "Enduro",
+    slug: "off-road-enduro-bike-rental",
+    image: "/images/enduro.jpg",
+    image2: "/images/bikes/enduro.png",
+    description:
+      "Experience the ultimate adventure in Portugal's Algarve with our full-day guided off-road enduro bike tours. Perfect for thrill-seekers and nature lovers alike, our tours take you through the stunning Algarve mountains, offering an exhilarating way to explore this beautiful region. With no hidden fees and everything provided—including top-quality enduro bikes, safety gear, and expert guides—you can focus on the ride and the breathtaking scenery. To top it all off, we include a free lunch, giving you a taste of authentic Portuguese culture. Whether you're a seasoned rider or a beginner, our tours promise a fun-filled, unforgettable adventure. Book your Algarve off-road enduro bike tour today and discover the best of Portugal on two wheels!",
+    title: "enduro Full Day KTM bike tour",
+    bikes: [
+      {
+        id: 1,
+        category: "Enduro",
+        name: "ktm exc 300 tpi",
+        title: "KTM Hard enduro bike tours ALgaRVE",
+        image: "/images/bikes/enduro.png",
+        description:
+          "With over 7 of these bad boys in our arsenal and thousands of combined hours in the Algarvian mountains, they have never let us down.",
+      },
     ],
   },
 ];

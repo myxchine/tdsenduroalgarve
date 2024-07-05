@@ -3,6 +3,7 @@ import { useActionState, useState } from "react";
 import Image from "next/image";
 import { newReservation as action } from "@/server/db/utils";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 export default function Contact({
   searchParams,
 }: {
@@ -31,6 +32,12 @@ function Form({ searchParams }: { searchParams: { [key: string]: string } }) {
           Ready to book a memorable adventure this holiday season in Algarve,
           Portugal?
         </p>
+        <Link
+          href={"/tours/off-road-enduro-bike-rental"}
+          className="underline text-xs text-tdsRed"
+        >
+          Learn more
+        </Link>
       </div>
       <Inputs searchParams={searchParams} />
 
@@ -82,22 +89,16 @@ function Form({ searchParams }: { searchParams: { [key: string]: string } }) {
   );
 }
 function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
-  const riders = searchParams.riders || "1";
-  const name = searchParams.name || "";
-  const surname = searchParams.surname || "";
-  const email = searchParams.email || "";
-  const verifyEmail = searchParams.verifyEmail || "";
-  const message = searchParams.message || "";
   const router = useRouter();
 
   const [formData, setFormData] = useState({
-    name: "",
-    surname: "",
-    email: "",
+    name: searchParams.name || "",
+    surname: searchParams.surname || "",
+    email: searchParams.email || "",
     verifyEmail: "",
-    category: "",
-    riders: "",
-    message: "",
+    category: searchParams.category || "",
+    riders: searchParams.riders || "",
+    message: searchParams.message || "",
   });
 
   function updateParams(param: string, value: string) {
@@ -114,11 +115,10 @@ function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
         placeholder="First Name"
         className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
         required
-        value={name}
+        value={formData.name}
         onBlur={(e) => updateParams("name", e.target.value)}
         onChange={(e) => {
           setFormData({ ...formData, name: e.target.value });
-          updateParams("name", e.target.value);
         }}
       />
       <input
@@ -127,10 +127,10 @@ function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
         placeholder="Surname"
         className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
         required
-        value={surname}
+        value={formData.surname}
+        onBlur={(e) => updateParams("surname", e.target.value)}
         onChange={(e) => {
           setFormData({ ...formData, surname: e.target.value });
-          updateParams("surname", e.target.value);
         }}
       />
       <input
@@ -139,10 +139,10 @@ function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
         placeholder="Email"
         className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
         required
-        value={email}
+        value={formData.email}
+        onBlur={(e) => updateParams("email", e.target.value)}
         onChange={(e) => {
           setFormData({ ...formData, email: e.target.value });
-          updateParams("email", e.target.value);
         }}
       />
       <input
@@ -151,10 +151,10 @@ function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
         placeholder="Verify email"
         className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
         required
-        value={verifyEmail}
+        value={formData.verifyEmail}
+        onBlur={(e) => updateParams("verifyEmail", e.target.value)}
         onChange={(e) => {
           setFormData({ ...formData, verifyEmail: e.target.value });
-          updateParams("verifyEmail", e.target.value);
         }}
       />
       <div className="flex flex-row gap-2">
@@ -170,10 +170,10 @@ function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
           name="riders"
           className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
           required
-          value={riders || ""}
+          value={formData.riders || ""}
+          onBlur={(e) => updateParams("riders", e.target.value)}
           onChange={(e) => {
             setFormData({ ...formData, riders: e.target.value });
-            updateParams("riders", e.target.value);
           }}
         >
           <option value="1">1 Rider</option>
@@ -189,10 +189,10 @@ function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
         placeholder="Details about dates, riders, shoe/clothing sizes and any other information you would like to share with us."
         className="p-2 rounded-md border border-gray-300 bg-white h-[150px]"
         required
-        value={message}
+        value={formData.message}
+        onBlur={(e) => updateParams("message", e.target.value)}
         onChange={(e) => {
           setFormData({ ...formData, message: e.target.value });
-          updateParams("message", e.target.value);
         }}
       />
     </>
