@@ -1,6 +1,5 @@
 "use client";
 import { useActionState, useState } from "react";
-import Image from "next/image";
 import { newReservation as action } from "@/server/db/utils";
 import { useRouter } from "next/navigation";
 import Link from "next/link";

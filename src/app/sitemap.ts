@@ -4,7 +4,7 @@ import { bikes, data } from "@/server/data";
 export default function sitemap(): MetadataRoute.Sitemap {
   const bikesSitemap: MetadataRoute.Sitemap = bikes.map(({ slug }) => ({
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/bikes/${slug}`,
-    priority: 0.6,
+    priority: 0.4,
   }));
 
   const toursSitemap: MetadataRoute.Sitemap = data.tours.categories.map(
@@ -27,15 +27,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${process.env.NEXT_PUBLIC_SITE_URL}/tours`,
       priority: 0.8,
     },
+    ...toursSitemap,
     {
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/bikes`,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/about-tour`,
       priority: 0.6,
     },
     {
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/about-tour`,
-      priority: 0.7,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/bikes`,
+      priority: 0.4,
     },
     ...bikesSitemap,
-    ...toursSitemap,
   ];
 }
