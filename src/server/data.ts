@@ -9,7 +9,7 @@ export const data = {
         name: "Enduro",
         slug: "off-road-enduro-bike-rental",
         image: "/images/enduro.jpg",
-        title: "KTM Hard enduro guided bike tours ALgaRVE",
+        title: "KTM Hard enduro guided bike tours ALgarve",
         bikes: [
           {
             id: 1,
@@ -150,10 +150,11 @@ export const bikes = [
   {
     id: 1,
     category: "Enduro",
-    name: "ktm exc 300 tpi",
+    name: "KTM EXC 300 TPI",
     slug: "ktm-exc-300",
     title: "KTM Hard enduro bike tours ALgaRVE",
     image: "/images/bikes/enduro.png",
+    openGraphImage: "/images/bikes/ktm-exc-300-openGraph.jpeg",
     descriptionLong:
       "The KTM 300 EXC is one of the most recognized names at the sharp end of hard enduro. With a bulletproof, fuel-injected 2-stroke engine churning out masses of low-down torque and top-end fury, it's the ideal companion when tackling challenging terrain.",
     description:

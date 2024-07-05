@@ -24,7 +24,7 @@ export async function generateMetadata({
     openGraph: {
       images: [
         {
-          url: bike.image,
+          url: bike.openGraphImage ?? bike.image,
           alt: bike.name,
         },
       ],
