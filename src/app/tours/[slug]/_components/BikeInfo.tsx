@@ -18,7 +18,7 @@ export default function BikeInfo({ category }: { category: any }) {
           width={400}
           height={400}
           priority={true}
-          className="w-full object-cover"
+          className="w-full h-auto object-cover"
         />
       </div>
       <div className="absolute bottom-0 left-0 right-0 w-full p-6">

@@ -37,7 +37,7 @@ export default function Tours() {
                   width={400}
                   height={400}
                   priority={true}
-                  className=" object-cover w-full mb-4 "
+                  className=" object-cover w-full mb-4 h-auto"
                 />
                 <button className="flex flex-col w-full p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center ">
                   View Packages
