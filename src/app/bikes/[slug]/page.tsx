@@ -1,5 +1,5 @@
 import { bikes } from "@/server/data";
-import { redirect } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -18,10 +18,7 @@ export async function generateMetadata({
   const bike = bikes.find((bike) => bike.slug === params.slug);
 
   if (!bike) {
-    return {
-      title: "Bike not found",
-      description: "Bike not found",
-    };
+    notFound();
   }
 
   return {
@@ -42,7 +39,7 @@ export default async function Bike({ params }: { params: { slug: string } }) {
   const bike = bikes.find((bike) => bike.slug === params.slug);
 
   if (!bike) {
-    redirect("/bikes");
+    notFound();
   }
   return (
     <section className="flex flex-col items-center gap-8 pt-32 p-6 max-w-6xl mx-auto  md:flex-row mb-12 text-left xl:px-0">

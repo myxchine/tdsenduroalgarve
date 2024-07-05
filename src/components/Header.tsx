@@ -55,7 +55,7 @@ const Header = () => {
                   Home
                 </div>
               </Link>
-              <Link href={"tours/"}>
+              <Link href={"/tours"}>
                 <div
                   className={`font-tds text-xl ${
                     pathname === "/tours" ? "text-tdsRed" : ""
@@ -123,7 +123,7 @@ const Header = () => {
                 Home
               </div>
             </Link>
-            <Link href={"tours/"}>
+            <Link href={"/tours"}>
               <div
                 className={`font-tds text-xl ${
                   pathname === "/tours" ? "text-tdsRed" : ""

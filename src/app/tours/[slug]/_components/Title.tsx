@@ -1,6 +1,6 @@
 export default function Title() {
   return (
-    <div className="gap-2 flex flex-col w-full pt-28 p-6 md:px-0 md:pb-12 md:pt-32">
+    <div className="gap-2 flex flex-col w-full pt-28 p-6 xl:px-0 md:pb-12 md:pt-32">
       <h1 className="text-4xl font-tds sm:text-5xl xl:text-6xl tracking-wider uppercase text-balance">
         Hard enduro guided bike{" "}
         <span className="text-tdsRed">
