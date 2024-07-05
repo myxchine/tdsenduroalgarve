@@ -14,6 +14,7 @@ export default function AboutTour() {
       <Hero
         image="/images/enduro.jpg"
         title=" Learn about our full day GUIDED TOUR "
+        titleColour="white"
         subtitle=""
         titleSize={null}
         buttonText="View Packages"

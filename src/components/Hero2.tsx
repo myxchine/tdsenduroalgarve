@@ -1,49 +1,82 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Hero() {
+export type HeroProps = {
+  image: string;
+  title: string;
+  titleSize: "2xl" | "3xl" | "4xl" | null;
+  titleColour: "black" | "white";
+  subtitle: string;
+  buttonText: string;
+  buttonWidth: "w-full" | "w-normal";
+  buttonLink: string;
+  buttonText2: string | null | undefined;
+  buttonLink2: string | null | undefined;
+};
+
+const Hero = ({
+  image,
+  title,
+  titleSize,
+  titleColour,
+  subtitle,
+  buttonText,
+  buttonWidth,
+  buttonLink,
+  buttonText2,
+  buttonLink2,
+}: HeroProps) => {
   return (
-    <div className="flex flex-col items-center justify-center w-full">
-      <div className="flex flex-col items-center justify-center w-full gap-12 py-12 pt-6">
-        <div className="flex flex-col items-center justify-center w-full gap-6 py-12 pt-6">
-          <div className="flex flex-col items-center justify-center w-full gap-6 py-12 pt-6">
-            <Image
-              src="/images/hero.jpg"
-              alt="hero"
-              width={1000}
-              height={1000}
-              priority={true}
-              className="w-full object-cover h-auto"
-            />
-            <div className="flex flex-col items-center justify-center w-full gap-6 py-12 pt-6">
-              <h1 className="text-4xl font-tds tracking-wider uppercase w-full">
-                GUIDED BIKE TOURS AND RENTALS IN ALGARVE MADE EASY.
-              </h1>
-              <p className="max-w-[500px] text-black/60 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                With over 7 of these bad boys in our arsenal and thousands of
-                combined hours in the Algarvian mountains, they have never let
-                us down.
-              </p>
-              <div className="flex flex-col items-center justify-center space-y-4 w-full pt-0">
-                <Link href="/tours/off-road-enduro-bike-rental">
-                  <button
-                    className={`w-full bg-tdsRed text-white font-bold w-full p-2 uppercase hover:bg-tdsRed/80 rounded`}
-                  >
-                    OFF ROAD BIKES
+    <section className="flex flex-col items-center justify-center w-full relative">
+      <div className="w-full relative flex flex-col items-center justify-center">
+        <Image
+          src={image}
+          alt="hero"
+          width={1000}
+          height={800}
+          quality={75}
+          priority={true}
+          className="w-full full-screen object-cover max-h-[700px] md:max-h-[1000px] lg:max-h-[1200px]"
+        />
+
+        <div className="absolute flex flex-col bottom-0 left-0 w-full  md:max-w-6xl  mx-auto md:right-0 md:h-screen md:items-end md:justify-center  md:w-screen md:text-left max-h-[700px] md:max-h-[1000px] lg:max-h-[1200px]">
+          <section className="w-full md:max-w-md right-0">
+            <h1
+              className={` text-white  md:text-black  ${
+                titleSize ? "text-" + titleSize : "text-[21px]"
+              }  text-center  uppercase p-4 font-tds tracking-wider md:text-left md:text-5xl text-balance`}
+            >
+              {title}
+            </h1>
+            <p className="text-center text-white pb-4 hidden">{subtitle}</p>
+            <div className="flex flex-col items-center justify-center space-y-4 w-full p-6 pt-0">
+              <Link
+                href={buttonLink}
+                className="w-full flex flex-col items-center justify-center"
+              >
+                <button
+                  className={`bg-tdsRed text-white  px-8 p-2 uppercase hover:bg-tdsRed/80 mx-auto font-tds rounded ${
+                    buttonWidth ? buttonWidth : "w-full"
+                  }`}
+                >
+                  {buttonText}
+                </button>
+              </Link>
+              {buttonLink2 ? (
+                <Link href={buttonLink2} className="w-full">
+                  <button className="bg-white text-black w-full p-2 uppercase hover:bg-white/80 font-tds rounded">
+                    {buttonText2}
                   </button>
                 </Link>
-                <Link href="/reserve">
-                  <button
-                    className={`w-full bg-tdsRed text-white font-bold w-full p-2 uppercase hover:bg-tdsRed/80 rounded`}
-                  >
-                    RESERVE A DAY
-                  </button>
-                </Link>
-              </div>
+              ) : (
+                <div className="h-2"></div>
+              )}
             </div>
-          </div>
+          </section>
         </div>
       </div>
-    </div>
+    </section>
   );
-}
+};
+
+export default Hero;

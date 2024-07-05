@@ -11,7 +11,7 @@ const Header = () => {
 
   const colour =
     pathname === "/" || pathname === "/about-tour" || pathname === "/strategy"
-      ? "white"
+      ? "black"
       : "black";
 
   const handleOpen = () => {
@@ -84,8 +84,10 @@ const Header = () => {
               </Link>
               <Link href={"/reserve"}>
                 <div
-                  className={`font-tds text-xl text-white w-fit p-2 px-4 rounded ${
-                    pathname === "/reserve" ? "bg-tdsRed" : "bg-black"
+                  className={`font-tds text-xl  w-fit p-2 px-4 rounded border border-black hover:bg-black hover:text-white hover:border-black ${
+                    pathname === "/reserve"
+                      ? "bg-tdsRed text-white border-tdsRed"
+                      : "bg-transparent text-black"
                   }`}
                 >
                   Reserve Now

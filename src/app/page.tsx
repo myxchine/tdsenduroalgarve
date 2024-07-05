@@ -1,4 +1,4 @@
-import Hero from "@/components/Hero";
+import Hero from "@/components/Hero2";
 import ToursList from "@/components/ToursList";
 export default function Home() {
   return (
@@ -6,15 +6,16 @@ export default function Home() {
       <Hero
         image="/images/hero.jpg"
         title="Off Road Bike tours and Rentals in Algarve made easy."
+        titleColour="black"
         subtitle=""
         titleSize={null}
         buttonText="Guided Tours & Rentals"
-        buttonLink="tours/"
+        buttonLink="/tours"
         buttonWidth="w-full"
         buttonText2="Reserve Now"
         buttonLink2="/reserve"
       />
-      <div className="flex flex-col items-center justify-center w-full gap-6 py-12 pt-6  mx-auto  md:max-w-6xl ">
+      <div className="flex flex-col items-start justify-start w-full gap-6 py-12 pt-6  mx-auto  md:max-w-6xl ">
         <ToursList />
       </div>
     </main>

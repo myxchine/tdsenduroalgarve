@@ -22,77 +22,72 @@ export default function ToursList() {
             </h4>
           </div>
 
-          <div className="w-full p-6 pt-2">
-            {category.bikes.map((bike) => (
-              <div
-                key={bike.id}
-                className="flex flex-col items-center justify-center  w-full "
-              >
-                <div className="flex flex-col items-center justify-center w-full w-full p-6 bg-black/5 rounded-md max-w-2xl mx-auto md:p-8">
-                  <div className="flex flex-col items-center justify-left  w-full gap-8 ">
-                    <section className="  ">
-                      <div className="flex flex-col items-center justify-center space-y-4 w-full pt-0 w-full">
-                        <h4 className="text-2xl   md:text-4xl  uppercase font-tds tracking-wider w-full">
-                          Full Day Tour
-                        </h4>
-                        <p className="w-full text-sm text-black/80 md:text-lg">
-                          An experienced guide through the beautiful Algarve
-                          region with bike, gear, transport and even lunch
-                          included!
-                        </p>
-                        <p className="w-full text-sm text-black/80 md:text-lg">
-                          The{" "}
-                          <span className="font-tds text-tdsRed px-1">
-                            KTM EXC 300{" "}
-                          </span>
-                          is a top of the range enduro bike with a range of
-                          features and packages for you or your group.
-                        </p>
-                      </div>
-                      <Image
-                        src={bike.image}
-                        alt={bike.name}
-                        width={200}
-                        height={200}
-                        priority={true}
-                        className="w-full object-cover h-auto"
-                      />
-                    </section>
+          {category.bikes.map((bike) => (
+            <div key={bike.id} className="flex flex-col   w-full p-6 pt-0 ">
+              <div className="flex flex-col items-start justify-center w-full w-full p-6 bg-black/5 rounded-md max-w-2xl  md:p-8">
+                <div className="flex flex-col items-start justify-start  w-full gap-8 ">
+                  <section className="  ">
+                    <div className="flex flex-col items-start justify-start space-y-4 w-full pt-0 w-full">
+                      <h4 className="text-2xl   md:text-4xl  uppercase font-tds tracking-wider w-full">
+                        Full Day Tour
+                      </h4>
+                      <p className="w-full text-sm text-black/80 md:text-lg">
+                        An experienced guide through the beautiful Algarve
+                        region with bike, gear, transport and even lunch
+                        included!
+                      </p>
+                      <p className="w-full text-sm text-black/80 md:text-lg">
+                        The{" "}
+                        <span className="font-tds text-tdsRed px-1">
+                          KTM EXC 300{" "}
+                        </span>
+                        is a top of the range enduro bike with a range of
+                        features and packages for you or your group.
+                      </p>
+                    </div>
+                    <Image
+                      src={bike.image}
+                      alt={bike.name}
+                      width={200}
+                      height={200}
+                      priority={true}
+                      className="w-full object-cover h-auto"
+                    />
+                  </section>
 
-                    <section className="w-full flex flex-col items-center justify-center gap-6 ">
-                      <div className="flex flex-col items-end justify-end space-y-4 w-full   ">
-                        <p className="text-4xl font-tds tracking-wider  md:text-6xl">
-                          <span className="text-sm font-normal pr-2 md:text-lg">
-                            from
+                  <section className="w-full flex flex-col items-center justify-center gap-6 ">
+                    <div className="flex flex-col items-end justify-end space-y-4 w-full   ">
+                      <p className="text-4xl font-tds tracking-wider  md:text-6xl">
+                        <span className="text-sm font-normal pr-2 md:text-lg">
+                          from
+                        </span>
+                        <span className="relative pl-3">
+                          <span className="text-sm absolute top-1 left-0 font-bold md:text-lg">
+                            €
                           </span>
-                          <span className="relative pl-3">
-                            <span className="text-sm absolute top-1 left-0 font-bold md:text-lg">
-                              €
-                            </span>
-                            {bike.packages[2].price}
-                          </span>
+                          {bike.packages[2].price}
+                        </span>
 
-                          <span className="text-sm font-normal md:text-lg">
-                            /day
-                          </span>
-                        </p>
-                        <div className="flex flex-col items-center justify-center space-y-4 w-full pt-0">
-                          <Link
-                            href="/tours/off-road-enduro-bike-rental"
-                            className="w-full"
-                          >
-                            <button className="bg-tdsRed text-white font-bold w-full p-2 uppercase hover:bg-tdsRed/80 rounded">
-                              Let's do it
-                            </button>
-                          </Link>
-                        </div>
+                        <span className="text-sm font-normal md:text-lg">
+                          /day
+                        </span>
+                      </p>
+                      <div className="flex flex-col items-center justify-center space-y-4 w-full pt-0">
+                        <Link
+                          href="/tours/off-road-enduro-bike-rental"
+                          className="w-full"
+                        >
+                          <button className="bg-tdsRed text-white font-bold w-full p-2 uppercase hover:bg-tdsRed/80 rounded">
+                            Let's do it
+                          </button>
+                        </Link>
                       </div>
-                    </section>
-                  </div>
+                    </div>
+                  </section>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       ))}
     </div>
