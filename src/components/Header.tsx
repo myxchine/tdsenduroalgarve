@@ -43,7 +43,9 @@ const Header = () => {
           </div>
 
           <div className="hidden md:block">
-            <div className={`flex flex-row gap-8  text-${colour}`}>
+            <div
+              className={`flex flex-row gap-8 items-center justify-center text-${colour}`}
+            >
               <Link href={"/"}>
                 <div
                   className={`font-tds text-xl ${
@@ -56,10 +58,19 @@ const Header = () => {
               <Link href={"tours/"}>
                 <div
                   className={`font-tds text-xl ${
-                    pathname === "/tours/" ? "text-tdsRed" : ""
+                    pathname === "/tours" ? "text-tdsRed" : ""
                   }`}
                 >
                   Tours
+                </div>
+              </Link>
+              <Link href={"/about-tour"}>
+                <div
+                  className={`font-tds text-xl ${
+                    pathname === "/about-tour" ? "text-tdsRed" : ""
+                  }`}
+                >
+                  About The Tour
                 </div>
               </Link>
               <Link href={"/bikes"}>
@@ -73,20 +84,11 @@ const Header = () => {
               </Link>
               <Link href={"/reserve"}>
                 <div
-                  className={`font-tds text-xl ${
-                    pathname === "/reserve" ? "text-tdsRed" : ""
+                  className={`font-tds text-xl text-white w-fit p-2 px-4 rounded ${
+                    pathname === "/reserve" ? "bg-tdsRed" : "bg-black"
                   }`}
                 >
-                  Reserve
-                </div>
-              </Link>
-              <Link href={"/contact"}>
-                <div
-                  className={`font-tds text-xl ${
-                    pathname === "/contact" ? "text-tdsRed" : ""
-                  }`}
-                >
-                  Contact
+                  Reserve Now
                 </div>
               </Link>
             </div>
@@ -124,10 +126,19 @@ const Header = () => {
             <Link href={"tours/"}>
               <div
                 className={`font-tds text-xl ${
-                  pathname === "/tours/" ? "text-tdsRed" : ""
+                  pathname === "/tours" ? "text-tdsRed" : ""
                 }`}
               >
                 Tours
+              </div>
+            </Link>
+            <Link href={"/about-tour"}>
+              <div
+                className={`font-tds text-xl ${
+                  pathname === "/about-tour" ? "text-tdsRed" : ""
+                }`}
+              >
+                About The Tour
               </div>
             </Link>
             <Link href={"/bikes"}>
@@ -141,20 +152,11 @@ const Header = () => {
             </Link>
             <Link href={"/reserve"}>
               <div
-                className={`font-tds text-xl ${
-                  pathname === "/reserve" ? "text-tdsRed" : ""
+                className={`font-tds text-xl text-white w-fit p-2 px-4 rounded ${
+                  pathname === "/reserve" ? "bg-tdsRed" : "bg-black"
                 }`}
               >
-                Reserve
-              </div>
-            </Link>
-            <Link href={"/contact"}>
-              <div
-                className={`font-tds text-xl ${
-                  pathname === "/contact" ? "text-tdsRed" : ""
-                }`}
-              >
-                Contact
+                Reserve Now
               </div>
             </Link>
           </div>

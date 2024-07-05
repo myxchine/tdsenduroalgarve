@@ -1,6 +1,13 @@
 import Hero from "@/components/Hero";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About the Off Road Enduro Bike Tour",
+  description:
+    "Join one of our experienced guides for this exciting full-day ride through the beautiful Algarve region while riding a KTM EXC-300! We will provide all the necessary safety gear and share our best riding techniques. Lunch is included in the ride​.. We offer the beautiful Algarve experience whilst making sure you have a great time with everything prepared for you.! The perfect way to explore the region and experience the local culture whether with friends, family or by yourself.",
+};
 export default function AboutTour() {
   return (
     <section>

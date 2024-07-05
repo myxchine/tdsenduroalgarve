@@ -16,10 +16,11 @@ export function Form({
     <form className="flex flex-col gap-4 max-w-xl mx-auto " action={submit}>
       <div className="flex flex-col gap-2 pb-2">
         <h1 className="text-4xl font-tds sm:text-5xl xl:text-6xl text-balance">
-          Guided <span className="text-tdsRed">Tour</span> & Rental
+          Reserve <span className="text-tdsRed">Tour</span> &{" "}
+          <span className="text-tdsRed">Rental</span>
         </h1>
         <p className="max-w-[500px] text-black/60 md:text-xl lg:text-base xl:text-xl">
-          Ready to book a memorable adventure this holiday season in Algarve,
+          Ready for a memorable adventure this holiday season in Algarve,
           Portugal?
         </p>
         <Link
