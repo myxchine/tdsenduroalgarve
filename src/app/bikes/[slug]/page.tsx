@@ -13,11 +13,14 @@ export async function generateMetadata({
   params,
 }: {
   params: { slug: string };
-}): Promise<Metadata | null> {
+}): Promise<Metadata> {
   const bike = bikes.find((bike) => bike.slug === params.slug);
 
   if (!bike) {
-    return null;
+    return {
+      title: "Bike not found",
+      description: "Bike not found",
+    };
   }
 
   return {
