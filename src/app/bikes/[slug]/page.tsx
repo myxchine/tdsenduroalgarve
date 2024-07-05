@@ -4,6 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 
+export async function generateStaticParams() {
+  return bikes.map(({ slug }) => ({
+    slug,
+  }));
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -32,7 +38,7 @@ export async function generateMetadata({
   };
 }
 
-export default function Bike({ params }: { params: { slug: string } }) {
+export default async function Bike({ params }: { params: { slug: string } }) {
   const bike = bikes.find((bike) => bike.slug === params.slug);
 
   if (!bike) {
