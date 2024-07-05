@@ -3,11 +3,6 @@ import { redirect } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "Our Bikes",
-  description:
-    "Take a look at the sick bikes we have available here in Algarve, Portugal. We offer the beautiful Algarve experience whilst making sure you have a great time with everything prepared for you.! The perfect way to explore the region and experience the local culture whether with friends, family or by yourself.",
-};
 
 export async function generateMetadata({
   params,
