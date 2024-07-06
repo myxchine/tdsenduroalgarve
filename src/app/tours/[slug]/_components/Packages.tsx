@@ -25,13 +25,13 @@ export default function Packages({ category }: { category: any }) {
                   </h2>
                   <ul className="flex flex-col gap-1 justify-center items-start w-full">
                     <Link href={"/bikes/ktm-exc-300"} className="">
-                      <button className="underline text-tdsRed text-sm font-bold">
-                        KTM EXC 300
+                      <button className=" text-tdsRed text-sm font-bold uppercase">
+                        KTM EXC 300 {`->`}
                       </button>
                     </Link>
                     <Link href={"/about-tour"} className="mb-1">
-                      <button className="underline text-tdsRed text-sm font-bold">
-                        Full Day Tour
+                      <button className=" text-tdsRed text-sm font-bold uppercase">
+                        Full Day Tour {`->`}
                       </button>
                     </Link>
                     {packages.included.map((included: any, index: number) => (

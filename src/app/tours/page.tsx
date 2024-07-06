@@ -30,19 +30,28 @@ export default function Tours() {
           >
             <div className="flex flex-col gap-4">
               <h1 className="text-3xl font-tds uppercase">{tour.title}</h1>
-              <Link href={`/tours/${tour.slug}`} className="w-full">
-                <Image
-                  src={tour.image2}
-                  alt={tour.title}
-                  width={400}
-                  height={400}
-                  priority={true}
-                  className=" object-cover w-full mb-4 h-auto"
-                />
-                <button className="flex flex-col w-full p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center ">
-                  View Packages
-                </button>
-              </Link>
+              <Image
+                src={tour.image2}
+                alt={tour.title}
+                width={400}
+                height={400}
+                priority={true}
+                className=" object-cover w-full mb-4 h-auto"
+              />
+              <div className="flex flex-col gap-2 w-full">
+                <Link href={`/tours/${tour.slug}`} className="w-full">
+                  <button className="flex flex-col w-full p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center ">
+                    View Packages
+                  </button>
+                </Link>
+
+                <Link href={`/bikes/ktm-exc-300`} className="w-full">
+                  <button className="flex flex-col w-full p-2 px-4 rounded bg-black text-white font-tds hover:bg-black/80 text-center justify-center items-center ">
+                    View Bike
+                  </button>
+                </Link>
+              </div>
+
               <p className=" text-black/80 mt-2">{tour.description}</p>
             </div>
           </section>

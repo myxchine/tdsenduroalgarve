@@ -1,4 +1,4 @@
-import Hero from "@/components/Hero";
+import Hero from "./_components/Hero";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -11,18 +11,7 @@ export const metadata: Metadata = {
 export default function AboutTour() {
   return (
     <section>
-      <Hero
-        image="/images/enduro.jpg"
-        title=" Learn about our full day GUIDED TOUR "
-        titleColour="white"
-        subtitle=""
-        titleSize={null}
-        buttonText="View Packages"
-        buttonLink="tours/off-road-enduro-bike-rental"
-        buttonWidth="w-full"
-        buttonText2={null}
-        buttonLink2={null}
-      />
+      <Hero />
       <div className="flex flex-col gap-4 py-12 w-full max-w-6xl mx-auto md:gap-8">
         <section className="flex flex-col p-6 gap-4">
           <h4 className="text-3xl    uppercase font-tds tracking-wider w-full md:text-5xl">
@@ -35,8 +24,8 @@ export default function AboutTour() {
             techniques. Lunch is included in the ride​.
           </p>
           <Link href={`/bikes/ktm-exc-300`} className="w-full">
-            <button className="flex flex-col w-full max-w-[300px] p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center md:p-4 md:px-8 md:text-lg">
-              Available Packages
+            <button className="flex flex-col w-full md:max-w-[300px] p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center  md:px-8 md:text-lg">
+              Let's do it
             </button>
           </Link>
         </section>

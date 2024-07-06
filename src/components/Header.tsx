@@ -86,8 +86,8 @@ const Header = () => {
                 <div
                   className={`font-tds text-xl  w-fit p-2 px-4 rounded border border-black hover:bg-black hover:text-white hover:border-black ${
                     pathname === "/reserve"
-                      ? "bg-tdsRed text-white border-tdsRed"
-                      : "bg-transparent text-black"
+                      ? "bg-black text-white border-black"
+                      : "bg-tdsRed text-white border-tdsRed"
                   }`}
                 >
                   Reserve Now
@@ -99,7 +99,7 @@ const Header = () => {
       )}
 
       {isOpen && (
-        <section className="h-screen bg-white w-screen fixed top-0 z-10 left-0 px-6 w-full flex flex-col items-start justify-start">
+        <section className="h-screen bg-white w-screen fixed top-0 z-10 left-0 px-6 w-full flex flex-col ">
           <div className="flex flex-row items-center justify-between w-full max-w-6xl mx-auto">
             <Link href={"/"}>
               <div className="text-center bg-tdsRed text-white font-tds p-4 text-3xl ">
@@ -115,7 +115,10 @@ const Header = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-4 py-12 " onClick={handleClose}>
+          <div
+            className="flex flex-col gap-4 py-12 items-center justify-center"
+            onClick={handleClose}
+          >
             <Link href={"/"}>
               <div
                 className={`font-tds text-xl ${
@@ -155,7 +158,7 @@ const Header = () => {
             <Link href={"/reserve"}>
               <div
                 className={`font-tds text-xl text-white w-fit p-2 px-4 rounded ${
-                  pathname === "/reserve" ? "bg-tdsRed" : "bg-black"
+                  pathname === "/reserve" ? "bg-tdsRed" : "bg-tdsRed"
                 }`}
               >
                 Reserve Now

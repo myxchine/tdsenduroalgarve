@@ -24,9 +24,9 @@ export function Form({
         </p>
         <Link
           href={"/tours/off-road-enduro-bike-rental"}
-          className="underline text-xs text-tdsRed"
+          className="font-bold  text-black"
         >
-          Learn more
+          Learn more {`->`}
         </Link>
       </div>
       <Inputs searchParams={searchParams} />

@@ -1,5 +1,5 @@
 import { bikes } from "@/server/data";
-import { notFound, redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -60,11 +60,19 @@ export default async function Bike({ params }: { params: { slug: string } }) {
           {bike.name}
         </h1>
 
-        <Link href={`/tours/off-road-enduro-bike-rental`} className="w-full">
-          <button className="flex flex-col w-full p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center text-left">
-            View Packages
-          </button>
-        </Link>
+        <div className="flex flex-col gap-2 w-full">
+          <Link href={`/tours/off-road-enduro-bike-rental`} className="w-full">
+            <button className="flex flex-col w-full p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center text-left">
+              View Packages
+            </button>
+          </Link>
+
+          <Link href={`/tours/off-road-enduro-bike-rental`} className="w-full">
+            <button className="flex flex-col w-full p-2 px-4 rounded bg-black text-white font-tds hover:bg-black/80 text-center justify-center items-center ">
+              View Tour
+            </button>
+          </Link>
+        </div>
         <p>{bike.descriptionLong ?? bike.description}</p>
 
         <div className="flex flex-col gap-4 w-full">
