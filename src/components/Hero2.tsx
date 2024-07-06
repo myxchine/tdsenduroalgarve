@@ -32,11 +32,21 @@ const Hero = ({
         <Image
           src={image}
           alt="hero"
+          width={390}
+          height={700}
+          quality={75}
+          priority={true}
+          className="w-full full-screen object-cover max-h-[700px] md:hidden"
+        />
+
+        <Image
+          src={image}
+          alt="hero"
           width={1000}
           height={800}
           quality={75}
           priority={true}
-          className="w-full full-screen object-cover max-h-[700px] md:max-h-[1000px] lg:max-h-[1200px]"
+          className="w-full full-screen object-cover hidden md:block max-h-[700px] md:max-h-[1000px] lg:max-h-[1200px]"
         />
 
         <div className="absolute flex flex-col bottom-0 left-0 w-full  md:max-w-6xl  mx-auto md:right-0 md:h-screen md:items-end md:justify-center  md:w-screen md:text-left max-h-[700px] md:max-h-[1000px] lg:max-h-[1200px]">

@@ -50,7 +50,7 @@ export default function ToursList() {
                       alt={bike.name}
                       width={200}
                       height={200}
-                      priority={true}
+                      loading="lazy"
                       className="w-full object-cover h-auto"
                     />
                   </section>
