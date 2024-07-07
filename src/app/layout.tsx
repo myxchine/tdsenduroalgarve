@@ -21,10 +21,12 @@ export const metadata: Metadata = {
     template: "%s - TDS Enduro Bike Tours Algarve, Portugal",
   },
   description:
-    "Join the fun of riding off road bikes while you're on holiday in Algarve whether it's with friends, family or by yourself.  We prepare your bike, gear, transport and route to ride on. All you need to do is show up! Hire a motorbike in Faro / Vilamoura / ALbufeira / Quarteira / Loule.",
+    "Experience off-road biking in Algarve with friends, family, or solo. We provide bikes, gear, transport, and routes. Just show up! Hire a motorbike in Faro, Vilamoura, Albufeira, Quarteira, or Loulé.",
 };
 export const viewport: Viewport = {
   initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
   width: "device-width",
   themeColor: "#FFFFFF",
 };
