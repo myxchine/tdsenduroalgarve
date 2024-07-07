@@ -15,7 +15,8 @@ export default function Packages({ category }: { category: any }) {
               >
                 <section className="flex flex-col w-full gap-4 ">
                   <h2 className="text-3xl font-tds">
-                    {packages.riders}{" "}
+                    {packages.riders}
+                    {index === 2 && "+"}{" "}
                     {packages.riders > 1 ? (
                       <span className="">riders</span>
                     ) : (
@@ -60,7 +61,8 @@ export default function Packages({ category }: { category: any }) {
                     className="w-full"
                   >
                     <button className="bg-tdsRed text-white text py-2   uppercase font-tds tracking-wider text-lg rounded w-full px-8">
-                      Reserve {packages.riders}{" "}
+                      Reserve {packages.riders}
+                      {index === 2 && "+"}{" "}
                       {packages.riders > 1 ? (
                         <span className="">riders</span>
                       ) : (

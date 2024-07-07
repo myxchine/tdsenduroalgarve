@@ -30,8 +30,11 @@ export default async function sendBookingConfirmationEmail(
     htmlContent: `<html>
       <head></head>
       <body>
-        <h1>Booking request from ${customerName} ${customerSurname} for TDS Enduro Bike Tour Algarve,</h1>
-        <h2>For ${requestedRiders} riders</h2>
+        <h1>Reservation request from ${customerName} ${customerSurname} </h1>
+        <h2>Enduro Bike Tour</h2>
+        <h2>For ${requestedRiders} ${
+      Number(requestedRiders) > 1 ? "riders" : "rider"
+    }</h2>
         <p>${customerMessage}</p>
       </body>
     </html>`,
