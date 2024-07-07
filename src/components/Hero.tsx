@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="flex flex-col items-center justify-center w-full relative">
       <div className="w-full relative flex flex-col items-center justify-center">
         <Image
-          src={`/images/enduro.jpg` || "/image/enduro-mobile.jpg"}
+          src={`/images/enduro.jpg`}
           alt="hero"
           width={800}
           height={800}
