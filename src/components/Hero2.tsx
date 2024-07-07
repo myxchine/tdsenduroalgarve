@@ -42,7 +42,7 @@ const Hero = ({
         <div className="absolute flex flex-col bottom-0 left-0 w-full  md:max-w-6xl  mx-auto md:right-0 md:h-screen md:items-end md:justify-center  md:w-screen md:text-left max-h-[700px] md:max-h-[1000px] lg:max-h-[1200px]">
           <section className="w-full md:max-w-md right-0">
             <h1
-              className={` text-white  md:text-black  ${
+              className={` text-white  md:text-white  ${
                 titleSize ? "text-" + titleSize : "text-[21px]"
               }  text-center  uppercase p-4 font-tds tracking-wider md:text-left md:text-5xl text-balance`}
             >
