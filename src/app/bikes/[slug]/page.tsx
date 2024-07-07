@@ -67,7 +67,7 @@ export default async function Bike({ params }: { params: { slug: string } }) {
             </button>
           </Link>
 
-          <Link href={`/tours/off-road-enduro-bike-rental`} className="w-full">
+          <Link href={`/about-tour`} className="w-full">
             <button className="flex flex-col w-full p-2 px-4 rounded bg-black text-white font-tds hover:bg-black/80 text-center justify-center items-center ">
               View Tour
             </button>
