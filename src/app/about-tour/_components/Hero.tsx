@@ -6,11 +6,11 @@ const Hero = () => {
     <section className="flex flex-col items-center justify-center w-full relative">
       <div className="w-full relative flex flex-col items-center justify-center">
         <Image
-          src="/images/enduro.jpg"
+          src="/images/hero.jpg"
           alt="hero"
-          width={1000}
+          width={900}
           height={800}
-          quality={75}
+          quality={60}
           priority={true}
           className="w-full full-screen object-cover max-h-[700px] md:max-h-[1000px] lg:max-h-[1200px]"
         />

@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main>
       <Hero
-        image="/images/hero.jpg"
+        image="/images/enduro.jpg"
         title="Off Road Bike tours and Rentals in Algarve made easy."
         titleColour="black"
         subtitle=""
