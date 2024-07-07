@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { CSPostHogProvider } from "@/analytics/provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -36,14 +37,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${TDS.variable}`}>
-      <body>
-        <main>
-          <Header />
-          {children}
-          <Footer />
-        </main>
-      </body>
-    </html>
+    <CSPostHogProvider>
+      <html lang="en" className={`${inter.variable} ${TDS.variable}`}>
+        <body>
+          <main>
+            <Header />
+            {children}
+            <Footer />
+          </main>
+        </body>
+      </html>
+    </CSPostHogProvider>
   );
 }
