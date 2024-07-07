@@ -17,7 +17,7 @@ const TDS = localFont({
   variable: "--font-tds",
 });
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL!),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL?.toString() as string),
   title: {
     default: "TDS Enduro Bike Tours Algarve, Portugal",
     template: "%s - TDS Enduro Bike Tours Algarve, Portugal",
