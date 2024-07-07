@@ -25,7 +25,10 @@ export default async function sendBookingConfirmationEmail(
 ): Promise<boolean> {
   const confirmationEmailData: EmailData = {
     sender: { name: customerName, email: customerEmail },
-    to: [{ name: "Francisco", email: "michael.dozzantoz@gmail.com" }],
+    to: [
+      { name: "Francisco", email: "francisco908.dossantos@gmail.com" },
+      { name: "Michael", email: "michael.dozzantoz@gmail.com" },
+    ],
     subject: `TDS reservation request from ${customerName} ${customerSurname}`,
     htmlContent: `<html>
       <head></head>
