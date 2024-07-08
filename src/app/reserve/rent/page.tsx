@@ -2,7 +2,8 @@ import { Metadata } from "next";
 import { Form } from "./_components/Form";
 
 export const metadata: Metadata = {
-  title: "Reserve a Rental",
+  title:
+    "Reserve a Rental KTM in Portugal, On or Off Road Bikes this Holiday Season",
   description:
     "Rent a KTM today. Looking for a unique and exciting way to explore the beautiful Algarve region? We offer the perfect way to experience the local culture and history with a motorcycle rental. Whether you're a seasoned rider or a first-time adventurer, we've got you covered.",
 };

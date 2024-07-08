@@ -160,7 +160,7 @@ function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
           }}
         >
           {rentals.map((bike) => (
-            <option key={bike.slug} value={bike.slug}>
+            <option key={bike.slug} value={bike.name}>
               {bike.name}
             </option>
           ))}
