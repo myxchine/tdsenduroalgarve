@@ -38,3 +38,4 @@ export async function newReservation(currentState: any, formData: FormData) {
     return "Error submitting form, please try again.";
   }
 }
+
