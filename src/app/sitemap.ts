@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
-import { bikes, data } from "@/server/data";
+import { data } from "@/server/db/data";
+import { bikes } from "@/server/db/bikes";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const bikesSitemap: MetadataRoute.Sitemap = bikes.map(({ slug }) => ({

@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <div className="flex flex-col items-start justify-start w-full gap-6 py-12 pt-6  mx-auto  md:max-w-6xl ">
+      <div className="flex flex-col items-start justify-start w-full gap-6 py-12 pt-6 pb-0  mx-auto ">
         <ToursList />
       </div>
     </main>

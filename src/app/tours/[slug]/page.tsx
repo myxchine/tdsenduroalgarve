@@ -1,7 +1,5 @@
-import { data } from "@/server/data";
+import { data } from "@/server/db/data";
 import Title from "./_components/Title";
-import BikeInfo from "./_components/BikeInfo";
-import GuideInfo from "./_components/GuideInfo";
 import Packages from "./_components/Packages";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
@@ -28,11 +26,11 @@ export default async function ToursList({
     notFound();
   }
   return (
-    <section className="flex flex-col items-center justify-center w-full pb-8 max-w-6xl mx-auto xl:px-0">
+    <section className="flex flex-col items-center justify-center w-full ">
       <Title />
-      <section className=" p-6 xl:px-0 w-full flex flex-col ">
+     
         <Packages category={category} />
-      </section>
+
     </section>
   );
 }

@@ -15,3 +15,15 @@ export const reservations = createTable("reservations", {
   message: text("message").notNull(),
   riders: integer("riders").notNull(),
 });
+
+export const rentals = createTable("rentals", {
+  id: uuid("id")
+    .primaryKey()
+    .default(sql`gen_random_uuid()`),
+  name: text("name").notNull(),
+  surname: text("surname").notNull(),
+  email: text("email").notNull(),
+  message: text("message").notNull(),
+  bike: text("bike").notNull(),
+  days: integer("days").notNull(),
+});

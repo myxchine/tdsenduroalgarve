@@ -1,8 +1,10 @@
 "use server";
 
-import sendBookingConfirmationEmail from "../email";
+import sendBookingConfirmationEmail from "../emailTour";
+import sendRentalConfirmationEmail from "../emailRental";
+
 import { db } from "../db";
-import { reservations } from "../db/schema";
+import { reservations, rentals } from "../db/schema";
 
 export async function newReservation(currentState: any, formData: FormData) {
   const name = formData.get("name")?.toString();
@@ -39,3 +41,47 @@ export async function newReservation(currentState: any, formData: FormData) {
   }
 }
 
+export async function newRental(currentState: any, formData: FormData) {
+  const name = formData.get("name")?.toString();
+  const surname = formData.get("surname")?.toString();
+  const message = formData.get("message")?.toString();
+  const email = formData.get("email")?.toString();
+  const days = formData.get("days")?.toString();
+  const bike = formData.get("bike")?.toString();
+
+  // Ensure all form data fields are available and valid
+  if (
+    typeof name !== "string" ||
+    typeof surname !== "string" ||
+    typeof message !== "string" ||
+    typeof email !== "string" ||
+    typeof days !== "string" ||
+    typeof bike !== "string"
+  ) {
+    return "Invalid form data";
+  }
+
+  try {
+    await db.insert(rentals).values({
+      name: name,
+      surname: surname,
+      email: email,
+      message: message,
+      bike: bike,
+      days: Number(days),
+    });
+    await sendRentalConfirmationEmail(
+      name,
+      surname,
+      message,
+      email,
+      bike,
+      days
+    );
+
+    return "Form submitted successfully!";
+  } catch (error) {
+    console.error(error);
+    return "Error submitting form, please try again.";
+  }
+}

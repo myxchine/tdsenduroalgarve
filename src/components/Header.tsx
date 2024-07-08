@@ -73,6 +73,15 @@ const Header = () => {
                   About The Tour
                 </div>
               </Link>
+              <Link href={"/rentals"}>
+                <div
+                  className={`font-tds text-xl ${
+                    pathname === "/rentals" ? "text-tdsRed" : ""
+                  }`}
+                >
+                  Rentals
+                </div>
+              </Link>
               <Link href={"/bikes"}>
                 <div
                   className={`font-tds text-xl ${
@@ -144,6 +153,15 @@ const Header = () => {
                 }`}
               >
                 About The Tour
+              </div>
+            </Link>
+            <Link href={"/rentals"}>
+              <div
+                className={`font-tds text-xl ${
+                  pathname === "/rentals" ? "text-tdsRed" : ""
+                }`}
+              >
+                Rentals
               </div>
             </Link>
             <Link href={"/bikes"}>
