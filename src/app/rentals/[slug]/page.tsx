@@ -22,8 +22,8 @@ export async function generateMetadata({
   }
 
   return {
-    title: bike.name,
-    description: bike.description,
+    title: `Rent a ${bike.name}`,
+    description: `Hire a ${bike.name} for your next adventure in Portugal, Algarve! Whether you are in Vilamoura, Faro, Loulé, or anyone else in the Algarve region, we have the perfect solution for you.`,
     openGraph: {
       images: [
         {
