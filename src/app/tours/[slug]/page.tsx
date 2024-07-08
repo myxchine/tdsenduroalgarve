@@ -1,6 +1,6 @@
 import { data } from "@/server/db/data";
 import Title from "./_components/Title";
-import Packages from "./_components/Packages";
+import Pricing from "./_components/Pricing";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
@@ -28,7 +28,7 @@ export default async function ToursList({
   return (
     <section className="flex flex-col items-center justify-center w-full ">
       <Title />
-      <Packages category={category} />
+      <Pricing category={category} />
     </section>
   );
 }
