@@ -28,9 +28,7 @@ export default async function ToursList({
   return (
     <section className="flex flex-col items-center justify-center w-full ">
       <Title />
-     
-        <Packages category={category} />
-
+      <Packages category={category} />
     </section>
   );
 }

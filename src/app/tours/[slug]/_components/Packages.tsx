@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function Packages({ category }: { category: any }) {
   return (
-    <div className="flex flex-col items-center justify-center w-full  bg-white  text-black py-2 md:py-8 gap-4  bg-black/10 xl:px-0">
+    <div className="flex flex-col items-center justify-center w-full  bg-white  text-black py-2 md:py-8 gap-4  bg-black/20 xl:px-0">
       <div className="md:max-w-6xl mx-auto flex flex-col w-full p-4 py-6 md:py-8 gap-8 xl:px-0 bg-transparent">
         <section className="flex flex-col w-full ">
           {category.bikes.map((bike: any, index: number) => (
@@ -10,7 +10,7 @@ export default function Packages({ category }: { category: any }) {
                 {bike.packages.map((packages: any, index: number) => (
                   <li
                     key={packages.id}
-                    className="flex flex-col items-center gap-8 justify-center  w-full bg-white rounded-md p-4 py-6 w-full"
+                    className="flex flex-col items-center gap-8 justify-center shadow w-full bg-white rounded-md p-4 py-6 w-full"
                   >
                     <section className="flex flex-col w-full gap-4 ">
                       <h2 className="text-3xl font-tds">

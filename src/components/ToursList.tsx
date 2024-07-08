@@ -35,7 +35,7 @@ export default function ToursList() {
                     <div className="flex flex-col items-start justify-start  w-full gap-8  ">
                       <section className="  ">
                         <div className="flex flex-col items-start justify-start space-y-4 w-full pt-0 w-full">
-                          <h3 className="text-2xl   md:text-4xl  uppercase font-tds tracking-wider w-full">
+                          <h3 className="text-3xl   md:text-4xl  uppercase font-tds w-full">
                             Full Day Tour
                           </h3>
                           <p className="w-full text-sm text-black/80 md:text-lg">
