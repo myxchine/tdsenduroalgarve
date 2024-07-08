@@ -29,19 +29,23 @@ export default function Tours() {
               key={tour.id}
             >
               <div className="flex flex-col gap-6 p-4 py-6 md:p-8 md:gap-8">
+                <h1 className="text-3xl font-tds uppercase text-balance">
+                  Enduro <span className="text-tdsRed">Full Day </span> KTM Bike{" "}
+                  <span className="text-tdsRed">Tour</span> Off Road Algarve
+                </h1>
                 <Image
                   src={tour.image}
                   alt={tour.title}
-                  width={600}
-                  height={400}
-                  quality={100}
+                  width={300}
+                  height={200}
+                  quality={60}
                   priority={true}
                   className=" object-cover w-full  h-auto rounded-md"
                 />
-                <h1 className="text-3xl font-tds uppercase">{tour.title}</h1>
+
                 <Link href={`/tours/${tour.slug}`} className="w-full">
                   <button className="flex flex-col w-full p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center ">
-                    View Packages
+                    View Pricing
                   </button>
                 </Link>
                 <p className=" text-black/80  text-balance">

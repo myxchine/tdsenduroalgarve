@@ -1,8 +1,8 @@
 import Link from "next/link";
 export default function Packages({ category }: { category: any }) {
   return (
-    <div className="flex flex-col items-center justify-center w-full  bg-white  text-black rounded-md py-2 md:py-8 gap-4  bg-black/10 xl:px-0">
-      <div className="md:max-w-6xl mx-auto flex flex-col w-full p-4 py-6 md:py-8 gap-8 xl:px-0">
+    <div className="flex flex-col items-center justify-center w-full  bg-white  text-black py-2 md:py-8 gap-4  bg-black/10 xl:px-0">
+      <div className="md:max-w-6xl mx-auto flex flex-col w-full p-4 py-6 md:py-8 gap-8 xl:px-0 bg-transparent">
         <section className="flex flex-col w-full ">
           {category.bikes.map((bike: any, index: number) => (
             <li key={bike.id} className="flex flex-col gap-4 w-full">
