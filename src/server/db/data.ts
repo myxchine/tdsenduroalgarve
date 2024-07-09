@@ -17,6 +17,7 @@ export const data = {
             name: "ktm exc 300 tpi",
             title: "KTM Hard enduro bike tours ALgaRVE",
             image: "/images/bikes/enduro.png",
+            slug: "ktm-hard-enduro-bike-tours-algarve",
             description:
               "With over 7 of these bad boys in our arsenal and thousands of combined hours in the Algarvian mountains, they have never let us down.",
             features: [

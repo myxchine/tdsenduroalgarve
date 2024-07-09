@@ -12,30 +12,41 @@ export default function AboutTour() {
   return (
     <section>
       <Hero />
-      <div className="flex flex-col gap-4 py-12 w-full max-w-6xl mx-auto md:gap-8">
-        <section className="flex flex-col p-6 gap-4">
-          <h4 className="text-3xl    uppercase font-tds tracking-wider w-full md:text-5xl">
-            Tour adventure in the Algarve region.
-          </h4>
-          <p className="w-full text-sm text-black/80 md:text-lg">
-            Join one of our experienced guides for this exciting full-day ride
-            through the beautiful Algarve region while riding a KTM EXC-300! We
-            will provide all the necessary safety gear and share our best riding
-            techniques. Lunch is included in the ride​.
-          </p>
-          <Link href={`/bikes/ktm-exc-300`} className="w-full">
+      <div className="flex flex-col gap-8 py-12 w-full max-w-6xl mx-auto md:gap-8">
+        <section className="flex flex-col px-6 gap-6 ">
+          <div>
+            <h2 className="text-3xl   mb-2  uppercase font-tds tracking-wider w-full md:text-5xl">
+              About the Tour
+            </h2>
+            <p className="w-full text-sm text-black/80">
+              Join our experienced guides for an exhilarating full-day ride
+              through the stunning Algarve region on a KTM EXC-300! We provide
+              all the necessary safety gear and share our top riding techniques.
+              A traditional lunch in the mountains is included!
+              <br />
+              Our unique tracks cater to riders of all skill levels. Your gear
+              will be ready for you, so you can hop on one of our fully-equipped
+              Enduro bikes and enjoy an unforgettable ride. The day is yours to
+              explore, with our guides tailoring the experience based on your
+              feedback. Best of all, everything is included in your package with
+              no hidden costs!
+            </p>
+          </div>
+
+          <Link href={`/tours/off-road-enduro-bike-rental`} className="w-full">
             <button className="flex flex-col w-full md:max-w-[300px] p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center  md:px-8 md:text-lg">
               Let's do it
             </button>
           </Link>
         </section>
+
         <section className="flex flex-col p-6 gap-4 pb-0">
-          <h4 className="text-3xl    uppercase font-tds tracking-wider w-full md:text-5xl">
+          <h3 className="text-3xl    uppercase font-tds tracking-wider w-full md:text-5xl">
             Included
-          </h4>
+          </h3>
           <div className="w-full text-sm text-black/80 md:text-lg">
             <ul>
-              <li>KTM EXC 300 TPI</li>
+              <li>KTM EXC 300 Motorbike</li>
               <li>Full Day Tour Guide</li>
               <li>All protective and riding equipment</li>
               <li>Lunch</li>

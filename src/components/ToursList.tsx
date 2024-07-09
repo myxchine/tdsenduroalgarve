@@ -11,7 +11,7 @@ export default function ToursList() {
         >
           <div className=" flex flex-col gap-4 p-6 pt-0  w-full  md:max-w-6xl  mx-auto xl:px-0">
             <h2 className="text-4xl md:text-6xl text-left font-tds w-full text-balance">
-              Enduro Bike <span className="text-tdsRed">tour</span> +{" "}
+              Enduro Motorbike <span className="text-tdsRed">tour</span> +{" "}
               <span className="text-tdsRed">rental</span>
             </h2>
             <Link href="/reserve" className="">
@@ -40,21 +40,21 @@ export default function ToursList() {
                           </h3>
                           <p className="w-full text-sm text-black/80 md:text-lg">
                             An experienced guide through the beautiful Algarve
-                            region with bike, gear, transport and even lunch
-                            included!
+                            region with motorbike, gear, transport and even
+                            lunch included!
                           </p>
                           <p className="w-full text-sm text-black/80 md:text-lg">
                             The{" "}
                             <span className="font-tds text-tdsRed px-1">
                               KTM EXC 300{" "}
                             </span>
-                            is a top of the range enduro bike with a range of
-                            features and packages for you or your group.
+                            is a top of the range enduro motorbike with a range
+                            of features and packages for you or your group.
                           </p>
                         </div>
                         <Image
                           src={bike.image}
-                          alt={bike.name}
+                          alt={bike.slug}
                           width={200}
                           height={200}
                           loading="lazy"

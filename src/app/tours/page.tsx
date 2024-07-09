@@ -17,8 +17,8 @@ export default function Tours() {
           Our <span className="text-tdsRed">TOURS</span> at TDS
         </h1>
         <p className="text-sm text-black/80 text-balance">
-          Take a look at the tours we offer and find the perfect one for your
-          needs.
+          Take a look at the tours we offer and find the perfect motorcycle
+          adventure for you.
         </p>
       </div>
       <section className="flex flex-col w-full bg-black/10  ">
@@ -30,8 +30,9 @@ export default function Tours() {
             >
               <div className="flex flex-col gap-6 p-4 py-6 md:p-8 md:gap-8">
                 <h1 className="text-3xl font-tds uppercase text-balance">
-                  Enduro <span className="text-tdsRed">Full Day </span> KTM Bike{" "}
-                  <span className="text-tdsRed">Tour</span> Off Road Algarve
+                  Enduro <span className="text-tdsRed">Full Day </span> KTM
+                  Motorbike <span className="text-tdsRed">Tour</span> Off Road
+                  Algarve
                 </h1>
                 <Image
                   src={tour.image}

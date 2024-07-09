@@ -48,7 +48,7 @@ export default async function Bike({ params }: { params: { slug: string } }) {
       </h1>
       <Image
         src={bike.image}
-        alt={bike.name}
+        alt={bike.slug}
         width={500}
         height={400}
         quality={100}

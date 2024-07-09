@@ -154,8 +154,8 @@ function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
           name="category"
           className="flex-1 p-2 rounded-md border border-gray-300 bg-white"
         >
-          <option key="KTM EXC-300 TPI" value="ktm_exc_300_tpi">
-            KTM EXC-300
+          <option key="KTM 300 EXC" value="ktm-300-exc">
+            KTM 300 EXC
           </option>
         </select>
         <select

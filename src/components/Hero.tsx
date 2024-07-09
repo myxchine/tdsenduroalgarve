@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="w-full relative flex flex-col items-center justify-center">
         <Image
           src={`/images/enduro.jpg`}
-          alt="hero"
+          alt="hero-motorbike-tds-enduro-algarve"
           width={800}
           height={800}
           quality={65}
@@ -20,7 +20,7 @@ const Hero = () => {
             <h1
               className={` text-white  md:text-white text-[21px] text-center  uppercase p-4 font-tds tracking-wider md:text-left md:text-5xl text-balance`}
             >
-              Off Road Bike tours and Rentals in Algarve made easy.
+              Off Road MotorBike tours and Rentals in Algarve made easy.
             </h1>
             <div className="flex flex-row items-center justify-center gap-3 w-full p-6 pt-0 md:flex-col">
               <Link

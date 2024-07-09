@@ -2,8 +2,8 @@ import Link from "next/link";
 import { TDSIcon } from "./icons";
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center justify-center w-full py-8 border-t border-black/10 py-10 pb-6 md:py-20 md:pb-6">
-      <div className="flex flex-col items-center justify-between gap-8 w-full max-w-6xl px-6 md:gap-16">
+    <footer className="flex flex-col items-center justify-center w-full py-8 border-t border-black/10 py-16 pb-6 md:py-20 md:pb-6">
+      <div className="flex flex-col items-center justify-between gap-12 w-full max-w-6xl px-6 md:gap-16">
         <div className="flex flex-row gap-4 items-center md:gap-8">
           <TDSIcon className="w-auto h-[100px] md:w-32 md:h-32" />
           <h2 className="text-4xl w-full font-tds md:text-6xl md:text-center">
@@ -45,7 +45,7 @@ const Footer = () => {
               About the Tour
             </Link>
             <Link href="/bikes" className="hover:underline text-black/60">
-              Our Bikes
+              Our Motorbikes
             </Link>
           </nav>
         </section>

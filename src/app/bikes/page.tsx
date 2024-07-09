@@ -14,11 +14,11 @@ export default function Bikes() {
     <div className="flex flex-col items-start gap-8 pt-32 ">
       <div className="flex flex-col gap-2 w-full max-w-6xl mx-auto px-6 xl:px-0 pb-4">
         <h1 className="text-4xl font-tds">
-          Our <span className="text-tdsRed">Bikes</span> at TDS
+          Our <span className="text-tdsRed">Motorbikes</span> at TDS Portugal
         </h1>
         <p className="text-sm text-black/80 text-balance">
-          Take a look at our range of bikes and find the perfect one for your
-          needs.
+          Take a look at our range of motorbikes and find the perfect one for
+          your needs.
         </p>
       </div>
       <section className="flex flex-col w-full bg-black/10  ">
@@ -35,7 +35,7 @@ export default function Bikes() {
 
               <Image
                 src={bike.image}
-                alt={bike.name}
+                alt={bike.slug}
                 width={500}
                 height={500}
                 quality={100}
@@ -44,7 +44,7 @@ export default function Bikes() {
               />
               <Link href={`/bikes/${bike.slug}`} className="w-full">
                 <button className="flex flex-col w-full p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center ">
-                  View {bike.name} Bike Now
+                  View {bike.name} Now
                 </button>
               </Link>
             </section>

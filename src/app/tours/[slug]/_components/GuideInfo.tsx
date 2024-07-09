@@ -7,10 +7,16 @@ export default function GuideInfo() {
         GUIDED TOUR
       </h4>
       <p className="w-full text-sm text-black/80 pb-16">
-        Join one of our experienced guides for this exciting full-day ride
-        through the beautiful Algarve region while riding a KTM EXC-300! We will
-        provide all the necessary safety gear and share our best riding
-        techniques. Lunch is included in the ride​.
+        Join our experienced guides for an exhilarating full-day ride through
+        the stunning Algarve region on a KTM EXC-300! We provide all the
+        necessary safety gear and share our top riding techniques. A traditional
+        lunch in the mountains is included!
+        <br />
+        Our unique tracks cater to riders of all skill levels. Your gear will be
+        ready for you, so you can hop on one of our fully-equipped Enduro bikes
+        and enjoy an unforgettable ride. The day is yours to explore, with our
+        guides tailoring the experience based on your feedback. Best of all,
+        everything is included in your package with no hidden costs!
       </p>
       <div className="absolute bottom-0 left-0 right-0 w-full p-6">
         <Link href={"/guided-tours/off-road-enduro-tour"} className="w-full">
