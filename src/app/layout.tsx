@@ -18,9 +18,6 @@ const TDS = localFont({
 });
 export const metadata: Metadata = {
   metadataBase: new URL(`https://tdsenduroalgarve.com`),
-  alternates: {
-    canonical: "/",
-  },
   title: {
     default: "TDS Enduro Bike Tours Algarve, Portugal",
     template: "%s | TDS Enduro Bike Tours Algarve, Portugal",
