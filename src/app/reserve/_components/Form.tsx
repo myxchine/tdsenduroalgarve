@@ -24,7 +24,7 @@ export function Form({
         </p>
         <Link
           href={"/tours/off-road-enduro-bike-rental"}
-          className="font-bold  text-black"
+          className="font-bold  text-black hover:underline"
         >
           Learn more {`->`}
         </Link>

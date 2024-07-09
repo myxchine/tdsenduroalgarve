@@ -6,10 +6,10 @@ export default function Pricing({ category }: { category: any }) {
       <div className="md:max-w-6xl mx-auto flex flex-col w-full p-4 py-6 md:py-8 gap-8 xl:px-0 ">
         <section className="flex flex-col w-full">
           {category.bikes.map((bike: any) => (
-            <li key={bike.id} className="flex flex-col gap-4 w-full">
-              <ul className="flex flex-col md:flex-row gap-8 justify-center items-center w-full">
+            <div key={bike.id} className="flex flex-col gap-4 w-full">
+              <div className="flex flex-col md:flex-row gap-8 justify-center items-center w-full">
                 {bike.packages.map((packageItem: any, packageIndex: number) => (
-                  <li
+                  <div
                     key={packageItem.id}
                     className="flex flex-col items-center gap-8 justify-center shadow w-full bg-white rounded-md p-4 py-6"
                   >
@@ -24,28 +24,28 @@ export default function Pricing({ category }: { category: any }) {
                         )}{" "}
                         <span className="text-xl"> / Includes</span>
                       </h2>
-                      <ul className="flex flex-col gap-1 justify-center items-start w-full">
-                        <Link href="/bikes/ktm-exc-300" className="">
-                          <button className="text-tdsRed text-sm font-bold uppercase">
+                      <div className="flex flex-col gap-1 justify-center items-start w-full">
+                        <Link href="/bikes/ktm-300-exc" className=" ">
+                          <p className="text-tdsRed text-sm font-bold uppercase hover:underline">
                             KTM EXC 300 {`->`}
-                          </button>
+                          </p>
                         </Link>
                         <Link href="/about-tour" className="mb-1">
-                          <button className="text-tdsRed text-sm font-bold uppercase">
+                          <p className="text-tdsRed text-sm font-bold uppercase hover:underline">
                             Full Day Tour {`->`}
-                          </button>
+                          </p>
                         </Link>
                         {packageItem.included.map(
                           (includedItem: any, includedIndex: number) => (
-                            <li
+                            <div
                               key={includedItem.id}
                               className="flex flex-col items-center gap-8 justify-center w-full text-left"
                             >
                               <p className="w-full text-sm">{includedItem}</p>
-                            </li>
+                            </div>
                           )
                         )}
-                      </ul>
+                      </div>
                     </section>
                     <section className="flex flex-col items-end gap-4 justify-between w-full">
                       <p className="text-4xl font-tds tracking-wider relative pl-3">
@@ -59,7 +59,7 @@ export default function Pricing({ category }: { category: any }) {
                         }`}
                         className="w-full"
                       >
-                        <button className="bg-tdsRed text-white py-2 uppercase font-tds tracking-wider text-lg rounded w-full px-8">
+                        <button className="bg-tdsRed text-white py-2 uppercase font-tds tracking-wider text-lg rounded w-full px-8 hover:bg-tdsRed/80">
                           Reserve {packageItem.riders}
                           {packageIndex === 2 && "+"}{" "}
                           {packageItem.riders > 1 ? (
@@ -70,10 +70,10 @@ export default function Pricing({ category }: { category: any }) {
                         </button>
                       </Link>
                     </section>
-                  </li>
+                  </div>
                 ))}
-              </ul>
-            </li>
+              </div>
+            </div>
           ))}
         </section>
       </div>
