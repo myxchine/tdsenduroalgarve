@@ -3,7 +3,7 @@ import { TDSIcon } from "./icons";
 const Footer = () => {
   return (
     <footer className="flex flex-col items-center justify-center w-full py-8 border-t border-black/10 py-16 pb-6 md:py-20 md:pb-6">
-      <div className="flex flex-col items-center justify-between gap-12 w-full max-w-6xl px-6 md:gap-16">
+      <div className="flex flex-col items-start justify-between gap-12 w-full max-w-6xl px-6 md:gap-16">
         <div className="flex flex-row gap-4 items-center md:gap-8">
           <TDSIcon className="w-auto h-[100px] md:w-32 md:h-32" />
           <h2 className="text-4xl w-full font-tds md:text-6xl md:text-center">
@@ -49,7 +49,7 @@ const Footer = () => {
             </Link>
           </nav>
         </section>
-        <p className="text-xs mt-2 text-black/60 text-left md:text-lg md:text-center">
+        <p className="text-xs mt-2 text-black/60 text-left md:text-lg max-w-5xl w-full">
           Discover the thrill of off-road and street motorcycle adventures in
           the beautiful Algarve region. Whether you're looking for a guided tour
           through the stunning mountains or renting a bike for your own
@@ -57,7 +57,7 @@ const Footer = () => {
           experience. Join us for an adventure and create lasting memories on
           two wheels.
         </p>
-        <div className="flex flex-col items-center gap-4 text-xs md:text-sm mt-4">
+        <div className="flex flex-col items-center gap-4 text-xs md:text-sm mt-4 w-full ">
           <p>&copy; 2024 TDS Enduro Algarve. All rights reserved.</p>
         </div>
       </div>
