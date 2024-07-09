@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="flex flex-col items-center justify-center w-full py-8 border-t border-black/10 py-10 pb-6">
       <div className="flex flex-col items-center justify-between gap-8 w-full max-w-6xl px-6 md:gap-16">
-        <h2 className="text-4xl font-semibold w-full font-tds md:text-6xl md:text-center">
+        <h2 className="text-4xl w-full font-tds md:text-6xl md:text-center">
           TDS <span className="text-tdsRed ">Enduro</span> Algarve
         </h2>
 
