@@ -27,7 +27,7 @@ export default async function sendBookingConfirmationEmail(
     sender: { name: customerName, email: customerEmail },
     to: [
       { name: "Francisco", email: "francisco908.dossantos@gmail.com" },
-      { name: "Michael", email: "michael.dozzantoz@gmail.com" },
+      { name: "Michael", email: "michael@duality.agency" },
     ],
     subject: `TDS reservation request from ${customerName} ${customerSurname}`,
     htmlContent: `<html>
