@@ -16,7 +16,6 @@
     "postgres": "^3.4.4",
     "posthog-js": "^1.144.2",
     "react": "19.0.0-rc-100dfd7dab-20240701",
-    "react-archer": "^4.4.0",
     "react-dom": "19.0.0-rc-100dfd7dab-20240701"
   },
   "devDependencies": {
