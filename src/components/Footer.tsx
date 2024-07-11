@@ -45,7 +45,7 @@ const Footer = () => {
               About the Tour
             </Link>
             <Link href="/bikes" className="hover:underline text-black/60">
-              Our Motorbikes
+              Our Bikes
             </Link>
           </nav>
         </section>

@@ -20,7 +20,7 @@ const Hero = () => {
             <h1
               className={` text-white  md:text-white text-[21px] text-center  uppercase p-4 font-tds tracking-wider md:text-left md:text-5xl text-balance`}
             >
-              Off Road MotorBike tours and Rentals in Algarve made easy.
+              Off Road Bike tours and Rentals in Algarve made easy.
             </h1>
             <div className="flex flex-row items-center justify-center gap-3 w-full p-6 pt-0 md:flex-col">
               <Link
