@@ -47,11 +47,11 @@ function Title() {
         </Link>
 
         <Link
-          href="/rentals"
+          href="/bikes"
           className="w-full flex flex-col items-center justify-center"
         >
           <button className="bg-foreground text-background w-full p-2 uppercase hover:bg-foreground/80 font-tds rounded">
-            Rentals
+            Bikes
           </button>
         </Link>
       </div>
