@@ -108,7 +108,7 @@ function BikesList() {
 
 function Tours() {
   return (
-    <section className="flex flex-col gap-4  w-full  md:max-w-6xl  mx-auto xl:px-0 py-8 md:py-12 md:pt-24">
+    <section className="flex flex-col gap-4  w-full  md:max-w-6xl pt-2  mx-auto xl:px-0 py-8 md:py-12 md:pt-24">
       <div className="px-6 flex flex-col gap-2">
         <h2 className="text-3xl font-tds md:text-5xl">Guided Tours</h2>
         <Link
