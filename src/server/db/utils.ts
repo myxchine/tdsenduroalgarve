@@ -4,7 +4,7 @@ import sendBookingConfirmationEmail from "../emailTour";
 import sendRentalConfirmationEmail from "../emailRental";
 
 import { db } from "../db";
-import { reservations, rentals } from "../db/schema";
+import { reservations, rentals, mailList } from "../db/schema";
 
 export async function newReservation(currentState: any, formData: FormData) {
   const name = formData.get("name")?.toString();
@@ -78,6 +78,26 @@ export async function newRental(currentState: any, formData: FormData) {
       bike,
       days
     );
+
+    return "Form submitted successfully!";
+  } catch (error) {
+    console.error(error);
+    return "Error submitting form, please try again.";
+  }
+}
+
+export async function newMailMember(currentState: any, formData: FormData) {
+  const email = formData.get("email")?.toString();
+
+  // Ensure all form data fields are available and valid
+  if (typeof email !== "string") {
+    return "Invalid form data";
+  }
+
+  try {
+    await db.insert(mailList).values({
+      email: email,
+    });
 
     return "Form submitted successfully!";
   } catch (error) {

@@ -1,4 +1,4 @@
-import { bikes } from "@/server/db/bikes";
+import { bikes } from "@/server/bikes";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,12 +23,12 @@ export async function generateMetadata({
 
   return {
     title: bike.name,
-    description: bike.descriptionLong ?? bike.description,
+    description: bike.description,
     openGraph: {
       images: [
         {
-          url: bike.openGraphImage ?? bike.image,
-          alt: bike.name,
+          url: bike.image,
+          alt: bike.slug,
         },
       ],
     },
@@ -42,45 +42,71 @@ export default async function Bike({ params }: { params: { slug: string } }) {
     notFound();
   }
   return (
-    <section className="flex flex-col items-center gap-8 pt-32 p-6 max-w-6xl mx-auto  md:flex-row mb-12 text-left xl:px-0">
-      <h1 className="text-4xl font-tds uppercase md:hidden w-full">
-        {bike.name}
-      </h1>
+    <section className="flex flex-col items-start gap-8 pt-8 p-6 max-w-6xl mx-auto  md:flex-row mb-12 text-left xl:px-0 md:py-24">
+      <div className="md:hidden w-full flex flex-col gap-2">
+        <h1 className="text-3xl font-tds uppercase ">{bike.name}</h1>
+        <p className="text-xs text-black/80 md:text-sm">{bike.shout}</p>
+        {bike.tour && (
+          <Link href={`/tours/`} className="w-full mt-2">
+            <button className="flex flex-col w-fit p-2 px-4 rounded bg-tdsRed text-white  hover:bg-tdsRed/80 text-center justify-center items-center text-left text-xs font-semibold tracking-wider">
+              Guided tour available
+            </button>
+          </Link>
+        )}
+        {bike.rental && (
+          <Link href={`/reserve/rent?bike=${bike.slug}`} className="w-full">
+            <button className="flex flex-col w-fit p-2 px-4 rounded bg-foreground text-white  hover:bg-foreground/80 text-center justify-center items-center text-left text-xs font-semibold tracking-wider">
+              Rent Bike
+            </button>
+          </Link>
+        )}
+      </div>
+
       <Image
-        src={bike.image}
+        src={`/images/bikes/${bike.image}`}
         alt={bike.slug}
         width={500}
         height={400}
         quality={100}
         priority={true}
-        className="w-full object-cover "
+        className="w-full object-cover md:order-last"
       />
 
-      <div className="flex text-left flex-col gap-8 w-full md:max-w-md md:text-right">
-        <h1 className="text-4xl font-tds uppercase hidden md:block w-full">
-          {bike.name}
-        </h1>
-
-        <div className="flex flex-col gap-2 w-full">
-          <Link href={`/tours/off-road-enduro-bike-rental`} className="w-full">
-            <button className="flex flex-col w-full p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center text-left">
-              View Packages
-            </button>
-          </Link>
-
-          <Link href={`/about-tour`} className="w-full">
-            <button className="flex flex-col w-full p-2 px-4 rounded bg-black text-white font-tds hover:bg-black/80 text-center justify-center items-center ">
-              View Tour
-            </button>
-          </Link>
+      <div className="flex text-left flex-col gap-8 w-full md:max-w-md md:text-left">
+        <div className="hidden md:flex w-full flex flex-col gap-2">
+          <h1 className="text-3xl font-tds uppercase md:text-5xl">
+            {bike.name}
+          </h1>
+          <p className="text-xs text-black/80 md:text-sm">{bike.shout}</p>
+          {bike.tour && (
+            <Link href={`/tours/`} className="w-full mt-2">
+              <button className="flex flex-col w-fit p-2 px-4 rounded bg-tdsRed text-white  hover:bg-tdsRed/80 text-center justify-center items-center text-left font-semibold tracking-wider">
+                Guided tour available
+              </button>
+            </Link>
+          )}
+          {bike.rental && (
+            <Link
+              href={`/reserve/rent?bike=${bike.slug}`}
+              className="w-full mt-2"
+            >
+              <button className="flex flex-col w-fit p-2 px-4 rounded bg-foreground text-white  hover:bg-foreground/80 text-center justify-center items-center text-left font-semibold tracking-wider">
+                Rent Bike
+              </button>
+            </Link>
+          )}
         </div>
-        <p>{bike.descriptionLong ?? bike.description}</p>
+
+        <p className="text-xs md:text-sm">{bike.description}</p>
 
         <div className="flex flex-col gap-4 w-full">
           <p className="text-2xl font-tds uppercase">Features</p>
-          <ul className="flex flex-wrap gap-2 md:justify-end md:items-end">
-            {bike.features.map((feature) => (
-              <li key={feature} className="bg-black/5 p-2 px-4 rounded">
+          <ul className="flex flex-wrap gap-2 md:justify-start md:items-start">
+            {bike.tags.map((feature) => (
+              <li
+                key={feature}
+                className="bg-black/5 p-2 px-4 rounded text-xs uppercase tracking-wider font-semibold"
+              >
                 {feature}
               </li>
             ))}

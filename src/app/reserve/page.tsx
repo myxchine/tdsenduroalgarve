@@ -15,7 +15,7 @@ export default function Contact({
   return (
     <section
       id="contact"
-      className="w-full gap-16 pb-12 p-6 md: md:py-24 lg:py-32 flex flex-col items-center max-w-6xl mx-auto pt-28 md:flex-row xl:px-0 sm:gap-12"
+      className="w-full gap-16 pb-12 p-6 md: md:py-24 lg:py-32 flex flex-col items-center max-w-6xl mx-auto pt-12 md:flex-row xl:px-0 sm:gap-12"
     >
       <Form searchParams={searchParams} />
     </section>

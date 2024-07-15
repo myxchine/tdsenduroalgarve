@@ -9,7 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        tdsRed: "#F21C00", // Add your custom color hex code here
+        //tdsRed: "#AB1400", // Add your custom color hex code here
+        //tdsRed: "#A30B1D",
+        tdsRed: "#F21C00",
+
+        primary: "#F21C00",
+        secondary: "#F21C00",
+        accent: "#F4C430",
+        background: "#fff",
+        foreground: "#000",
       },
       fontFamily: {
         sans: ["var(--font-inter)"],

@@ -23,10 +23,10 @@ export function Form({
           Portugal?
         </p>
         <Link
-          href={"/tours/off-road-enduro-bike-rental"}
+          href={"/reserve/rent"}
           className="font-bold  text-black hover:underline"
         >
-          Learn more {`->`}
+          Just rent instead {`->`}
         </Link>
       </div>
       <Inputs searchParams={searchParams} />

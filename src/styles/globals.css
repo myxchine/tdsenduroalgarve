@@ -12,3 +12,11 @@ select {
   -moz-appearance: none; /* For Firefox */
   background: white; /* Removes the background */
 }
+
+body {
+  /* font-family: var(--font-tds); */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

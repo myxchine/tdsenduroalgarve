@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "@/styles/globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "./_components/Header";
+import Footer from "./_components/Footer";
 import { CSPostHogProvider } from "@/analytics/provider";
 
 const inter = Inter({
@@ -16,6 +16,7 @@ const TDS = localFont({
   display: "swap",
   variable: "--font-tds",
 });
+
 export const metadata: Metadata = {
   metadataBase: new URL(`https://tdsenduroalgarve.com`),
   title: {
@@ -41,7 +42,7 @@ export default function RootLayout({
     <CSPostHogProvider>
       <html lang="en" className={`${inter.variable} ${TDS.variable}`}>
         <body>
-          <main>
+          <main className="relative">
             <Header />
             {children}
             <Footer />

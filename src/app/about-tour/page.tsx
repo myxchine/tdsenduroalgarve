@@ -24,6 +24,7 @@ export default function AboutTour() {
               all the necessary safety gear and share our top riding techniques.
               A traditional lunch in the mountains is included!
               <br />
+              <br />
               Our unique tracks cater to riders of all skill levels. Your gear
               will be ready for you, so you can hop on one of our fully-equipped
               Enduro bikes and enjoy an unforgettable ride. The day is yours to

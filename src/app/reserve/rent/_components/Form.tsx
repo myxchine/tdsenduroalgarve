@@ -16,16 +16,15 @@ export function Form({
     <form className="flex flex-col gap-4 max-w-xl mx-auto " action={submit}>
       <div className="flex flex-col gap-2 pb-2">
         <h1 className="text-4xl font-tds sm:text-5xl xl:text-6xl text-balance">
-          Rent a <span className="text-tdsRed">Bike</span> from us in{" "}
-          <span className="text-tdsRed">Algarve</span>
+          Rent a <span className="text-tdsRed">Bike</span> from us
         </h1>
         <p className="max-w-[500px] text-black/60 md:text-xl lg:text-base xl:text-xl">
           Ride around in style and comfort with our premium bikes. Book your
           rental today and experience the beauty of Algarve whether on or off
           road.
         </p>
-        <Link href={"/rentals"} className="font-bold  text-black">
-          Learn more {`->`}
+        <Link href={"/reserve"} className="font-bold  text-black hover:underline">
+          Reserve a tour {`->`}
         </Link>
       </div>
       <Inputs searchParams={searchParams} />

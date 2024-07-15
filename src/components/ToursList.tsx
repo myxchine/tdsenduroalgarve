@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function ToursList() {
   return (
-    <div className="flex flex-col  items-center justify-center gap-12 w-full pt-6 md:pt-12">
+    <div className="flex flex-col  items-center justify-center gap-12 w-full pt-12 md:pt-16">
       {data.tours.categories.map((category) => (
         <div
           key={category.id}

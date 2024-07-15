@@ -27,3 +27,10 @@ export const rentals = createTable("rentals", {
   bike: text("bike").notNull(),
   days: integer("days").notNull(),
 });
+
+export const mailList = createTable("mailList", {
+  id: uuid("id")
+    .primaryKey()
+    .default(sql`gen_random_uuid()`),
+  email: text("email").notNull(),
+});
