@@ -53,9 +53,13 @@ function Bikes() {
     <section className="flex flex-col gap-4  w-full  md:max-w-6xl  mx-auto xl:px-0 py-8 md:py-12 ">
       <div className="px-6 flex flex-col gap-2">
         <h2 className="text-3xl font-tds md:text-5xl ">Motorcycles</h2>
+        <p className="text-sm text-black/80 max-w-md">
+          Premium bikes that you can rely on and enjoy your ride. Rental is
+          available for all bikes.
+        </p>
         <Link
           href={"/bikes"}
-          className="text-sm text-tdsRed hover:underline md:text-lg"
+          className="text-sm text-tdsRed hover:underline md:text-lg "
         >
           View All {"->"}
         </Link>
@@ -111,6 +115,10 @@ function Tours() {
     <section className="flex flex-col gap-4  w-full  md:max-w-6xl pt-2  mx-auto xl:px-0 py-8 md:py-12 md:pt-24">
       <div className="px-6 flex flex-col gap-2">
         <h2 className="text-3xl font-tds md:text-5xl">Guided Tours</h2>
+        <p className="text-sm text-black/80 max-w-md">
+          Enjoy a day long unforgettable ride with all the gear, bike, trails
+          and even lunch included! Bike license not required off road.
+        </p>
         <Link
           href={"/tours"}
           className="text-sm text-tdsRed hover:underline md:text-lg"
