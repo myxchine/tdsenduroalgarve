@@ -16,13 +16,13 @@ export default function Home() {
 
 function About() {
   return (
-    <section className="px-6 py-12  w-full bg-black/5 ">
-      <div className="max-w-6xl mx-auto w-full flex flex-col gap-8">
+    <section className="px-6 py-12  mx-auto w-fit">
+      <div className="max-w-6xl mx-auto  flex flex-col gap-8">
         <div className="flex flex-col gap-6 w-full">
-          <h2 className="text-3xl   mb-2  uppercase font-tds tracking-wider w-full md:text-5xl">
+          <h2 className="text-3xl   mb-2  uppercase font-tds tracking-wider  md:text-5xl">
             About the Tour
           </h2>
-          <p className="w-full text-sm text-black/80 max-w-xl">
+          <p className="w-full text-sm text-black/80 max-w-xl md:text-lg">
             Join our experienced guides for an exhilarating full-day ride
             through the stunning Algarve region on a KTM EXC-300! We provide all
             the necessary safety gear and share our top riding techniques. A
@@ -93,12 +93,12 @@ function BikesList() {
                 {bike.name}
               </h3>
 
-              <p className="text-xs text-goreground/40 max-w-[250px]">
+              <p className="text-xs text-goreground/40 max-w-[250px] md:text-sm">
                 {bike.shout}
               </p>
               <Link
                 href={`/bikes/${bike.slug}`}
-                className="text-sm  text-center text-tdsRed hover:underline mt-2"
+                className="text-sm  text-center text-tdsRed hover:underline mt-2 md:text-lg"
               >
                 Let's do it {"->"}
               </Link>

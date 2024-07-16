@@ -4,7 +4,7 @@ import { Logo } from "../Logo";
 
 export default function Menu() {
   return (
-    <section className="flex flex-row items-center justify-between w-full md:max-w-[1600px] mx-auto  p-4 px-5 lg:px-8">
+    <section className="flex flex-row items-center justify-between w-full md:max-w-6xl mx-auto  p-4 px-5 xl:px-0 ">
       <Link href={"/"} className="w-fit flex flex-row items-start ">
         <Logo />
       </Link>

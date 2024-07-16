@@ -3,7 +3,7 @@ import Form from "./Form";
 const Footer = () => {
   return (
     <footer className="flex flex-col items-center justify-center w-full  py-16 pb-6 md:py-28 md:pb-6 md:px-6 border-t border-foreground/10 mt-12">
-      <div className="flex flex-col items-start justify-between gap-12 w-full max-w-[1600px] px-6 md:gap-16">
+      <div className="flex flex-col items-start justify-between gap-12 w-full max-w-6xl px-6 md:gap-16">
         <div className="flex flex-col gap-2 items-start text-sm text-foreground/60 md:text-left  mb-8">
           <div className="text-3xl text-left text-foreground w-full font-tds md:text-4xl md:text-left">
             TDS <span className="text-tdsRed">Enduro</span> Algarve

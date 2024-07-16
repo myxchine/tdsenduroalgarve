@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function Bikes() {
   return (
-    <div className="flex flex-col  gap-8 py-8 max-w-5xl mx-auto">
+    <div className="flex flex-col  gap-8 py-8 max-w-6xl mx-auto">
       <Title />
       <BikesList />
     </div>
@@ -35,7 +35,7 @@ function Title() {
 function BikesList() {
   return (
     <section className="flex flex-col w-full  p-6 xl:px-0">
-      <div className="flex flex-col gap-8 w-full  md:grid md:grid-cols-2 md:gap-16 max-w-6xl mx-auto py-4">
+      <div className="flex flex-col gap-8 w-full  md:grid md:grid-cols-2 md:gap-16 max-w-6xl mx-auto py-4 xl:px-0 ">
         {bikes.map((bike) => (
           <section
             className="flex flex-col items-start gap-8 bg-white w-full   relative"

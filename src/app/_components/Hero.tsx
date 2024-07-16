@@ -16,11 +16,11 @@ function HeroImage() {
       <Image
         src="/images/enduro.jpg"
         alt="hero"
-        quality={85}
+        quality={75}
         priority={true}
-        width={800}
-        height={800}
-        className=" object-cover object-left  w-full h-[400px] md:h-[600px] lg:h-[800px] xl:h-[1050px] mt-[-88px]  md:mt-[-96px] z-[-1]"
+        width={1000}
+        height={1000}
+        className=" object-cover object-left  w-full h-[400px] md:h-[600px] lg:h-[800px] xl:h-[1100px] mt-[-88px]  md:mt-[-96px] z-[-1]"
       />
     </section>
   );
