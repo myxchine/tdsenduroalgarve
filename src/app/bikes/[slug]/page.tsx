@@ -98,6 +98,7 @@ export default async function Bike({ params }: { params: { slug: string } }) {
         </div>
 
         <p className="text-xs md:text-sm">{bike.description}</p>
+        {bike.specsTrue && <Specifications bike={bike} />}
 
         <div className="flex flex-col gap-4 w-full">
           <p className="text-2xl font-tds uppercase">Features</p>
@@ -114,5 +115,48 @@ export default async function Bike({ params }: { params: { slug: string } }) {
         </div>
       </div>
     </section>
+  );
+}
+
+function Specifications({ bike }: { bike: any }) {
+  return (
+    <div className="flex flex-col gap-4 w-full">
+      <p className="text-2xl font-tds uppercase">Specifications</p>
+      <ul className="flex flex-col grid grid-cols-2 gap-2 md:justify-start md:items-start">
+        <li className="bg-black/5 p-2 px-4 rounded text-xs uppercase tracking-wider font-semibold">
+          {bike.horsepower} hp
+        </li>
+        <li className="bg-black/5 p-2 px-4 rounded text-xs uppercase tracking-wider font-semibold">
+          {bike.kw} kw
+        </li>
+        <li className="bg-black/5 p-2 px-4 rounded text-xs uppercase tracking-wider font-semibold">
+          {bike.weight} kg
+        </li>
+        <li className="bg-black/5 p-2 px-4 rounded text-xs uppercase tracking-wider font-semibold">
+          {bike.tank} l
+        </li>
+        <li className="bg-black/5 p-2 px-4 rounded text-xs uppercase tracking-wider font-semibold">
+          {bike.displacement} cm³
+        </li>
+        <li className="bg-black/5 p-2 px-4 rounded text-xs uppercase tracking-wider font-semibold">
+          {bike.cylinders} cylinders
+        </li>
+        <li className="bg-black/5 p-2 px-4 rounded text-xs uppercase tracking-wider font-semibold">
+          {bike.stroke} stroke
+        </li>
+        <li className="bg-black/5 p-2 px-4 rounded text-xs uppercase tracking-wider font-semibold">
+          Seat height: {bike.seatHeight} cm
+        </li>
+        <li className="bg-black/5 p-2 px-4 rounded text-xs uppercase tracking-wider font-semibold">
+          Starter: {bike.starter}
+        </li>
+        <li className="bg-black/5 p-2 px-4 rounded text-xs uppercase tracking-wider font-semibold">
+          Cooling: {bike.cooling}
+        </li>
+        <li className="bg-black/5 p-2 px-4 rounded text-xs uppercase tracking-wider font-semibold">
+          Gears: {bike.gears}
+        </li>
+      </ul>
+    </div>
   );
 }
