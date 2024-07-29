@@ -20,11 +20,11 @@ const TDS = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(`https://tdsenduroalgarve.com`),
   title: {
-    default: "TDS Enduro Bike Tours Algarve, Portugal",
-    template: "%s | TDS Enduro Bike Tours Algarve, Portugal",
+    default: "Enduro Portugal | TDS Enduro Bike Tours in Algarve",
+    template: "%s | Enduro Portugal | TDS Enduro Bike Tours in Algarve",
   },
   description:
-    "Experience off-road biking in Algarve with friends, family, or solo. We provide bikes, gear, transport, and routes. Just show up! Hire a motorbike in Faro, Vilamoura, Albufeira, Quarteira, or Loulé.",
+    "Welcome to everything Hard Enduro in Portugal from buying, renting and tours. Experience off-road biking in Algarve with friends, family, or solo. We provide bikes, gear, transport, and routes. Just show up! Hire a motorbike in Faro, Vilamoura, Albufeira, Quarteira, or Loulé.",
 };
 export const viewport: Viewport = {
   initialScale: 1,
