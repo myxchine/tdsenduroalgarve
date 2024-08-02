@@ -9,6 +9,7 @@ export default function Home() {
       <EnduroPortugal />
       <EnduroTours />
       <KTMTopoftheLineBikes />
+      <EnduroToursAlgarve />
       <About />
     </>
   );
