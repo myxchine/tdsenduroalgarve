@@ -30,10 +30,25 @@ function Title() {
   return (
     <section className="w-full md:max-w-2xl lg:max-w-md right-0 lg:absolute xl:right-32 py-4 ">
       <h1
-        className={` text-foreground text-2xl text-balance text-center md:text-4xl  uppercase p-4 font-tds tracking-wider lg:text-left lg:text-5xl text-balance lg:text-background`}
+        className={` text-foreground text-3xl text-balance text-center md:text-5xl  uppercase p-4 font-tds tracking-wider lg:text-left lg:text-6xl text-balance lg:text-background`}
       >
-        Off Road Bike tours & Rentals in Portugal
+        Enduro Portugal
       </h1>
+      <p className="p-6 pt-0 text-center md:text-left md:text-lg md:text-white ">
+        Off Road Bike tours & Rentals in Portugal
+      </p>
+      <p className="p-6 pt-0 text-center md:text-left md:text-lg md:text-white hidden">
+        TDS Enduro offers a unique opportunity for adventure riders to explore
+        Portugal on top-quality KTM motorbikes. Our tours take you through the
+        diverse landscapes of the Algarve region, known for its challenging
+        trails and beautiful scenery. Riders can experience a variety of
+        terrains, from rugged mountain paths to coastal tracks. Our guided tours
+        are designed for both beginners and experienced riders, providing a safe
+        and exciting adventure. Join TDS Enduro for a professionally organized
+        tour and discover the thrill of enduro riding in one of Europe's most
+        captivating destinations.
+      </p>
+
       <div className="flex flex-row items-center justify-center gap-3 w-full p-6 pt-0 md:flex-col">
         <Link
           href="/tours"

@@ -56,7 +56,6 @@ export default async function ToursList({
 function Hero({ tour }: { tour: any }) {
   return (
     <div className="gap-2 flex flex-col w-full pt-8 p-6 pb-12 xl:px-0 md:pb-12 md:pt-8 max-w-6xl mx-auto md:flex-row items-center gap-8">
-      <ImageHero tour={tour} />
       <div className="flex flex-col gap-3">
         <h1 className="text-3xl font-tds sm:text-5xl xl:text-5xl tracking-wider uppercase text-balance max-w-3xl">
           {tour.name} enduro guided bike{" "}

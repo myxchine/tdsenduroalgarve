@@ -2,15 +2,46 @@ import Image from "next/image";
 import Link from "next/link";
 import { tours } from "@/server/db/tours";
 import { bikes } from "@/server/bikes";
-import Hero from "./_components/Hero";
+import EnduroPortugal from "./_components/Hero";
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Tours />
-      <Bikes />
+      <EnduroPortugal />
+      <EnduroTours />
+      <KTMTopoftheLineBikes />
       <About />
     </>
+  );
+}
+
+function EnduroToursAlgarve() {
+  return (
+    <section className="px-6 py-12  mx-auto w-fit">
+      <div className="max-w-6xl mx-auto  flex flex-col gap-8">
+        <div className="flex flex-col gap-6 w-full">
+          <h2 className="text-3xl   mb-2  uppercase font-tds tracking-wider  md:text-5xl">
+            Enduro Tours Algarve
+          </h2>
+          <p className="w-full text-sm text-black/80 max-w-xl md:text-lg">
+            TDS Enduro offers a unique opportunity for adventure riders to
+            explore Portugal on top-quality KTM motorbikes. Our tours take you
+            through the diverse landscapes of the Algarve region, known for its
+            challenging trails and beautiful scenery. Riders can experience a
+            variety of terrains, from rugged mountain paths to coastal tracks.
+            Our guided tours are designed for both beginners and experienced
+            riders, providing a safe and exciting adventure. Join TDS Enduro for
+            a professionally organized tour and discover the thrill of enduro
+            riding in one of Europe's most captivating destinations.
+          </p>
+        </div>
+
+        <Link href={`/tours`} className="w-full">
+          <button className="flex flex-col w-full md:max-w-[300px] p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center  md:px-8 md:text-lg">
+            Let's do it
+          </button>
+        </Link>
+      </div>
+    </section>
   );
 }
 
@@ -48,14 +79,17 @@ function About() {
   );
 }
 
-function Bikes() {
+function KTMTopoftheLineBikes() {
   return (
     <section className="flex flex-col gap-4  w-full  md:max-w-6xl  mx-auto xl:px-0 py-8 md:py-12 ">
       <div className="px-6 flex flex-col gap-2">
-        <h2 className="text-3xl font-tds md:text-5xl ">Motorcycles</h2>
+        <h2 className="text-3xl font-tds md:text-5xl ">
+          KTM Top of the Line Bikes
+        </h2>
         <p className="text-sm text-black/80 max-w-md">
-          Premium bikes that you can rely on and enjoy your ride. Rental is
-          available for all bikes.
+          State of the art enduro motorcycles that you can rely on and enjoy
+          your ride. Rental is available for all bikes, tours available for the
+          KTM 300 EXC.
         </p>
         <Link
           href={"/bikes"}
@@ -110,11 +144,11 @@ function BikesList() {
   );
 }
 
-function Tours() {
+function EnduroTours() {
   return (
     <section className="flex flex-col gap-4  w-full  md:max-w-6xl pt-2  mx-auto xl:px-0 py-8 md:py-12 md:pt-24">
       <div className="px-6 flex flex-col gap-2">
-        <h2 className="text-3xl font-tds md:text-5xl">Guided Tours</h2>
+        <h2 className="text-3xl font-tds md:text-5xl">Enduro Tours</h2>
         <p className="text-sm text-black/80 max-w-md">
           Enjoy a day long unforgettable ride with all the gear, bike, trails
           and even lunch included! Bike license not required off road.
