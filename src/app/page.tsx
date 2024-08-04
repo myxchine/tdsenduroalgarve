@@ -11,12 +11,64 @@ export default function Home() {
       <KTMTopoftheLineBikes />
       <EnduroToursAlgarve />
       <AboutTheTour />
+      <IntroductiontoDifficultyLevels />
       <OffRoadAdventures />
       <WhatToExpect />
       <AlgarveMotorcycleTours />
       <MotorbikeHolidayPortugal />
       <MotorcycleToursInAlgarvePortugal />
     </>
+  );
+}
+
+function IntroductiontoDifficultyLevels() {
+  return (
+    <section className="px-6 py-12  mx-auto w-fit">
+      <div className="max-w-xl mx-auto  flex flex-col gap-8">
+        <div className="flex flex-col gap-6 w-full">
+          <h2 className="text-3xl   mb-2  uppercase font-tds tracking-wider  md:text-5xl max-w-xl">
+            Introduction to Difficulty Levels
+          </h2>
+          <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
+            We offer a variety of difficulty levels to cater to riders of all
+            skill levels.
+          </p>
+          <ul className="flex flex-col gap-4">
+            <li>
+              <h3>Beginner</h3>
+              <p>
+                This is the most beginner-friendly tour, suitable for riders who
+                are new to enduro riding. It offers a gentle ride through the
+                rolling hills and picturesque villages of southern Portugal.
+              </p>
+            </li>
+            <li>
+              <h3>Intermediate</h3>
+              <p>
+                This tour is suitable for riders who have some experience in
+                enduro riding and are looking for a more challenging ride. It
+                offers a mix of scenic roads and challenging terrain, providing
+                a unique and exciting experience.
+              </p>
+            </li>
+            <li>
+              <h3>Advanced</h3>
+              <p>
+                This tour is suitable for riders who have some experience in
+                enduro riding and are looking for a more challenging ride. It
+                offers a mix of scenic roads and challenging terrain, providing
+                a unique and exciting experience.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <Link href={"/tours"} className="w-full">
+          <button className="flex flex-col w-full md:max-w-[300px] p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center  md:px-8 md:text-lg">
+            Book Your Difficulty Level Tour Today!
+          </button>
+        </Link>
+      </div>
+    </section>
   );
 }
 
