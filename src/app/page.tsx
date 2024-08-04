@@ -25,7 +25,7 @@ function AlgarveMotorcycleTours() {
     <section className="px-6 py-12  mx-auto w-fit">
       <div className="max-w-6xl mx-auto  flex flex-col gap-8">
         <div className="flex flex-col gap-6 w-full">
-          <h2 className="text-3xl   mb-2  uppercase font-tds tracking-wider  md:text-5xl">
+          <h2 className="text-3xl   mb-2  uppercase font-tds tracking-wider  md:text-5xl max-w-xl">
             Algarve Motorcycle Tours: Explore the Best of Southern Portugal
           </h2>
           <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
@@ -67,7 +67,7 @@ function MotorcycleToursInAlgarvePortugal() {
     <section className="px-6 py-12  mx-auto w-fit">
       <div className="max-w-6xl mx-auto  flex flex-col gap-8">
         <div className="flex flex-col gap-6 w-full">
-          <h2 className="text-3xl   mb-2  uppercase font-tds tracking-wider  md:text-5xl">
+          <h2 className="text-3xl   mb-2  uppercase font-tds tracking-wider  md:text-5xl max-w-xl">
             Motorcycle Tours in Algarve Portugal: Experience the Ultimate Ride
           </h2>
           <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
@@ -111,7 +111,7 @@ function MotorbikeHolidayPortugal() {
     <section className="px-6 py-12  mx-auto w-fit">
       <div className="max-w-6xl mx-auto  flex flex-col gap-8">
         <div className="flex flex-col gap-6 w-full">
-          <h2 className="text-3xl   mb-2  uppercase font-tds tracking-wider  md:text-5xl">
+          <h2 className="text-3xl   mb-2  uppercase font-tds tracking-wider  md:text-5xl max-w-xl">
             Motorbike Holiday Portugal: Explore the Best of the Algarve
           </h2>
           <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
