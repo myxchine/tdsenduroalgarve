@@ -20,7 +20,7 @@ function HeroImage() {
         priority={true}
         width={1000}
         height={1000}
-        className=" object-cover object-left  w-full h-[400px] md:h-[600px] lg:h-[800px] xl:h-[1100px] mt-[-88px]  md:mt-[-96px] z-[-1]"
+        className=" object-cover object-left  w-full h-[400px] md:h-[600px] lg:h-[800px] xl:h-[900px] mt-[-88px]  md:mt-[-96px] z-[-1]"
       />
     </section>
   );

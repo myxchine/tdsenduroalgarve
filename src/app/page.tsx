@@ -10,8 +10,225 @@ export default function Home() {
       <PortugalEnduroTours />
       <KTMTopoftheLineBikes />
       <EnduroToursAlgarve />
-      <About />
+      <AboutTheTour />
+      <OffRoadAdventures />
+      <WhatToExpect />
+      <AlgarveMotorcycleTours />
+      <MotorbikeHolidayPortugal />
+      <MotorcycleToursInAlgarvePortugal />
     </>
+  );
+}
+
+function AlgarveMotorcycleTours() {
+  return (
+    <section className="px-6 py-12  mx-auto w-fit">
+      <div className="max-w-6xl mx-auto  flex flex-col gap-8">
+        <div className="flex flex-col gap-6 w-full">
+          <h2 className="text-3xl   mb-2  uppercase font-tds tracking-wider  md:text-5xl">
+            Algarve Motorcycle Tours: Explore the Best of Southern Portugal
+          </h2>
+          <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
+            Are you looking for a unique and exciting motorcycle tour in the
+            Algarve region of Portugal? Our guided tours will take you on an
+            unforgettable adventure through the rolling hills, rugged coastline,
+            and picturesque villages of southern Portugal.
+          </p>
+          <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
+            Our Algarve motorcycle tours are designed to provide a hassle-free
+            experience, with everything taken care of from the moment you
+            arrive. From the scenic roads to the stunning scenery, our expert
+            guides will show you the best of the Algarve on two wheels.
+          </p>
+          <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
+            What's included in our Algarve motorcycle tour packages? We've got
+            you covered with:
+            <ul className="list-disc pl-4">
+              <li>Guided motorcycle tour with an experienced guide</li>
+              <li>Top-quality motorcycle rental</li>
+              <li>Support vehicle and luggage transfer</li>
+              <li>Breakfast and lunch each day</li>
+              <li>Accommodation in a carefully selected hotel or guesthouse</li>
+            </ul>
+          </p>
+        </div>
+
+        <Link href={"/tours"} className="w-full">
+          <button className="flex flex-col w-full md:max-w-[300px] p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center  md:px-8 md:text-lg">
+            Book Your Algarve Motorcycle Tour Today!
+          </button>
+        </Link>
+      </div>
+    </section>
+  );
+}
+function MotorcycleToursInAlgarvePortugal() {
+  return (
+    <section className="px-6 py-12  mx-auto w-fit">
+      <div className="max-w-6xl mx-auto  flex flex-col gap-8">
+        <div className="flex flex-col gap-6 w-full">
+          <h2 className="text-3xl   mb-2  uppercase font-tds tracking-wider  md:text-5xl">
+            Motorcycle Tours in Algarve Portugal: Experience the Ultimate Ride
+          </h2>
+          <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
+            Are you ready for the ultimate motorcycle tour in the Algarve region
+            of Portugal? Our guided tours will take you on an unforgettable
+            adventure through the rolling hills, rugged coastline, and
+            picturesque villages of southern Portugal.
+          </p>
+          <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
+            Our motorcycle tours in Algarve Portugal are designed to provide a
+            unique and exciting experience, with a focus on safety and
+            enjoyment. Our expert guides will take you on a journey through the
+            best of the Algarve, with a mix of scenic roads, challenging
+            terrain, and stunning scenery.
+          </p>
+          <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
+            What can you expect from our motorcycle tours in Algarve Portugal?
+            We've got you covered with:
+            <ul className="list-disc pl-4">
+              <li>Guided motorcycle tour with an experienced guide</li>
+              <li>Top-quality motorcycle rental</li>
+              <li>Support vehicle and luggage transfer</li>
+              <li>Breakfast and lunch each day</li>
+              <li>Accommodation in a carefully selected hotel or guesthouse</li>
+            </ul>
+          </p>
+        </div>
+
+        <Link href={"/tours"} className="w-full">
+          <button className="flex flex-col w-full md:max-w-[300px] p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center  md:px-8 md:text-lg">
+            Book Your Motorcycle Tour in Algarve Portugal Today!
+          </button>
+        </Link>
+      </div>
+    </section>
+  );
+}
+
+function MotorbikeHolidayPortugal() {
+  return (
+    <section className="px-6 py-12  mx-auto w-fit">
+      <div className="max-w-6xl mx-auto  flex flex-col gap-8">
+        <div className="flex flex-col gap-6 w-full">
+          <h2 className="text-3xl   mb-2  uppercase font-tds tracking-wider  md:text-5xl">
+            Motorbike Holiday Portugal: Explore the Best of the Algarve
+          </h2>
+          <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
+            Are you looking for a motorbike holiday in Portugal that combines
+            stunning scenery, exciting roads, and a unique cultural experience?
+            Look no further than the Algarve region, where our guided motorbike
+            tours will take you on an unforgettable adventure.
+          </p>
+          <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
+            Our motorbike holidays in Portugal are designed to provide a
+            hassle-free experience, with everything taken care of from the
+            moment you arrive. From the rugged coastline to the rolling hills
+            and picturesque villages, our expert guides will show you the best
+            of the Algarve on two wheels.
+          </p>
+          <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
+            What's included in our motorbike holiday packages? We've got you
+            covered with:
+            <ul className="list-disc pl-4">
+              <li>Guided motorbike tour with an experienced guide</li>
+              <li>Top-quality motorbike rental</li>
+              <li>Accommodation in a carefully selected hotel or guesthouse</li>
+              <li>Breakfast and lunch each day</li>
+              <li>Support vehicle and luggage transfer</li>
+            </ul>
+          </p>
+        </div>
+
+        <Link href={"/tours"} className="w-full">
+          <button className="flex flex-col w-full md:max-w-[300px] p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center  md:px-8 md:text-lg">
+            Book Your Motorbike Holiday in Portugal Today!
+          </button>
+        </Link>
+      </div>
+    </section>
+  );
+}
+
+function OffRoadAdventures() {
+  return (
+    <section className="px-6 py-12  mx-auto w-fit">
+      <div className="max-w-6xl mx-auto  flex flex-col gap-8">
+        <div className="flex flex-col gap-6 w-full">
+          <h2 className="text-3xl   mb-2  uppercase font-tds tracking-wider  md:text-5xl">
+            Off Road Adventures
+          </h2>
+          <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
+            Are you ready for an unforgettable off-road adventure in the Algarve
+            region of Portugal? Our guided tours offer a unique opportunity to
+            explore the diverse landscapes of southern Portugal on top-quality
+            KTM motorbikes. From rugged mountain paths to coastal tracks, our
+            expert guides will take you on an exhilarating ride through the most
+            breathtaking scenery.
+          </p>
+          <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
+            But what if I'm a beginner? Don't worry! Our tours are designed for
+            riders of all skill levels, and our experienced guides will provide
+            you with all the necessary safety gear and share their top riding
+            techniques to ensure a safe and enjoyable experience.
+          </p>
+          <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
+            What's included in the tour? We've got you covered! Our packages
+            include:
+          </p>
+          <ul className="list-disc pl-4">
+            <li>Full-day guided tour with an experienced guide</li>
+            <li>Top-quality KTM EXC-300 motorbike</li>
+            <li>All necessary safety gear</li>
+            <li>Traditional lunch in the mountains</li>
+            <li>No hidden costs!</li>
+          </ul>
+        </div>
+        <Link href={"/tours"} className="w-full">
+          <button className="flex flex-col w-full md:max-w-[300px] p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center  md:px-8 md:text-lg">
+            Book Your Off Road Adventure Today!
+          </button>
+        </Link>
+      </div>
+    </section>
+  );
+}
+
+function WhatToExpect() {
+  return (
+    <section className="px-6 py-12  mx-auto w-fit">
+      <div className="max-w-6xl mx-auto  flex flex-col gap-8">
+        <div className="flex flex-col gap-6 w-full">
+          <h2 className="text-3xl   mb-2  uppercase font-tds tracking-wider  md:text-5xl">
+            What to Expect
+          </h2>
+          <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
+            Our off-road adventures are designed to provide an unforgettable
+            experience for riders of all skill levels. From the moment you
+            arrive, our expert guides will take care of everything, providing
+            you with a comprehensive briefing, safety gear, and a top-quality
+            KTM EXC-300 motorbike.
+          </p>
+          <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
+            But what about the terrain? Our unique tracks cater to riders of all
+            skill levels, from beginner-friendly trails to more challenging
+            routes for experienced riders. Our guides will tailor the experience
+            to your feedback, ensuring that you get the most out of your day.
+          </p>
+          <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
+            What about lunch? We've got that covered too! A traditional lunch in
+            the mountains is included in your package, giving you the
+            opportunity to refuel and recharge for the rest of the day.
+          </p>
+        </div>
+
+        <Link href={"/tours"} className="w-full">
+          <button className="flex flex-col w-full md:max-w-[300px] p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center  md:px-8 md:text-lg">
+            Join Us for an Unforgettable Off Road Adventure!
+          </button>
+        </Link>
+      </div>
+    </section>
   );
 }
 
@@ -46,7 +263,7 @@ function EnduroToursAlgarve() {
   );
 }
 
-function About() {
+function AboutTheTour() {
   return (
     <section className="px-6 py-12  mx-auto w-fit">
       <div className="max-w-6xl mx-auto  flex flex-col gap-8">
@@ -151,9 +368,9 @@ function PortugalEnduroTours() {
       <div className="px-6 flex flex-col gap-2">
         <h2 className="text-3xl font-tds md:text-5xl">Portugal Enduro Tours</h2>
         <p className="text-sm text-black/80 max-w-md">
-          Enjoy a day long unforgettable hard enduro ride in Portugal with all
-          the gear, bike, trails and even lunch included! Bike license not
-          required off road.
+          Enjoy a day long unforgettable hard enduro ride in Portugal, Algarve,
+          with all the gear, bike, trails and even lunch included! Bike license
+          not required off road.
         </p>
         <Link
           href={"/tours"}
@@ -183,7 +400,7 @@ function ToursList() {
               height={200}
               quality={65}
               priority={true}
-              className="w-[300px] h-[300px] object-cover  md:h-[400px] md:w-full"
+              className="w-[300px] h-[200px] object-cover  md:h-[400px] md:w-full"
             />
             <div className="flex flex-col gap-2 w-full justify-start items-start md:w-full md:gap-4">
               <h3 className="text-xl font-bold text-center  md:text-3xl">
@@ -206,21 +423,3 @@ function ToursList() {
     </section>
   );
 }
-
-/*
-             <section className="flex flex-row gap-4 items-end justify-end w-full">
-              <p className="text-4xl font-tds tracking-wider  md:text-6xl">
-                <span className="text-sm font-normal pr-2 md:text-lg">
-                  from
-                </span>
-                <span className="relative pl-3">
-                  <span className="text-sm absolute top-1 left-0 font-bold md:text-lg">
-                    €
-                  </span>
-                  {tour.startingPrice}
-                </span>
-
-                <span className="text-sm font-normal md:text-lg">/day</span>
-              </p>
-            </section>
-*/

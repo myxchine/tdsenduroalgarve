@@ -5,6 +5,7 @@ import "@/styles/globals.css";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
 import { CSPostHogProvider } from "@/analytics/provider";
+import ContactButton from "./_components/ContactButton";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -45,6 +46,7 @@ export default function RootLayout({
           <main className="relative">
             <Header />
             {children}
+            <ContactButton />
             <Footer />
           </main>
         </body>
