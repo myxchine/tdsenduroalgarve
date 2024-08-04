@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <EnduroPortugal />
-      <EnduroTours />
+      <PortugalEnduroTours />
       <KTMTopoftheLineBikes />
       <EnduroToursAlgarve />
       <About />
@@ -145,14 +145,15 @@ function BikesList() {
   );
 }
 
-function EnduroTours() {
+function PortugalEnduroTours() {
   return (
     <section className="flex flex-col gap-4  w-full  md:max-w-6xl pt-2  mx-auto xl:px-0 py-8 md:py-12 md:pt-24">
       <div className="px-6 flex flex-col gap-2">
-        <h2 className="text-3xl font-tds md:text-5xl">Enduro Tours</h2>
+        <h2 className="text-3xl font-tds md:text-5xl">Portugal Enduro Tours</h2>
         <p className="text-sm text-black/80 max-w-md">
-          Enjoy a day long unforgettable ride with all the gear, bike, trails
-          and even lunch included! Bike license not required off road.
+          Enjoy a day long unforgettable hard enduro ride in Portugal with all
+          the gear, bike, trails and even lunch included! Bike license not
+          required off road.
         </p>
         <Link
           href={"/tours"}
