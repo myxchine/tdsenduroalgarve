@@ -35,7 +35,7 @@ export default function Post({ params }: { params: { slug: string } }) {
       <Link href="/" className="text-tdsRed">
         Let's get started {"->"}
       </Link>
-      <article className="flex flex-col items-start gap-8 bg-white w-full    ">
+      <article className="flex flex-col items-start gap-8 bg-white w-full   mt-8 ">
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
       <Link href="/" className="text-tdsRed">
