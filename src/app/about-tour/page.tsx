@@ -34,7 +34,7 @@ export default function AboutTour() {
             </p>
           </div>
 
-          <Link href={`/tours/off-road-enduro-bike-rental`} className="w-full">
+          <Link href={`/tours/`} className="w-full">
             <button className="flex flex-col w-full md:max-w-[300px] p-2 px-4 rounded bg-tdsRed text-white font-tds hover:bg-tdsRed/80 text-center justify-center items-center  md:px-8 md:text-lg">
               Let's do it
             </button>

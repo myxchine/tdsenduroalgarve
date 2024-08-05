@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import { tours } from "@/server/db/tours";
 import { bikes } from "@/server/bikes";
 import { rentals } from "@/server/db/rentals";
+import { posts } from "@/data/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const bikesSitemap: MetadataRoute.Sitemap = bikes.map(({ slug }) => ({
@@ -17,6 +18,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const rentalsSitemap: MetadataRoute.Sitemap = rentals.map(({ slug }) => ({
     url: `${process.env.NEXT_PUBLIC_SITE_URL}/rentals/${slug}`,
     priority: 0.7,
+  }));
+
+  const postsSitemap: MetadataRoute.Sitemap = posts.map(({ slug }) => ({
+    url: `${process.env.NEXT_PUBLIC_SITE_URL}/posts/${slug}`,
+    priority: 0.9,
   }));
 
   return [
@@ -47,5 +53,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.4,
     },
     ...bikesSitemap,
+    {
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/posts`,
+      priority: 0.9,
+    },
+    ...postsSitemap,
   ];
 }

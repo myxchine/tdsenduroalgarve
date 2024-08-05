@@ -95,14 +95,15 @@ function AlgarveMotorcycleTours() {
           <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
             What's included in our Algarve motorcycle tour packages? We've got
             you covered with:
-            <ul className="list-disc pl-4">
-              <li>Guided motorcycle tour with an experienced guide</li>
-              <li>Top-quality motorcycle rental</li>
-              <li>Support vehicle and luggage transfer</li>
-              <li>Breakfast and lunch each day</li>
-              <li>Accommodation in a carefully selected hotel or guesthouse</li>
-            </ul>
           </p>
+
+          <ul className="list-disc pl-4">
+            <li>Guided motorcycle tour with an experienced guide</li>
+            <li>Top-quality motorcycle rental</li>
+            <li>Support vehicle and luggage transfer</li>
+            <li>Breakfast and lunch each day</li>
+            <li>Accommodation in a carefully selected hotel or guesthouse</li>
+          </ul>
         </div>
 
         <Link href={"/tours"} className="w-full">
@@ -138,14 +139,15 @@ function MotorcycleToursInAlgarvePortugal() {
           <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
             What can you expect from our motorcycle tours in Algarve Portugal?
             We've got you covered with:
-            <ul className="list-disc pl-4">
-              <li>Guided motorcycle tour with an experienced guide</li>
-              <li>Top-quality motorcycle rental</li>
-              <li>Support vehicle and luggage transfer</li>
-              <li>Breakfast and lunch each day</li>
-              <li>Accommodation in a carefully selected hotel or guesthouse</li>
-            </ul>
           </p>
+
+          <ul className="list-disc pl-4">
+            <li>Guided motorcycle tour with an experienced guide</li>
+            <li>Top-quality motorcycle rental</li>
+            <li>Support vehicle and luggage transfer</li>
+            <li>Breakfast and lunch each day</li>
+            <li>Accommodation in a carefully selected hotel or guesthouse</li>
+          </ul>
         </div>
 
         <Link href={"/tours"} className="w-full">
@@ -182,14 +184,15 @@ function MotorbikeHolidayPortugal() {
           <p className="w-full text-lg text-black/80 max-w-xl md:text-xl">
             What's included in our motorbike holiday packages? We've got you
             covered with:
-            <ul className="list-disc pl-4">
-              <li>Guided motorbike tour with an experienced guide</li>
-              <li>Top-quality motorbike rental</li>
-              <li>Accommodation in a carefully selected hotel or guesthouse</li>
-              <li>Breakfast and lunch each day</li>
-              <li>Support vehicle and luggage transfer</li>
-            </ul>
           </p>
+
+          <ul className="list-disc pl-4">
+            <li>Guided motorbike tour with an experienced guide</li>
+            <li>Top-quality motorbike rental</li>
+            <li>Accommodation in a carefully selected hotel or guesthouse</li>
+            <li>Breakfast and lunch each day</li>
+            <li>Support vehicle and luggage transfer</li>
+          </ul>
         </div>
 
         <Link href={"/tours"} className="w-full">
