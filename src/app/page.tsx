@@ -497,8 +497,8 @@ function PostTitle() {
 }
 function Post({ post }: { post: any }) {
   return (
-    <section className="flex flex-col gap-4 relative  flex-shrink-0 w-[300px] md:w-[400px] ">
-      <h2 className="text-2xl font-tds line-clamp-1 ">{post.h1}</h2>
+    <section className="flex flex-col gap-4 relative  flex-shrink-0 w-[250px] md:w-[400px] ">
+      <h2 className="text-xl font-tds line-clamp-2 ">{post.h1}</h2>
       <p className="line-clamp-2 text-sm">{post.description}</p>
       <Link
         href={`/posts/${post.slug}`}
@@ -512,9 +512,8 @@ function Post({ post }: { post: any }) {
 
 function Posts() {
   return (
-    <section className="flex flex-col w-full  p-6 xl:px-0 max-w-6xl mx-auto">
-      <PostTitle />
-      <div className="flex flex-row gap-8 w-full  m md:gap-16  py-4 xl:px-0 overflow-x-auto scrollbar-hide">
+    <section className="flex flex-col w-full   xl:px-0 max-w-6xl mx-auto">
+      <div className="flex flex-row gap-8 w-full  m md:gap-16  py-4 xl:px-0 overflow-x-auto scrollbar-hide p-6">
         {posts.map((post) => (
           <Post key={post.slug} post={post} />
         ))}
