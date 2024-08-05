@@ -412,9 +412,12 @@ function BikesList() {
               </Link>
             </div>
             {bike.tour && (
-              <section className="text-white bg-black absolute top-0 left-0 py-1 px-3 bg-black text-xs shadow text-center">
+              <Link
+                href={`/tours`}
+                className="text-white bg-black absolute top-0 left-0 py-1 px-3 bg-black text-xs shadow text-center hover:bg-black/80"
+              >
                 Available Now
-              </section>
+              </Link>
             )}
           </div>
         ))}
