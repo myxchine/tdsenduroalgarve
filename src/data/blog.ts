@@ -1,6 +1,6 @@
 export const posts = [
   {
-    checked: false,
+    checked: true,
     h1: "Enduro Portugal - The Ultimate Guide to Off-Road Adventures in Southern Portugal",
     html:
       " <p>If you're passionate about enduro riding and are seeking an unforgettable adventure, look no further than the Algarve region of Portugal. Known for its diverse landscapes, scenic beauty, and challenging trails, Algarve offers some of the best enduro experiences in Europe. This comprehensive guide will take you through everything you need to know about enduro riding in Algarve, from the top tours and bike rentals to the unique features that make this region a must-visit destination for off-road enthusiasts.</p><br/>" +
@@ -15,9 +15,9 @@ export const posts = [
       "<h2>Top Enduro Tours in Algarve</h2><br/>" +
       "<p>For those looking to explore Algarve's enduro trails, several tour operators offer expertly guided tours that cater to different skill levels. Here are some of the best options:</p><br/>" +
       "<ul>" +
-      "<li><strong>TDS Enduro Tours:</strong> TDS Enduro provides an exceptional experience for adventure riders. Their tours cover a wide range of terrains, from challenging mountain trails to coastal tracks. Whether you're a beginner or an experienced rider, TDS Enduro ensures a safe and exhilarating adventure with all necessary equipment and support included.</li><br/>" +
-      "<li><strong>Portugal Enduro Tours:</strong> Offering a full-day ride through the Algarve region, Portugal Enduro Tours delivers an unforgettable experience. The tours include everything from bike rental and safety gear to traditional mountain lunches, allowing you to focus on enjoying the ride.</li><br/>" +
-      "<li><strong>Motorbike Holiday Portugal:</strong> This tour operator specializes in motorbike holidays that combine stunning scenery with exciting rides. Their guided tours cover various difficulty levels and include all essentials, ensuring a hassle-free and enjoyable adventure.</li><br/>" +
+      "<li><strong>About us:</strong> TDS Enduro provides an exceptional experience for adventure riders. Their tours cover a wide range of terrains, from challenging mountain trails to coastal tracks. Whether you're a beginner or an experienced rider, TDS Enduro ensures a safe and exhilarating adventure with all necessary equipment and support included.</li><br/>" +
+      "<li><strong>Portugal Enduro Tours:</strong> TDS offers a full-day ride through the Algarve region, they deliver an unforgettable experience. The tours include everything from bike rental and safety gear to traditional mountain lunches, allowing you to focus on enjoying the ride.</li><br/>" +
+      "<li><strong>Motorbike Holidays in Portugal:</strong>Our tour operator specializes in motorbike holidays that combine stunning scenery with exciting rides. The guided tours cover various difficulty levels and include all essentials, ensuring a hassle-free and enjoyable adventure.</li><br/>" +
       "</ul><br/>" +
       "<h2>What to Expect on Your Enduro Adventure</h2><br/>" +
       "<p>When embarking on an enduro tour in Algarve, here's what you can expect:</p><br/>" +
@@ -36,7 +36,7 @@ export const posts = [
       "<li><strong>Respect the Environment:</strong> Follow local guidelines and respect the natural environment. Stay on designated trails to help preserve the beauty of Algarve’s landscapes.</li><br/>" +
       "</ul><br/>" +
       "<h2>Conclusion</h2><br/>" +
-      "<p>Enduro Algarve offers an unparalleled off-road experience, combining diverse terrains, stunning scenery, and expertly guided tours. Whether you're seeking a thrilling ride through rugged mountains or a scenic adventure along coastal tracks, Algarve has it all. With top-quality bike rentals, professional guides, and comprehensive tour packages, you're guaranteed an unforgettable enduro adventure in one of Europe’s most captivating destinations.</p><br/>" +
+      "<p>Enduro in Algarve offers an unparalleled off-road experience, combining diverse terrains, stunning scenery, and expertly guided tours. Whether you're seeking a thrilling ride through rugged mountains or a scenic adventure along coastal tracks, Algarve has it all. With top-quality bike rentals, professional guides, and comprehensive tour packages, you're guaranteed an unforgettable enduro adventure in one of Europe’s most captivating destinations.</p><br/>" +
       "<p>Ready to embark on your enduro journey in Algarve? Book your tour today and get ready for the ride of a lifetime!</p><br/>" +
       "<p>For more information and to book your adventure, visit our <a href='/tours'>tours page</a>.</p>",
 
@@ -270,13 +270,13 @@ export const posts = [
       "Explore Faro and the Algarve region with ease by renting a bike. Discover top bike rental options in Faro, including city bikes, mountain bikes, and e-bikes. Enjoy flexible rental periods, high-quality bikes, and additional services to enhance your adventure. Learn more about booking your bike rental and start your cycling journey in Portugal today!",
   },
   {
-    checked: false,
+    checked: true,
     h1: "Vilamoura Bikes - TDS Enduro is Your Premier Choice for Off-Road Adventures Based in Vilamoura",
 
     html:
       " <p>Welcome to TDS Enduro Bikes, the leading provider of off-road biking experiences in Portugal, proudly based in the vibrant town of Vilamoura. Our central location in Vilamoura makes us the ideal choice for adventurers looking to explore the stunning Algarve region on two wheels. With our top-of-the-line bikes, expertly designed tours, and comprehensive rental services, we offer an unparalleled off-road experience. Discover why TDS Enduro Bikes is the best choice for your next adventure.</p><br/>" +
       "<h2>Why Vilamoura is the Perfect Base for Off-Road Adventures</h2><br/>" +
-      "<p>Vilamoura, renowned for its beautiful marina and lively atmosphere, is more than just a picturesque destination. It serves as the perfect starting point for your off-road journey through the Algarve. Here’s why our Vilamoura base enhances your riding experience:</p><br/>" +
+      "<p>Vilamoura, renowned for its beautiful, award-winning marina and lively atmosphere, is more than just a picturesque destination. It serves as the perfect starting point for your off-road journey through the Algarve. Here’s why our Vilamoura base enhances your riding experience:</p><br/>" +
       "<ul>" +
       "<li><strong>Central Location:</strong> Situated in the heart of Vilamoura, our facility provides easy access to some of the best off-road trails in the Algarve. You’ll spend less time traveling and more time enjoying the adventure.</li><br/>" +
       "<li><strong>Scenic Routes:</strong> Vilamoura's strategic location allows us to offer a variety of custom trails that showcase the diverse beauty of the Algarve, from rugged hills to serene landscapes.</li><br/>" +
