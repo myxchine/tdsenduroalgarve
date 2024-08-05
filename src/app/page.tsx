@@ -9,6 +9,7 @@ export default function Home() {
       <EnduroPortugal />
       <PortugalEnduroTours />
       <KTMTopoftheLineBikes />
+      <Posts />
       <EnduroToursAlgarve />
       <AboutTheTour />
       <IntroductiontoDifficultyLevels />
@@ -473,6 +474,49 @@ function ToursList() {
               </Link>
             </div>
           </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+import { posts } from "@/data/blog";
+function PostTitle() {
+  return (
+    <div className="flex flex-col gap-2 w-full   xl:px-0 pb-4">
+      <h1 className="text-4xl font-tds md:text-5xl">
+        Explore <span className="text-tdsRed">TDS</span>
+      </h1>
+      <p className="text-sm text-black/80 text-balance md:text-lg">
+        Take a look at our posts and learn about enduro as well as us.
+      </p>
+      <Link href={`/posts/`} className="hover:underline text-tdsRed z-[100]">
+        View all {"->"}
+      </Link>
+    </div>
+  );
+}
+function Post({ post }: { post: any }) {
+  return (
+    <section className="flex flex-col gap-4 relative  flex-shrink-0 w-[300px] md:w-[400px] ">
+      <h2 className="text-2xl font-tds line-clamp-1 ">{post.h1}</h2>
+      <p className="line-clamp-2 text-sm">{post.description}</p>
+      <Link
+        href={`/posts/${post.slug}`}
+        className="hover:underline text-tdsRed z-[100]"
+      >
+        Read More {"->"}
+      </Link>
+    </section>
+  );
+}
+
+function Posts() {
+  return (
+    <section className="flex flex-col w-full  p-6 xl:px-0 max-w-6xl mx-auto">
+      <PostTitle />
+      <div className="flex flex-row gap-8 w-full  m md:gap-16  py-4 xl:px-0 overflow-x-auto scrollbar-hide">
+        {posts.map((post) => (
+          <Post key={post.slug} post={post} />
         ))}
       </div>
     </section>
