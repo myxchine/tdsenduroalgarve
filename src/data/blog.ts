@@ -341,8 +341,8 @@ export const posts = [
     slug: "vilamoura-bikes",
   },
   {
-    checked: false,
-    h1: "Faro Enduro - Your Ultimate Off-Road Adventure in Southern Portugal",
+    checked: true,
+    h1: "Faro Enduro - Dirt-Bike-Off-Road Adventure in Southern Portugal",
     html:
       "<p>Welcome to Faro Enduro, where the adventure of off-road riding comes alive in the stunning Algarve region of Portugal. If you’re looking for a thrilling enduro experience, Faro Enduro offers a comprehensive guide to exploring the rugged terrains and scenic landscapes of this beautiful region. From guided tours to top-quality bike rentals, everything is set for an unforgettable adventure.</p><br/>" +
       "<h2>What is Faro Enduro?</h2><br/>" +
