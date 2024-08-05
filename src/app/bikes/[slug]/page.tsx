@@ -53,13 +53,6 @@ export default async function Bike({ params }: { params: { slug: string } }) {
             </button>
           </Link>
         )}
-        {bike.rental && (
-          <Link href={`/reserve/rent?bike=${bike.slug}`} className="w-full">
-            <button className="flex flex-col w-fit p-2 px-4 rounded bg-foreground text-white  hover:bg-foreground/80 text-center justify-center items-center text-left text-xs font-semibold tracking-wider">
-              Rent Bike
-            </button>
-          </Link>
-        )}
       </div>
 
       <Image
@@ -85,19 +78,13 @@ export default async function Bike({ params }: { params: { slug: string } }) {
               </button>
             </Link>
           )}
-          {bike.rental && (
-            <Link
-              href={`/reserve/rent?bike=${bike.slug}`}
-              className="w-full mt-2"
-            >
-              <button className="flex flex-col w-fit p-2 px-4 rounded bg-foreground text-white  hover:bg-foreground/80 text-center justify-center items-center text-left font-semibold tracking-wider">
-                Rent Bike
-              </button>
-            </Link>
-          )}
         </div>
 
         <p className="text-xs md:text-sm">{bike.description}</p>
+
+        <Link href={`/reserve`} className="text-tdsRed hover:underline">
+          Reserve now for free {`->`}
+        </Link>
         {bike.specsTrue && <Specifications bike={bike} />}
 
         <div className="flex flex-col gap-4 w-full">

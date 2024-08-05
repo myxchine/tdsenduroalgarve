@@ -16,19 +16,20 @@ export function Form({
       <div className="flex flex-col gap-2 pb-2">
         <h1 className="text-4xl font-tds sm:text-5xl xl:text-6xl text-balance">
           Reserve <span className="text-tdsRed">Tour</span> &{" "}
-          <span className="text-tdsRed">Rental</span>
+          <span className="text-tdsRed">Rental</span> for free
         </h1>
+
         <p className="max-w-[500px] text-black/60 md:text-xl lg:text-base xl:text-xl">
           Ready for a memorable adventure this holiday season in Algarve,
           Portugal?
         </p>
-        <Link
-          href={"/reserve/rent"}
-          className="font-bold  text-black hover:underline"
-        >
-          Just rent instead {`->`}
-        </Link>
       </div>
+      <Link
+        href={`/tours`}
+        className=" text-sm hover:underline mt-[-10px] mb-4"
+      >
+        View pricing first{`->`}
+      </Link>
       <Inputs searchParams={searchParams} />
 
       <button

@@ -384,7 +384,7 @@ function BikesList() {
         {bikes.map((bike) => (
           <div
             key={bike.id}
-            className="flex-shrink-0  flex flex-col items-center justify-center  scrollbar-hide gap-6 "
+            className="flex-shrink-0  flex flex-col items-center justify-center  scrollbar-hide gap-6 relative"
           >
             <Image
               src={`/images/bikes/${bike.image}`}
@@ -411,6 +411,11 @@ function BikesList() {
                 Let's do it {"->"}
               </Link>
             </div>
+            {bike.tour && (
+              <section className="text-white bg-black absolute top-0 left-0 py-1 px-3 bg-black text-xs shadow text-center">
+                Available Now
+              </section>
+            )}
           </div>
         ))}
       </div>

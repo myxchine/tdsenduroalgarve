@@ -39,7 +39,7 @@ export const posts = [
       "<h2>Conclusion</h2><br/>" +
       "<p>With TDS Enduro, your enduro adventure in Portugal promises an unparalleled off-road experience. Combining diverse terrains, expert guidance, and top-quality equipment, our tours provide an exhilarating and unforgettable journey through one of Europe’s most beautiful regions. Book your Enduro Portugal adventure today and get ready for the ride of a lifetime!</p><br/>" +
       "<p>For more information and to book your tour, visit our <a href='/tours'>tours page</a>.</p>",
-    slug: "enduro-portugal",
+    slug: "enduro-algarve",
     description:
       "Experience the thrill of enduro riding in Portugal with TDS Enduro. Explore diverse terrains, enjoy expert guidance, and ride top-quality bikes. Our all-inclusive tours cater to all skill levels and promise an unforgettable adventure. Discover why Portugal is the ultimate destination for off-road enthusiasts.",
   },

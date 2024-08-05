@@ -23,6 +23,33 @@ export const bikes = [
       "Reliable",
     ],
   },
+];
+
+export const bikesOld = [
+  {
+    id: 1,
+    category: "Enduro",
+    name: "KTM 300 EXC",
+    slug: "ktm-300-exc",
+    rental: true,
+    tour: true,
+    title: "KTM Hard enduro bike tours ALgaRVE",
+    image: "/images/bikes/enduro.png",
+    openGraphImage: "/images/bikes/ktm-exc-300-openGraph.jpg",
+    descriptionLong:
+      "The KTM 300 EXC is one of the most recognized names at the sharp end of hard enduro. With a bulletproof, fuel-injected 2-stroke engine churning out masses of low-down torque and top-end fury, it's the ideal companion when tackling challenging terrain.",
+    description:
+      "With over 7 of these bad boys in our arsenal and thousands of combined hours in the Algarvian mountains, they have never let us down.",
+    features: [
+      "104.6 kg",
+      "51 hp (38 kW)",
+      "High-performance",
+      "Lightweight",
+      "Versatile",
+      "Durable",
+      "Reliable",
+    ],
+  },
   {
     id: 2,
     category: "Adventure",
