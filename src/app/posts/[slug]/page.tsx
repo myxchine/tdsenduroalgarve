@@ -38,6 +38,9 @@ export default function Post({ params }: { params: { slug: string } }) {
       <article className="flex flex-col items-start gap-8 bg-white w-full    ">
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
+      <Link href="/" className="text-tdsRed">
+        Let's do it {"->"}
+      </Link>
     </section>
   );
 }
