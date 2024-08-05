@@ -1,5 +1,3 @@
-import { desc } from "drizzle-orm";
-
 export const posts = [
   {
     checked: false,
