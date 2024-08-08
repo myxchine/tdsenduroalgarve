@@ -4,8 +4,8 @@ import localFont from "next/font/local";
 import "@/styles/globals.css";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
-import { CSPostHogProvider } from "@/analytics/provider";
 import ContactButton from "./_components/ContactButton";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -40,17 +40,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <CSPostHogProvider>
-      <html lang="en" className={`${inter.variable} ${TDS.variable}`}>
-        <body>
-          <main className="relative">
-            <Header />
-            {children}
-            <ContactButton />
-            <Footer />
-          </main>
-        </body>
-      </html>
-    </CSPostHogProvider>
+    <html lang="en" className={`${inter.variable} ${TDS.variable}`}>
+      <body>
+        <main className="relative">
+          <Header />
+          {children}
+          <ContactButton />
+          <Footer />
+        </main>
+      </body>
+      <GoogleAnalytics gaId={"G-MHMCJ4Z05X"} />
+    </html>
   );
 }
