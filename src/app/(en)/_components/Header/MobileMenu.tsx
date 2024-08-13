@@ -15,6 +15,7 @@ export default function MobileMenu() {
           <Link
             href={"/"}
             className="w-fit flex flex-col  items-center justify-center "
+            aria-label="TDS Enduro Algarve Home"
           >
             <Logo />
           </Link>
@@ -35,6 +36,7 @@ export default function MobileMenu() {
             <Link
               href={"/"}
               className="w-fit flex flex-col  items-center justify-center "
+              aria-label="TDS Enduro Algarve Home"
             >
               <Logo />
             </Link>
@@ -49,8 +51,22 @@ export default function MobileMenu() {
           <div onClick={() => setIsOpen(false)}>
             <Nav className="flex flex-col gap-8 py-12 items-center justify-center" />
           </div>
+          <LanguageSwitcher />
         </section>
       )}
     </>
+  );
+}
+
+function LanguageSwitcher() {
+  return (
+    <div className="flex flex-row items-center justify-center gap-8 w-full p-8 max-w-md mx-auto">
+      <Link href="/pt" className="hover:underline text-foreground">
+        Português
+      </Link>
+      <Link href="/" className="underline text-tdsRed">
+        English
+      </Link>
+    </div>
   );
 }

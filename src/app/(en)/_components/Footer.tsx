@@ -40,12 +40,7 @@ const Footer = () => {
             <Link href="/reserve" className="hover:underline text-black/60">
               Reserve Tour
             </Link>
-            <Link
-              href="/reserve/rent"
-              className="hover:underline text-black/60"
-            >
-              Reserve Rental
-            </Link>
+
             <Link href="/about-tour" className="hover:underline text-black/60">
               About the Tour
             </Link>
@@ -68,6 +63,7 @@ const Footer = () => {
         <div className="py-12 md:hidden">
           <Form />
         </div>
+        <LanguageSwitcher />
         <div className="flex flex-col items-center gap-4 text-xs md:text-sm mt-4 w-full ">
           <p>&copy; 2024 TDS Enduro Algarve. All rights reserved.</p>
         </div>
@@ -77,3 +73,16 @@ const Footer = () => {
 };
 
 export default Footer;
+
+function LanguageSwitcher() {
+  return (
+    <div className="flex flex-row items-center justify-center gap-8 w-full p-8 max-w-md mx-auto">
+      <Link href="/pt" className="hover:underline text-foreground">
+        Português
+      </Link>
+      <Link href="/" className="underline text-tdsRed">
+        English
+      </Link>
+    </div>
+  );
+}

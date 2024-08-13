@@ -1,11 +1,11 @@
-import { posts } from "@/data/blog";
+import { posts_PT } from "@/data/blog_PT";
 import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Posts",
+  title: "Postagens",
   description:
-    "Learn about the best enduro tours in Algarve, Portugal. Discover the thrill of enduro riding in Algarve, a paradise for dirt biking enthusiasts. With stunning landscapes and challenging terrains, Algarve offers an unforgettable experience for both beginners and seasoned riders. Join us for an exhilarating enduro adventure in one of Portugal's most scenic regions.",
+    "Conheça os melhores passeios de enduro no Algarve, Portugal. Descubra a emoção do enduro no Algarve, um paraíso para os entusiastas do dirt bike. Com paisagens deslumbrantes e terrenos desafiantes, o Algarve oferece uma experiência inesquecível tanto para iniciantes como para pilotos experientes. Junte-se a nós numa emocionante aventura de enduro numa das regiões mais pitorescas de Portugal.",
 };
 
 export default function PostsPage() {
@@ -21,10 +21,10 @@ function Title() {
   return (
     <div className="flex flex-col gap-2 w-full px-6  xl:px-0 pb-4">
       <h1 className="text-4xl font-tds md:text-5xl">
-        Explore <span className="text-tdsRed">TDS</span>
+        Explorar <span className="text-tdsRed">Enduro em Portugal</span>
       </h1>
       <p className="text-xs text-black/80 text-balance md:text-lg">
-        Take a look at our posts and learn about enduro as well as us.
+        Dê uma olhada em nossos posts e conheça o enduro assim como nós.
       </p>
     </div>
   );
@@ -35,10 +35,10 @@ function Post({ post }: { post: any }) {
       <h2 className="text-2xl font-tds ">{post.h1}</h2>
       <p>{post.description}</p>
       <Link
-        href={`/posts/${post.slug}`}
+        href={`/pt/posts/${post.slug}`}
         className="hover:underline text-tdsRed z-[100]"
       >
-        Read More {"->"}
+        Leia mais {"->"}
       </Link>
     </section>
   );
@@ -48,7 +48,7 @@ function Posts() {
   return (
     <section className="flex flex-col w-full  p-6 xl:px-0">
       <div className="flex flex-col gap-8 w-full  md:grid md:grid-cols-2 md:gap-16 max-w-6xl mx-auto py-4 xl:px-0 ">
-        {posts.map((post) => (
+        {posts_PT.map((post) => (
           <Post key={post.slug} post={post} />
         ))}
       </div>

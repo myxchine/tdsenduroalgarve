@@ -5,6 +5,7 @@ export default function ContactButton() {
     <Link
       href={"/reserve"}
       className="bg-tdsRed/90 p-4 rounded-md fixed bottom-6 right-6"
+      aria-label="Reserve button"
     >
       <ContactIcon className="w-8 h-8" />
     </Link>

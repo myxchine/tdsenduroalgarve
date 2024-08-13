@@ -15,7 +15,7 @@ function HeroImage() {
     <section className="w-full flex ">
       <Image
         src="/images/enduro.jpg"
-        alt="hero"
+        alt="tds-enduro-hero"
         quality={75}
         priority={true}
         width={1000}
@@ -35,38 +35,39 @@ function Title() {
         Enduro Portugal
       </h1>
       <p className="p-6 pt-0 text-center md:text-left md:text-lg md:text-white ">
-        Off Road Bike tours & Rentals in Portugal
+        Passeios e aluguer de motos Enduro em Portugal
       </p>
       <p className="p-6 pt-0 text-center md:text-left md:text-lg md:text-white hidden">
-        TDS Enduro offers a unique opportunity for adventure riders to explore
-        Portugal on top-quality KTM motorbikes. Our tours take you through the
-        diverse landscapes of the Algarve region, known for its challenging
-        trails and beautiful scenery. Riders can experience a variety of
-        terrains, from rugged mountain paths to coastal tracks. Our guided tours
-        are designed for both beginners and experienced riders, providing a safe
-        and exciting adventure. Join TDS Enduro for a professionally organized
-        tour and discover the thrill of enduro riding in one of Europe's most
-        captivating destinations.
+        O TDS Enduro oferece uma oportunidade única para os pilotos de aventura
+        explorarem Portugal em motos KTM de elevada qualidade. Os nossos
+        passeios levam-no através do diversas paisagens da região do Algarve,
+        conhecida pelas suas desafiantes trilhos e belas paisagens. Os
+        condutores podem experimentar uma variedade de terrenos, desde caminhos
+        de montanha acidentados a trilhos costeiros. As nossas visitas guiadas
+        são concebidos para principiantes e condutores experientes,
+        proporcionando um ambiente seguro e emocionante aventura. Junte-se ao
+        TDS Enduro para um evento organizado por profissionais faça um tour e
+        descubra a emoção do enduro num dos locais mais destinos cativantes.
       </p>
 
       <div className="flex flex-row items-center justify-center gap-3 w-full p-6 pt-0 md:flex-col">
         <Link
-          href="/tours"
+          href="/pt/tours"
           className="w-full flex flex-col items-center justify-center"
         >
           <button
             className={`bg-tdsRed text-background  px-8 p-2 uppercase hover:bg-tdsRed/80 mx-auto font-tds rounded w-full`}
           >
-            Tours
+            Passeios
           </button>
         </Link>
 
         <Link
-          href="/bikes"
+          href="/pt/bikes"
           className="w-full flex flex-col items-center justify-center"
         >
           <button className="bg-foreground text-background w-full p-2 uppercase hover:bg-foreground/80 font-tds rounded">
-            Bikes
+            Motos
           </button>
         </Link>
       </div>
