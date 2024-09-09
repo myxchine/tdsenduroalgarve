@@ -2,7 +2,8 @@ import { Metadata } from "next";
 import { Form } from "./_components/Form";
 
 export const metadata: Metadata = {
-  title: "Reserve an Off Road Enduro Bike Tour & Rental in Portugal",
+  title:
+    "Reserve an Off Road Enduro Bike Experience, Tour & Rental in Portugal",
   description:
     "Ready for a memorable adventure this holiday season in Algarve, Portugal? We offer the beautiful Algarve experience whilst making sure you have a great time with everything prepared for you.! The perfect way to explore the region and experience the local culture whether with friends, family or by yourself.",
 };

@@ -6,9 +6,9 @@ export default function Menu() {
   return (
     <section className="flex flex-row items-center justify-between w-full md:max-w-6xl mx-auto  p-4 px-5 xl:px-0 ">
       <Link
-        href={"/pt"}
+        href={"/"}
         className="w-fit flex flex-row items-start "
-        aria-label="TDS Enduro Algarve Inicio"
+        aria-label="TDS Enduro Algarve Home"
       >
         <Logo />
       </Link>

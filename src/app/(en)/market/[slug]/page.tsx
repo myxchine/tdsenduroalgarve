@@ -1,4 +1,4 @@
-import { bikes } from "@/server/bikes";
+import { bikes } from "@/server/db/market";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,7 +22,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: bike.name,
+    title: `Buy a ${bike.name} in Portugal`,
     description: bike.description,
     openGraph: {
       images: [
@@ -46,6 +46,11 @@ export default async function Bike({ params }: { params: { slug: string } }) {
       <div className="md:hidden w-full flex flex-col gap-2">
         <h1 className="text-3xl font-tds uppercase ">{bike.name}</h1>
         <p className="text-xs text-black/80 md:text-sm">{bike.shout}</p>
+
+        <p className="my-4 font-semibold">
+          Contact +351 964 691 830 for more info about purchasing a {bike.name}{" "}
+          or email us at michael@duality.agency
+        </p>
         {bike.tour && (
           <Link href={`/tours/`} className="w-full mt-2">
             <button className="flex flex-col w-fit p-2 px-4 rounded bg-tdsRed text-white  hover:bg-tdsRed/80 text-center justify-center items-center text-left text-xs font-semibold tracking-wider">
@@ -71,6 +76,14 @@ export default async function Bike({ params }: { params: { slug: string } }) {
             {bike.name}
           </h1>
           <p className="text-xs text-black/80 md:text-sm">{bike.shout}</p>
+          <p className="text-xs text-black/80 md:text-sm">
+            Both brand new and second-hand {bike.name}s are available.
+          </p>
+
+          <p className="my-4 font-semibold text-tdsRed">
+            Contact +351 964 691 830 for more info about purchasing a{" "}
+            {bike.name} or email us at michael@duality.agency
+          </p>
           {bike.tour && (
             <Link href={`/tours/`} className="w-full mt-2">
               <button className="flex flex-col w-fit p-2 px-4 rounded bg-tdsRed text-white  hover:bg-tdsRed/80 text-center justify-center items-center text-left font-semibold tracking-wider">
@@ -82,21 +95,9 @@ export default async function Bike({ params }: { params: { slug: string } }) {
 
         <p className="text-xs md:text-sm">{bike.description}</p>
 
-        {bike.tour && (
-          <>
-            <Link href={`/reserve`} className="text-tdsRed hover:underline">
-              Reserve Off Road Experience now for free {`->`}
-            </Link>
-          </>
-        )}
-
-        {!bike.tour && (
-          <span className="text-tdsRed font-semibold">
-            Contact +351 968 185 407 or email francisco908.dossantos@gmail.com
-            for custom inquiries to rent a {bike.name} in Algarve.
-          </span>
-        )}
-
+        <Link href={`/reserve`} className="text-tdsRed hover:underline">
+          Reserve Off Road Experience now for free {`->`}
+        </Link>
         {bike.specsTrue && <Specifications bike={bike} />}
 
         <div className="flex flex-col gap-4 w-full">

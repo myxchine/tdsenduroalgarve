@@ -15,8 +15,10 @@ export function Form({
     <form className="flex flex-col gap-4 max-w-xl mx-auto " action={submit}>
       <div className="flex flex-col gap-2 pb-2">
         <h1 className="text-4xl font-tds sm:text-5xl xl:text-6xl text-balance">
-          Reserve <span className="text-tdsRed">Tour</span> &{" "}
-          <span className="text-tdsRed">Rental</span> for free
+          Reserve an Off-Road Experience {"("}
+          <span className="text-tdsRed">Tour</span> &{" "}
+          <span className="text-tdsRed">Rental</span>
+          {")"} for free
         </h1>
 
         <p className="max-w-[500px] text-black/60 md:text-xl lg:text-base xl:text-xl">
