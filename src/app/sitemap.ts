@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: {
       languages: {
         en: `https://tdsenduroalgarve.com/bikes/${slug}`,
-        pt: `https://tdsenduroalgarve.com/bikes/pt/${slug}`,
+        pt: `https://tdsenduroalgarve.com/pt/bikes/${slug}`,
       },
     },
   }));
@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: {
       languages: {
         en: `https://tdsenduroalgarve.com/tours/${slug}`,
-        pt: `https://tdsenduroalgarve.com/tours/pt/${slug}`,
+        pt: `https://tdsenduroalgarve.com/pt/tours/${slug}`,
       },
     },
   }));
@@ -32,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: {
       languages: {
         en: `https://tdsenduroalgarve.com/posts/${slug}`,
-        pt: `https://tdsenduroalgarve.com/posts/pt/${slug}`,
+        pt: `https://tdsenduroalgarve.com/pt/posts/${slug}`,
       },
     },
   }));
