@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Motas",
+  title: "Motas Enduro",
   description:
     "Dê uma olhada nas motos que temos disponíveis aqui no Algarve, Portugal. Oferecemos a bela experiência do Algarve e ao mesmo tempo garantimos que você se diverte com tudo preparado para você.! A maneira perfeita de explorar a região e vivenciar a cultura local seja com amigos, família ou sozinho.",
 };
@@ -23,7 +23,7 @@ function Title() {
   return (
     <div className="flex flex-col gap-2 w-full px-6  xl:px-0 pb-4">
       <h1 className="text-4xl font-tds md:text-5xl">
-        Explorar <span className="text-tdsRed">Motas</span>
+        <span className="text-tdsRed">Motas</span> Enduro
       </h1>
       <p className="text-xs text-black/80 text-balance md:text-lg">
         Explore enduro, motocross, aventura ou motos de rua em Portugal.
