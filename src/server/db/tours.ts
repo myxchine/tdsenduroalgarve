@@ -14,11 +14,11 @@ export const tours = [
     bikeSlug: "ktm-300-exc",
     bikeImage: "ktm-300-exc.jpg",
     info: "No bike license required off-road.",
-    startingPrice: 270,
+    startingPrice: 280,
     packages: [
-      { id: 1, price: 330, days: 1, riders: 1 },
-      { id: 2, price: 290, days: 1, riders: 2 },
-      { id: 3, price: 270, days: 1, riders: 3 },
+      { id: 1, price: 340, days: 1, riders: 1 },
+      { id: 2, price: 300, days: 1, riders: 2 },
+      { id: 3, price: 280, days: 1, riders: 3 },
     ],
     included: [
       "All protective and riding equipment",
@@ -41,12 +41,12 @@ export const tours = [
     bike: "ktm-300-exc",
     bikeImage: "ktm-300-exc.jpg",
     info: "No bike license required off-road.",
-    startingPrice: 270,
+    startingPrice: 280,
 
     packages: [
-      { id: 1, price: 330, days: 1, riders: 1 },
-      { id: 2, price: 290, days: 1, riders: 2 },
-      { id: 3, price: 270, days: 1, riders: 3 },
+      { id: 1, price: 340, days: 1, riders: 1 },
+      { id: 2, price: 300, days: 1, riders: 2 },
+      { id: 3, price: 280, days: 1, riders: 3 },
     ],
     included: [
       "All protective and riding equipment",
@@ -68,12 +68,12 @@ export const tours = [
     bike: "ktm-300-exc",
     bikeImage: "ktm-300-exc.jpg",
     info: "No bike license required off-road.",
-    startingPrice: 270,
+    startingPrice: 280,
 
     packages: [
-      { id: 1, price: 330, days: 1, riders: 1 },
-      { id: 2, price: 290, days: 1, riders: 2 },
-      { id: 3, price: 270, days: 1, riders: 3 },
+      { id: 1, price: 340, days: 1, riders: 1 },
+      { id: 2, price: 300, days: 1, riders: 2 },
+      { id: 3, price: 280, days: 1, riders: 3 },
     ],
     included: [
       "All protective and riding equipment",

@@ -15,11 +15,11 @@ export const tours_PT = [
     bikeSlug: "ktm-300-exc",
     bikeImage: "ktm-300-exc.jpg",
     info: "Não é necessária licença de motocicleta fora de estrada.",
-    startingPrice: 270,
+    startingPrice: 280,
     packages: [
-      { id: 1, price: 330, days: 1, riders: 1 },
-      { id: 2, price: 290, days: 1, riders: 2 },
-      { id: 3, price: 270, days: 1, riders: 3 },
+      { id: 1, price: 340, days: 1, riders: 1 },
+      { id: 2, price: 300, days: 1, riders: 2 },
+      { id: 3, price: 280, days: 1, riders: 3 },
     ],
     included: [
       "Todo o equipamento de proteção e pilotagem",
@@ -43,12 +43,12 @@ export const tours_PT = [
     bike: "ktm-300-exc",
     bikeImage: "ktm-300-exc.jpg",
     info: "Não é necessária licença de motocicleta fora de estrada.",
-    startingPrice: 270,
+    startingPrice: 280,
 
     packages: [
-      { id: 1, price: 330, days: 1, riders: 1 },
-      { id: 2, price: 290, days: 1, riders: 2 },
-      { id: 3, price: 270, days: 1, riders: 3 },
+      { id: 1, price: 340, days: 1, riders: 1 },
+      { id: 2, price: 300, days: 1, riders: 2 },
+      { id: 3, price: 280, days: 1, riders: 3 },
     ],
     included: [
       "Todo o equipamento de proteção e pilotagem",
@@ -71,12 +71,12 @@ export const tours_PT = [
     bike: "ktm-300-exc",
     bikeImage: "ktm-300-exc.jpg",
     info: "Não é necessária licença de motocicleta fora de estrada.",
-    startingPrice: 270,
+    startingPrice: 280,
 
     packages: [
-      { id: 1, price: 330, days: 1, riders: 1 },
-      { id: 2, price: 290, days: 1, riders: 2 },
-      { id: 3, price: 270, days: 1, riders: 3 },
+      { id: 1, price: 340, days: 1, riders: 1 },
+      { id: 2, price: 300, days: 1, riders: 2 },
+      { id: 3, price: 280, days: 1, riders: 3 },
     ],
     included: [
       "Todo o equipamento de proteção e pilotagem",
