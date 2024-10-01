@@ -87,7 +87,7 @@ export default async function Bike({ params }: { params: { slug: string } }) {
         </Link>
         <p className="my-4  text-tdsRed text-balance">
           You can also contact +351 964 691 830 for more info about purchasing a{" "}
-          {bike.name} or email us at michael@duality.agency
+          {bike.name} or email us at michael.dozzantoz@gmail.com
         </p>
       </div>
     </section>

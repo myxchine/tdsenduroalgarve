@@ -24,7 +24,7 @@ export default async function Bike() {
 
         <p className="my-4 font-semibold">
           Contact +351 964 691 830 for more info about purchasing a {bike.name}{" "}
-          or email us at michael@dozzantoz@gmail.com
+          or email us at michael.dozzantoz@gmail.com
         </p>
         {bike.tour && (
           <Link href={`/tours/`} className="w-full mt-2">
@@ -57,7 +57,7 @@ export default async function Bike() {
 
           <p className="my-4 font-semibold text-tdsRed">
             Contact +351 964 691 830 for more info about purchasing a{" "}
-            {bike.name} or email us at michael@duality.agency
+            {bike.name} or email us at michael.dozzantoz@gmail.com
           </p>
           {bike.tour && (
             <Link href={`/tours/`} className="w-full mt-2">
