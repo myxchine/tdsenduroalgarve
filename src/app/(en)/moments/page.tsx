@@ -29,6 +29,12 @@ function Title() {
         Take a look at fun, dirty, silly, unique and exciting moments with our
         riders at TDS Algarve on our Portugal Enduro Tours.
       </p>
+      <Link
+        href={"/tours"}
+        className="text-lg text-tdsRed hover:underline md:text-lg mt-4"
+      >
+        View our available all inclusive tours{"->"}
+      </Link>
     </div>
   );
 }
