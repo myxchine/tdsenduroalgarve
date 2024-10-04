@@ -8,6 +8,7 @@ const navItems = [
   { href: "/tours", label: "Tours" },
   { href: "/bikes", label: "Bikes" },
   { href: "/market", label: "Market" },
+  { href: "/moments", label: "Moments" },
 
   //{ href: "/buy", label: "Buy" },
 ];
@@ -31,7 +32,7 @@ export default function Nav(props: any) {
 
       <Link href={"/reserve"}>
         <div
-          className={`font-tds  w-fit p-2 px-4 rounded border border-black hover:bg-black hover:text-white hover:border-black ${
+          className={`font-tds  w-fit p-2 px-4 rounded border border-black hover:bg-tdsRed hover:text-white hover:border-tdsRed ${
             pathname === "/reserve"
               ? "bg-tdsRed text-white border-tdsRed"
               : "bg-black text-white border-black"

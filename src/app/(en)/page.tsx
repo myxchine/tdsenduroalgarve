@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <>
       <EnduroPortugal />
+      <GalleryHero />
       <PortugalEnduroTours />
       <KTMTopoftheLineBikes />
       <Posts />
@@ -20,6 +21,76 @@ export default function Home() {
       <MotorbikeHolidayPortugal />
       <MotorcycleToursInAlgarvePortugal />
     </>
+  );
+}
+const images = [
+  "6ef4470d-db7d-4127-a10f-63a881c29c41.JPG",
+  "326b9268-997a-4799-b89a-d7f14b18359e.JPG",
+  "38fe4ccc-30c5-411f-9bb2-e0707836f1a7.JPG",
+  "fe0fd833-40bf-405d-aabe-231ac5baaa1b.JPG",
+];
+
+function GalleryHero() {
+  return (
+    <section className="flex flex-col gap-4  w-full  md:max-w-6xl pt-2  mx-auto xl:px-0 py-8 md:py-12 md:pt-24">
+      <div className="px-6 flex flex-col gap-2">
+        <h2 className="text-3xl font-tds md:text-5xl">Portugal Enduro Tours</h2>
+        <p className="text-sm text-black/80 max-w-md">
+          Take a look at fun, dirty, silly, unique and exciting moments with our
+          riders at TDS Algarve on our Portugal Enduro Tours.
+        </p>
+        <Link
+          href={"/moments"}
+          className="text-sm text-tdsRed hover:underline md:text-lg"
+        >
+          View full gallery {"->"}
+        </Link>
+      </div>
+      <Gallery />
+    </section>
+  );
+}
+
+function Gallery() {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 justify-center items-start w-full p-6 ">
+      {images.map((image, index) => (
+        <Image
+          key={index}
+          src={`/images/moments/${image}`}
+          alt={image}
+          width={300}
+          height={300}
+          loading="lazy"
+          className="object-cover w-full aspect-square"
+          draggable={true}
+        />
+      ))}
+    </div>
+  );
+}
+
+function PortugalEnduroTours() {
+  return (
+    <section className="flex flex-col gap-4  w-full  md:max-w-6xl pt-2  mx-auto xl:px-0 py-8 md:py-12 md:pt-24">
+      <div className="px-6 flex flex-col gap-2">
+        <h2 className="text-3xl font-tds md:text-5xl">
+          See our available TDS Enduro Tours in Algarve, Portugal
+        </h2>
+        <p className="text-sm text-black/80 max-w-md">
+          Enjoy a day long unforgettable hard enduro ride in Portugal, Algarve,
+          with all the gear, bike, trails and even lunch included! Bike license
+          not required off road. Take a look below.
+        </p>
+        <Link
+          href={"/tours"}
+          className="text-sm text-tdsRed hover:underline md:text-lg"
+        >
+          View All {"->"}
+        </Link>
+      </div>
+      <ToursList />
+    </section>
   );
 }
 
@@ -359,7 +430,7 @@ function KTMTopoftheLineBikes() {
     <section className="flex flex-col gap-4  w-full  md:max-w-6xl  mx-auto xl:px-0 py-8 md:py-12 ">
       <div className="px-6 flex flex-col gap-2">
         <h2 className="text-3xl font-tds md:text-5xl ">
-          KTM Top of the Line Bikes
+          KTM Enduro Bikes Algarve, Portugal
         </h2>
         <p className="text-sm text-black/80 max-w-md">
           State of the art enduro motorcycles that you can rely on and enjoy
@@ -423,28 +494,6 @@ function BikesList() {
           </div>
         ))}
       </div>
-    </section>
-  );
-}
-
-function PortugalEnduroTours() {
-  return (
-    <section className="flex flex-col gap-4  w-full  md:max-w-6xl pt-2  mx-auto xl:px-0 py-8 md:py-12 md:pt-24">
-      <div className="px-6 flex flex-col gap-2">
-        <h2 className="text-3xl font-tds md:text-5xl">Portugal Enduro Tours</h2>
-        <p className="text-sm text-black/80 max-w-md">
-          Enjoy a day long unforgettable hard enduro ride in Portugal, Algarve,
-          with all the gear, bike, trails and even lunch included! Bike license
-          not required off road.
-        </p>
-        <Link
-          href={"/tours"}
-          className="text-sm text-tdsRed hover:underline md:text-lg"
-        >
-          View All {"->"}
-        </Link>
-      </div>
-      <ToursList />
     </section>
   );
 }

@@ -12,7 +12,6 @@ export default function Menu() {
       >
         <Logo />
       </Link>
-      <LanguageSwitcher />
       <Nav className="hidden md:flex text-foreground flex flex-row items-center justify-end gap-8 w-full" />
     </section>
   );

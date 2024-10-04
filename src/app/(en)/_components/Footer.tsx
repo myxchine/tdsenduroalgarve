@@ -23,7 +23,6 @@ const Footer = () => {
         <section className="flex grid grid-cols-2 md:grid-cols-4 w-full gap-8 md:gap-12 md:flex-row ">
           <nav className="flex flex-col items-start gap-4 text-sm w-full md:items-start">
             <div className="text-base font-semibold">Main</div>
-
             <Link href="/" className="hover:underline text-black/60">
               Home
             </Link>
@@ -32,6 +31,12 @@ const Footer = () => {
             </Link>
             <Link href="/bikes" className="hover:underline text-black/60">
               Bikes
+            </Link>
+            <Link href="/market" className="hover:underline text-black/60">
+              Market
+            </Link>
+            <Link href="/moments" className="hover:underline text-black/60">
+              Moments
             </Link>
           </nav>
 
