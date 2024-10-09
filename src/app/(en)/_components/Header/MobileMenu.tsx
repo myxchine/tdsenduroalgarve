@@ -6,6 +6,8 @@ import Nav from "./Nav";
 import { MenuIcon, CloseIcon } from "../icons";
 import { Logo } from "../Logo";
 import AnnouncementBanner from "./AnnouncementBanner";
+import LanguageSwitcher from "../LanguageSwitcher";
+
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -55,18 +57,5 @@ export default function MobileMenu() {
         </section>
       )}
     </>
-  );
-}
-
-function LanguageSwitcher() {
-  return (
-    <div className="flex flex-row items-center justify-center gap-8 w-full p-8 max-w-md mx-auto">
-      <Link href="/pt" className="hover:underline text-foreground">
-        Português
-      </Link>
-      <Link href="/" className="underline text-tdsRed">
-        English
-      </Link>
-    </div>
   );
 }
