@@ -35,7 +35,7 @@ function Title() {
         Enduro Portugal
       </h1>
       <p className="p-6 pt-0 text-center md:text-left md:text-lg md:text-white ">
-        Passeios e aluguer de motos Enduro em Portugal
+        Passeios e Aluguel de Motos Off-Road em Vilamoura, Algarve, Portugal
       </p>
       <p className="p-6 pt-0 text-center md:text-left md:text-lg md:text-white hidden">
         O TDS Enduro oferece uma oportunidade única para os pilotos de aventura

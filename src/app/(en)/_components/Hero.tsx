@@ -35,7 +35,7 @@ function Title() {
         Enduro Portugal
       </h1>
       <p className="p-6 pt-0 text-center lg:text-left lg:text-lg lg:text-white ">
-        Off Road Bike tours & Rentals in Portugal
+        Off Road Bike tours & Rentals in Vilamoura, Algarve, Portugal
       </p>
       <p className="p-6 pt-0 text-center md:text-left md:text-lg md:text-white hidden">
         TDS Enduro offers a unique opportunity for adventure riders to explore

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Form from "./Form";
+import LanguageSwitcher from "./LanguageSwitcher";
 const Footer = () => {
   return (
     <footer className="flex flex-col items-center justify-center w-full  py-16 pb-6 md:py-28 md:pb-6 md:px-6 border-t border-foreground/10 mt-12">
@@ -78,16 +79,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-function LanguageSwitcher() {
-  return (
-    <div className="flex flex-row items-center justify-center gap-8 w-full p-8 max-w-md mx-auto">
-      <Link href="/pt" className="hover:underline text-foreground">
-        Português
-      </Link>
-      <Link href="/" className="underline text-tdsRed">
-        English
-      </Link>
-    </div>
-  );
-}

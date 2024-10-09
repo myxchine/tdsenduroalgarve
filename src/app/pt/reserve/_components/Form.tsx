@@ -1,5 +1,5 @@
 "use client";
-import { useActionState, useState } from "react";
+import { useActionState, useState, useEffect } from "react";
 import { newReservation as action } from "@/server/db/utils";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -10,6 +10,42 @@ export function Form({
   searchParams: { [key: string]: string };
 }) {
   const [status, submit, isPending] = useActionState(action, null);
+  const router = useRouter();
+
+  const [formData, setFormData] = useState({
+    name: searchParams.name || "",
+    surname: searchParams.surname || "",
+    email: searchParams.email || "",
+    verifyEmail: "",
+    category: searchParams.category || "",
+    riders: searchParams.riders || "",
+    message: searchParams.message || "",
+  });
+
+  function updateParams(param: string, value: string) {
+    const newParams = { ...searchParams, [param]: value };
+
+    router.replace(`/pt/reserve?${new URLSearchParams(newParams)}`, {
+      scroll: false,
+    });
+  }
+
+  useEffect(() => {
+    if (status) {
+      setFormData({
+        name: "",
+        surname: "",
+        email: "",
+        verifyEmail: "",
+        category: "",
+        riders: "",
+        message: "",
+      });
+
+      // Reset URL params
+      router.replace("/pt/reserve", { scroll: false });
+    }
+  }, [status, router]);
 
   return (
     <form className="flex flex-col gap-4 max-w-xl mx-auto" action={submit}>
@@ -24,11 +60,17 @@ export function Form({
           Algarve, Portugal?
         </p>
       </div>
-      <Link href={`/tours`} className="text-sm hover:underline mt-[-10px] mb-4">
+      <Link
+        href={`/pt/tours`}
+        className="text-sm hover:underline mt-[-10px] mb-4"
+      >
         Veja os preços primeiro{`->`}
       </Link>
-      <Inputs searchParams={searchParams} />
-
+      <Inputs
+        setFormData={setFormData}
+        formData={formData}
+        updateParams={updateParams}
+      />
       <button
         type="submit"
         className={`bg-black border border-black rounded-md text-white p-2 text-center h-12 px-4 w-full max-w-xl font-tds tracking-wider ${
@@ -77,27 +119,15 @@ export function Form({
   );
 }
 
-function Inputs({ searchParams }: { searchParams: { [key: string]: string } }) {
-  const router = useRouter();
-
-  const [formData, setFormData] = useState({
-    name: searchParams.name || "",
-    surname: searchParams.surname || "",
-    email: searchParams.email || "",
-    verifyEmail: "",
-    category: searchParams.category || "",
-    riders: searchParams.riders || "",
-    message: searchParams.message || "",
-  });
-
-  function updateParams(param: string, value: string) {
-    const newParams = { ...searchParams, [param]: value };
-
-    router.replace(`/pt/reserve?${new URLSearchParams(newParams)}`, {
-      scroll: false,
-    });
-  }
-
+function Inputs({
+  setFormData,
+  updateParams,
+  formData,
+}: {
+  setFormData: any;
+  updateParams: any;
+  formData: any;
+}) {
   return (
     <>
       <input
