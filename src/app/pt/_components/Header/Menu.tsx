@@ -12,21 +12,7 @@ export default function Menu() {
       >
         <Logo />
       </Link>
-      <LanguageSwitcher />
       <Nav className="hidden md:flex text-foreground flex flex-row items-center justify-end gap-8 w-full" />
     </section>
-  );
-}
-
-function LanguageSwitcher() {
-  return (
-    <div className="flex flex-row items-end justify-end w-full  gap-8 font-tds">
-      <Link href="/" className="hover:underline text-foreground">
-        EN
-      </Link>
-      <Link href="/pt" className="underline text-tdsRed">
-        PT
-      </Link>
-    </div>
   );
 }
