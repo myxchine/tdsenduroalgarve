@@ -30,10 +30,10 @@ export default function Nav(props: any) {
 
       <Link href={"/pt/reserve"}>
         <div
-          className={`font-tds  w-fit p-2 px-4 rounded border border-black hover:bg-black hover:text-white hover:border-black ${
-            pathname === "/reserve"
-              ? "bg-tdsRed text-white border-tdsRed"
-              : "bg-black text-white border-black"
+          className={`font-tds  w-fit p-2 px-4 rounded border border-black hover:text-white  ${
+            pathname === "/pt/reserve"
+              ? "bg-tdsRed text-white border-tdsRed "
+              : "bg-black text-white border-black hover:bg-tdsRed hover:border-tdsRed"
           }`}
         >
           Reserva agora
