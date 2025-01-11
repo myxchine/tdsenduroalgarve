@@ -116,3 +116,10 @@ section {
     rgba(0, 0, 0, 0) 20%
   );
 }
+
+select {
+  appearance: none; /* Removes the default arrow */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  background: white; /* Removes the background */
+}
