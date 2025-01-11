@@ -25,7 +25,7 @@ export default function Gallery() {
         {richImages.map((image, index) => (
           <div className="flex flex-col gap-2" key={index}>
             <Image
-              src={`/images/moments/${image.src}`}
+              src={`/images/gallery/${image.src}`}
               alt={image.description}
               width={300}
               height={300}
