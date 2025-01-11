@@ -13,9 +13,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const bike = bikes.find((bike) => bike.slug === params.slug);
+  const slug = (await params).slug;
+  const bike = bikes.find((bike) => bike.slug === slug);
 
   if (!bike) {
     notFound();
@@ -35,8 +36,9 @@ export async function generateMetadata({
   };
 }
 
-export default async function Bike({ params }: { params: { slug: string } }) {
-  const bike = bikes.find((bike) => bike.slug === params.slug);
+export default async function Bike({ params }: {  params: Promise<{ slug: string }>; }) {
+  const slug = (await params).slug;
+  const bike = bikes.find((bike) => bike.slug === slug);
 
   if (!bike) {
     notFound();

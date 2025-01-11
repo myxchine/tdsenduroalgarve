@@ -15,11 +15,12 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-static";
 
-export default function Contact({
+export default async function Contact({
   searchParams,
 }: {
-  searchParams: { [key: string]: string };
+  searchParams: Promise<{ [key: string]: string }>;
 }) {
+  const params = (await searchParams);
   return (
     <>
       <Section>
@@ -40,7 +41,7 @@ export default function Contact({
             View tour first{`->`}
           </Link>
 
-          <Form searchParams={searchParams} />
+          <Form searchParams={params} />
           <p className="max-w-xl text-balance my-6 mx-auto text-center">
             Or contact us directly at{" "}
             <a
@@ -50,7 +51,10 @@ export default function Contact({
               francisco@tdsenduroalgarve.com
             </a>{" "}
             /{" "}
-            <a href="tel:+351 968 185 407" className="underline lowercase hover:text-accent">
+            <a
+              href="tel:+351 968 185 407"
+              className="underline lowercase hover:text-accent"
+            >
               +351 968 185 407
             </a>
           </p>
