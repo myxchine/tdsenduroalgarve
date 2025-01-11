@@ -9,7 +9,6 @@ export default function ContactButton() {
   return (
     <Link
       href={"/reserve"}
-      scroll={false}
       className={` border-2 border-accent text-background rounded px-3 py-1 bg-accent/90   hover:text-accent hover:bg-background font-accent  w-fit items-center text-center ${
         pathname === "/reserve"
           ? "hidden"
