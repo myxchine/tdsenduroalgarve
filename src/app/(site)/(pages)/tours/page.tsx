@@ -13,7 +13,7 @@ import { Pricing } from "@/components/tours";
 import { tours } from "@/_tours/all";
 import TestimonialsList from "@/components/testimonials";
 export const metadata: Metadata = {
-  title: "Enduro Portugal Tours",
+  title: "Enduro Tours Portugal",
   description:
     "All enclusive premium enduro tours in Southern Portugal (Algarve) for those who want nothing but the best. We offer the beautiful Algarve experience whilst making sure you have a great time with everything prepared for you.",
 };
@@ -23,7 +23,7 @@ function Hero(props: any) {
     <div {...props}>
       <div className="flex flex-col gap-6 max-w-xl  text-center mx-auto ">
         <h1 className="text-balance">
-          Enduro Portugal <span className="text-accent">Tours</span>
+          Enduro <span className="text-accent">Tours</span> Portugal
         </h1>
         <p>
           All enclusive{" "}
