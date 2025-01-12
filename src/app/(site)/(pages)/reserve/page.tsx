@@ -20,7 +20,7 @@ export default async function Contact({
 }: {
   searchParams: Promise<{ [key: string]: string }>;
 }) {
-  const params = (await searchParams);
+  const params = await searchParams;
   return (
     <>
       <Section>
@@ -34,7 +34,7 @@ export default async function Contact({
             TDS offers an all inclusive service (best bikes, gear, and routes
             included) for those who want <strong>nothing but the best.</strong>{" "}
             A curated experience for friends, family or pro riders creatin a
-            unique tailored experience for your needs.
+            unique tailored experience to your needs.
           </p>
 
           <Link href={`/tours`} className=" hover:underline mb-4 text-accent">

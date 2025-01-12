@@ -22,12 +22,12 @@ export const metadata: Metadata = {
     template: "%s | TDS Enduro Algarve Motorbike Tours in Southern Portugal",
   },
   description:
-    "Hard Enduro motornike tours & rental in Southern Portugal (Algarve). Experience off-road biking in Algarve with friends, family, or solo. We provide bikes, gear, transport, and routes. Just show up! Hire a motorbike in Faro, Vilamoura, Albufeira, Quarteira, or Loulé.",
+    "Hard Enduro motorbike tours & rental in Southern Portugal (Algarve).  TDS offers an all inclusive service (best bikes, gear, and routes included) for those who want nothing but the best. A curated experience for friends, family or pro riders creatin a unique tailored experience to your needs.",
 
   openGraph: {
     type: "website",
     url: "https://tdsenduroalgarve.com",
-    siteName: "TDS Enduro Motorbike Tours Algarve",
+    siteName: "TDS Enduro Motorbike Tours Portugal",
   },
 };
 
