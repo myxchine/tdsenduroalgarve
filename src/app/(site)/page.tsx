@@ -79,7 +79,7 @@ function Hero(props: any) {
         <div className="flex flex-col gap-4">
           <h1 className="text-balance md:text-left">Enduro Portugal</h1>
           <p className="max-w-md mx-auto md:mx-0  md:text-left">
-            Enduro motorbike tours in Algarve, Portugal
+            KTM Enduro motorbike tours in Algarve, Portugal
           </p>
         </div>
 
