@@ -1,6 +1,6 @@
 ---
 title: "Motrocycle Tours in Portugal"
-excerpt: "Experience the ultimate motorcycle tours in Portugal with TDS Enduro Algarve! Ride top-tier KTM bikes through stunning landscapes, from coastal roads to rugged trails. All-inclusive packages with expert guides, premium gear, and traditional Portuguese lunches."
+excerpt: "Experience the ultimate motorcycle tours in Portugal with TDS Enduro Algarve! Ride top-tier KTM bikes through stunning landscapes, from flowing single tracks and beautiful views to tough river beds and hill climbs. All-inclusive packages with expert guides, premium gear, and traditional Portuguese lunches."
 coverImage: "/images/articles/3.JPG"
 date: "2025-01-11T17:16:13.122Z"
 ogImage:
@@ -8,7 +8,7 @@ ogImage:
 ---
 
 
-Portugal, with its stunning landscapes, rich culture, and year-round sunshine, is a dream destination for motorcycle enthusiasts. From winding coastal roads to rugged mountain trails, the diversity of terrain offers something for every rider. At TDS Enduro Algarve, we specialize in delivering unforgettable motorcycle tours in the Algarve region, tailored to your style and skill level.
+Portugal, with its stunning landscapes, rich culture, and year-round sunshine, is a dream destination for motorcycle enthusiasts. From flowing single tracks and beautiful views to tough river beds and hill climbs., the diversity of terrain offers something for every rider. At TDS Enduro Algarve, we specialize in delivering unforgettable motorcycle tours in the Algarve region, tailored to your style and skill level.
 
 ---
 
@@ -17,16 +17,18 @@ Portugal, with its stunning landscapes, rich culture, and year-round sunshine, i
 ### 1. Diverse Terrain
 
 Portugal’s landscapes are incredibly varied, making it an ideal destination for motorcycle tours. In a single trip, you can experience:
--	Coastal roads with breathtaking ocean views.
--	Mountain passes with challenging curves.
--	Forested trails that take you off the beaten path.
+-	Beuatiful views from the top of Algarves mountains.
+-	Mountain passes with varying skill level hill climbs.
 -	Countryside tracks winding through vineyards and charming villages.
+-   Extreme enduro river beds hand cut and created by our team at TDS.
 
 The Algarve, in particular, is a hot spot for motorcycle tours, offering a mix of technical challenges and scenic beauty that riders from all over the world come to experience.
 
 ### 2. Perfect Weather
 
 Portugal’s mild climate allows for riding year-round. Even in the winter months, the Algarve enjoys sunny days and temperatures perfect for hitting the trails.
+
+We do enduro tours all year round at TDS, it's not too cold in winter with temperature usually bottoming out around 10C.
 
 ### 3. Rich Culture and Hospitality
 

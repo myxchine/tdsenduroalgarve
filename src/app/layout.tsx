@@ -18,11 +18,11 @@ export const metadata: Metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
   title: {
     default:
-      "Enduro Portugal | TDS Enduro Algarve Motorbike Tours in Southern Portugal",
-    template: "%s | TDS Enduro Algarve Motorbike Tours in Southern Portugal",
+      "Enduro Portugal | TDS KTM Motorbike Tours in Southern Portugal, Algarve",
+    template: "%s | TDS KTM Motorbike Tours in Southern Portugal, Algarve",
   },
   description:
-    "Hard Enduro motorbike tours & rental in Southern Portugal (Algarve).  TDS offers an all inclusive service (best bikes, gear, and routes included) for those who want nothing but the best. A curated experience for friends, family or pro riders creatin a unique tailored experience to your needs.",
+    "Hard Enduro motorbike tour in Algarve. TDS offers an all inclusive service (best bikes, gear, and routes included) for those who want nothing but the best. A curated experience for friends, family or pro riders creatin a unique tailored experience to your needs.",
 
   openGraph: {
     type: "website",
