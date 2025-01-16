@@ -6,7 +6,7 @@ import Footer from "@/ui/footer";
 import "@/styles/globals.css";
 import { Toaster } from "sonner";
 import Phone from "@/components/phone";
-
+import { GoogleAnalytics } from "@next/third-parties/google";
 import ContactButton from "@/components/ContactButton";
 
 const geistSans = Inter({
@@ -63,6 +63,7 @@ export default function RootLayout({
         </div>
         <Toaster position="bottom-center" richColors={true} />
       </body>
+      <GoogleAnalytics gaId={"G-MHMCJ4Z05X"} />
     </html>
   );
 }
