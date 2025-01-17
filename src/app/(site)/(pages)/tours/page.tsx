@@ -2,12 +2,9 @@ import { Section, Row, Button } from "@/ui/components";
 import Image from "next/image";
 import { Metadata } from "next";
 import Link from "next/link";
-import { SuggestedArticlesList } from "@/components/suggested-articles";
 import Gallery from "@/components/gallery";
 import { testimonials } from "@/_testimonials/all";
-
 import Bike from "@/components/bike";
-import EnduroTour from "@/components/endurotour";
 import ExploreArticles from "@/components/explorearticles";
 import { Pricing } from "@/components/tours";
 import { tours } from "@/_tours/all";
@@ -16,6 +13,11 @@ export const metadata: Metadata = {
   title: "Enduro Tours Portugal",
   description:
     "All enclusive premium enduro tours in Southern Portugal (Algarve) for those who want nothing but the best. We offer the beautiful Algarve experience whilst making sure you have a great time with everything prepared for you.",
+  openGraph: {
+    title: "Enduro Tours Portugal",
+    description:
+      "All enclusive premium enduro tours in Southern Portugal (Algarve) for those who want nothing but the best. We offer the beautiful Algarve experience whilst making sure you have a great time with everything prepared for you.",
+  },
 };
 
 function Hero(props: any) {
