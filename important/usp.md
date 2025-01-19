@@ -29,7 +29,13 @@ Emphasise TDS as premium enduro tours for those who want nothing but the best En
 
 ## Priotiry Keywords
 
+Algarve, Hard Enduro's hidden secret
+
+---
+
 Enduro Portugal
+
+offroad motorcycle tour algarve
 
 enduro holidays
 
