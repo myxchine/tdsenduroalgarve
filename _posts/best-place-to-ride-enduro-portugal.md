@@ -13,7 +13,7 @@ The Algarve is widely regarded as the best place to ride enduro in Portugal. Its
 
 Moreover, Portugal remains one of the few countries in Europe where off-road riding is legal and encouraged, making it a haven for riders from nations with heavy restrictions like Germany, Belgium, and France. The Algarve’s expansive network of trails and enduro-friendly regulations ensure that riders can enjoy their sport without fear of legal complications or fines.
 
-![Algarve: The Ultimate Enduro Destination | TDS Enduro Tours Portugal](/images/articles/0.JPG )
+![Algarve: The Ultimate Enduro Destination | TDS Enduro Tours Portugal](/images/articles/0.jpg )
 
 ## **1. Incredible Variety of Trails**
 
