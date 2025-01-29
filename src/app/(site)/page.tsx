@@ -74,7 +74,7 @@ export default function Home() {
 function Hero(props: any) {
   return (
     <div {...props}>
-      <div className="flex flex-col gap-6 max-w-2xl md:px-6  text-center  mx-auto md:mx-0 text-black md:text-white">
+      <div className="flex flex-col gap-6 max-w-xl md:px-6  text-center  mx-auto md:mx-0 text-black md:text-white">
         <div className="flex flex-col gap-4">
           <h1 className="text-balance md:text-left">
             All Inclusive Enduro Tour
@@ -84,18 +84,18 @@ function Hero(props: any) {
           </p>
         </div>
 
-        <div className="flex flex-row items-center justify-center gap-4 px-4 md:px-0">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 px-4 md:px-0">
           <Link
             href="/tours"
-            className={`bg-accent text-background w-1/2  px-8 p-2 uppercase hover:bg-accent/80 mx-auto font-accent rounded `}
+            className={`bg-accent text-background w-full  px-8 p-3 uppercase hover:bg-accent/80 mx-auto font-accent rounded `}
           >
-            The Tour
+            See the Tour
           </Link>
           <Link
-            href="/bikes"
-            className="bg-foreground text-background w-1/2 p-2 uppercase hover:bg-black/80 font-accent rounded"
+            href="/reserve"
+            className="bg-foreground text-background w-full p-3 uppercase hover:bg-black/80 font-accent rounded"
           >
-            The Bike
+            Reserve for free <span className="font-sans">  {"->"}</span>
           </Link>
         </div>
       </div>

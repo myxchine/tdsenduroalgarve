@@ -57,12 +57,29 @@ export default async function About() {
       </Section>
       <Section>
         <Row>
-          <p>
-            Whether you're bringing 10 of your{" "}
-            <strong>friends / family on a holiday </strong>
-            ride or if you're a solo <strong>pro</strong> interested in training
-            Extreme Enduro. We have it all covered.
-          </p>
+          <div className="flex flex-col md:flex-row gap-8 items-center justify-center mb-6">
+            <div className="flex flex-col gap-4">
+              <h2>
+                An all inclusive{" "}
+                <span className="text-accent">Off-Road Experience</span>
+              </h2>
+              <p>
+                Whether you're bringing 10 of your{" "}
+                <strong>friends / family on a holiday </strong>
+                ride or if you're a solo <strong>pro</strong> interested in
+                training Extreme Enduro. We have it all covered.
+              </p>
+            </div>
+
+            <Image
+              src="/images/articles/0.jpg"
+              className="object-cover aspect-[4/3] max-w-md w-full md:order-first"
+              height={400}
+              width={500}
+              alt="All inclusive off-road experience in Algarve, Portugal"
+            />
+          </div>
+
           <Pricing tour={tours} />
         </Row>
       </Section>
