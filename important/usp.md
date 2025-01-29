@@ -29,23 +29,55 @@ Emphasise TDS as premium enduro tours for those who want nothing but the best En
 
 ## Priotiry Keywords
 
-Algarve, Hard Enduro's hidden secret
+Algarve, Hard Enduro's hidden secret X
+
+Best place to ride enduro in portugal 
+
+Enduro Tours for Husband and Wife
+
+Enduro Tours for Family
+
+Enduro Tours for Father and Son
+
+Enduro Tours for Kids
+
+Enduro Tours for group of friends
+
+Enduro Tours for Professional Riders
+
+Enduro Tours for Fathers
+
+Enduro Tours for boys holiday
+
+Enduro Tours for women
+
+Enduro Tours for a break from work
+
+Enduro Tours for brothers
+
+Enduro Tours for beginners
+
+Enduro Tours for Motocross Riders
+
+Enduro vs Motocross
+
+Why enduro is better than Motocross
 
 ---
 
-Enduro Portugal
+Enduro Portugal X
 
-offroad motorcycle tour algarve
+offroad motorcycle tour algarve X
 
-enduro holidays
+enduro holidays X
 
 bike tour faro
 
-enduro tours portugal
+enduro tours portugal X
 
 vilamoura bike tours
 
-motorcycle tours portugal
+motorcycle tours portugal X
 
 bike rental vilamoura
 
