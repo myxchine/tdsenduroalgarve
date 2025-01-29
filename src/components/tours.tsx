@@ -42,24 +42,29 @@ export function Pricing({ tour }: { tour: any }) {
               )}{" "}
               <span className="text-xl"> / Includes</span>
             </h3>
-            <div className="flex flex-col gap-1 justify-center items-start w-full">
-              <Link href="/bikes/ktm-300-exc" className=" ">
-                <p className="text-accent text-sm font-bold uppercase hover:underline">
+            <ul className="flex flex-col gap-1 justify-center items-start w-full">
+              <li>
+                <Link
+                  href="/bikes/ktm-300-exc"
+                  className="text-accent text-sm font-bold uppercase hover:underline"
+                >
                   KTM EXC 300 {`->`}
-                </p>
-              </Link>
-              <Link href="/about-tour" className="mb-1">
-                <p className="text-accent text-sm font-bold uppercase hover:underline">
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about-tour"
+                  className="text-accent text-sm font-bold uppercase hover:underline"
+                >
                   Full Day Tour {`->`}
-                </p>
-              </Link>
-              <div>
-                <p>All protective and riding equipment</p>
-                <p>Fuel</p>
-                <p>Water and snacks</p>
-                <p>Traditional Lunch</p>
-              </div>
-            </div>
+                </Link>
+              </li>
+
+              <li>All protective and riding equipment</li>
+              <li>Fuel</li>
+              <li>Water and snacks</li>
+              <li>Traditional Lunch</li>
+            </ul>
           </div>
           <div className="flex flex-col items-end gap-4 justify-between w-full">
             <p className="text-4xl font-accent tracking-wider relative pl-3">

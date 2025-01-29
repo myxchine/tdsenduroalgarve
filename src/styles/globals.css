@@ -123,3 +123,8 @@ select {
   -moz-appearance: none; /* For Firefox */
   background: white; /* Removes the background */
 }
+
+
+img {
+  @apply rounded
+}
