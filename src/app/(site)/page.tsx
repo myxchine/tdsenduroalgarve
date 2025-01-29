@@ -14,7 +14,6 @@ import ExploreArticles from "@/components/explorearticles";
 import { TourList } from "@/components/tours";
 import EnduroTour from "@/components/endurotour";
 export default function Home() {
-  const articles = getAllPosts();
   return (
     <>
       <Section full>
@@ -35,6 +34,7 @@ export default function Home() {
       <EnduroTour />
 
       <Bike />
+      <ExploreArticles />
 
       <Section>
         <Row>
@@ -67,7 +67,6 @@ export default function Home() {
           <TourList tour={tours} />
         </Row>
       </Section>
-      <ExploreArticles />
     </>
   );
 }
@@ -77,9 +76,11 @@ function Hero(props: any) {
     <div {...props}>
       <div className="flex flex-col gap-6 max-w-2xl md:px-6  text-center  mx-auto md:mx-0 text-black md:text-white">
         <div className="flex flex-col gap-4">
-          <h1 className="text-balance md:text-left">Enduro Portugal</h1>
-          <p className="max-w-md mx-auto md:mx-0  md:text-left">
-            KTM Enduro motorbike tours in Algarve, Portugal
+          <h1 className="text-balance md:text-left">
+            All Inclusive Enduro Tour
+          </h1>
+          <p className="max-w-[300px] mx-auto md:mx-0  md:text-left">
+            Premium KTM Hard Enduro motorbike tours in Algarve, Portugal
           </p>
         </div>
 
