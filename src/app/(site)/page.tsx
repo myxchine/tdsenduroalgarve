@@ -20,11 +20,11 @@ export default function Home() {
         <div className="relative  md:bg-black">
           <Image
             src="/images/enduro.jpg"
-            alt="TDS Enduro Algarve, Faro"
-            width={1200}
+            alt="TDS Enduro Algarve, Southern Portugal"
+            width={1000}
             height={800}
-            priority={true}
-            className="object-cover w-full h-[400px] md:h-[700px] lg:h-[900px] object-left"
+            priority
+            className="object-cover w-full h-[300px] md:h-[700px] lg:h-[900px] object-left"
             style={{ transform: "scaleX(-1)" }}
           />
           <Hero className=" w-full  flex flex-col items- md:items-start justify-center md:absolute  md:bottom-0  h-[100%] max-w-6xl mx-auto left-0 right-0 pt-12      text-background" />

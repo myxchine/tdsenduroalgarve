@@ -58,9 +58,6 @@ export default function RootLayout({
         <Header />
         <main id="tds-main">{children}</main>
         <Footer />
-        <div className="fixed bottom-6 right-0  md:hidden w-full flex flex-col items-center justify-center">
-          <ContactButton />
-        </div>
         <Toaster position="bottom-center" richColors={true} />
       </body>
       <GoogleAnalytics gaId={"G-MHMCJ4Z05X"} />
