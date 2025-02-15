@@ -1,7 +1,7 @@
 ---
 title: "Algarve, Hard Enduro's Hidden Secret"
 excerpt: "For hard enduro enthusiasts, the search for the perfect riding destination can often feel like a challenge itself. Trails must be rugged and varied, the weather reliable, and—most crucially—it must be legal to ride. In much of Europe, enduro riding is restricted or outright banned, leaving riders yearning for a haven where their passion can thrive. Enter the Algarve, Portugal’s sun-soaked southern gem and the best-kept secret of the hard enduro world."
-coverImage: "/images/articles/11.JPG"
+coverImage: "/images/articles/1.JPG"
 date: "2025-01-18T17:16:13.122Z"
 ogImage:
  url: "/images/articles/1.JPG"
