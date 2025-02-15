@@ -1,10 +1,10 @@
 ---
 title: "What is Enduro: Your Guide to Off-Road Adventure"
 excerpt: "Enduro—a word that evokes visions of rugged trails, daring riders, and motorcycles built to conquer the wild. For enthusiasts, it’s a passion; for newcomers, it’s an exhilarating mystery. But what exactly is Enduro?"
-coverImage: "/images/articles/2.jpg"
+coverImage: "/images/new/3.jpg"
 date: "2025-01-16T05:35:07.322Z"
 ogImage:
- url: "/images/articles/2.jpg"
+ url: "/images/new/3.jpg"
 ---
 
 Enduro is more than just a sport—it’s an intense off-road challenge that tests skill, endurance, and determination. In this guide, we’ll break down everything you need to know about Enduro, from its origins to its most extreme variations, and why riders around the world can’t get enough of it.
