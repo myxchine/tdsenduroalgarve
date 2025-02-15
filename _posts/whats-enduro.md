@@ -2,7 +2,7 @@
 title: "What is Enduro: Your Guide to Off-Road Adventure"
 excerpt: "Enduro—a word that evokes visions of rugged trails, daring riders, and motorcycles built to conquer the wild. For enthusiasts, it’s a passion; for newcomers, it’s an exhilarating mystery. But what exactly is Enduro?"
 coverImage: "/images/new/3.jpg"
-date: "2025-01-16T05:35:07.322Z"
+date: "2025-02-15T05:35:07.322Z"
 ogImage:
  url: "/images/new/3.jpg"
 ---
