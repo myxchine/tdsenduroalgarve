@@ -26,7 +26,7 @@ export default async function sendBookingConfirmationEmail(
   const confirmationEmailData: EmailData = {
     sender: { name: customerName, email: customerEmail },
     to: [
-   { name: "Francisco", email: "francisco@tdsenduroalgarve.com" },
+      { name: "Francisco", email: "francisco@tdsenduroalgarve.com" },
       { name: "Michael", email: "michael.dozzantoz@gmail.com" },
     ],
     subject: `Enduro tour reservation request from ${customerName} ${customerSurname}`,

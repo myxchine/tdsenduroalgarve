@@ -112,15 +112,7 @@ export default function Footer() {
       </div>
 
       <p className="flex flex-row items-center justify-center text-center gap-1 text-sm md:text-base  w-full mt-4 md:mt-8">
-        &copy; 2025 TDS Enduro Algarve. Site by{" "}
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://vesqa.com"
-          className="hover:underline text-accent"
-        >
-          Vesqa
-        </a>
+        &copy; 2025 TDS Enduro Tours.
       </p>
     </footer>
   );
