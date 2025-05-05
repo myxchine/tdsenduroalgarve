@@ -32,6 +32,14 @@ export function Form({
 
   useEffect(() => {
     if (status === true) {
+      toast.success("Reservation submitted successfully");
+      router.push(
+        `/reserve/thankyou?name=${encodeURIComponent(formData.name)}`
+      );
+    }
+
+    if (status === false) {
+      toast.error("An error occured please try again");
       setFormData({
         name: "",
         surname: "",
@@ -41,13 +49,6 @@ export function Form({
         riders: "",
         message: "",
       });
-      toast.success("Form submitted successfully");
-
-      router.replace("/reserve", { scroll: false });
-    }
-
-    if (status === false) {
-      toast.error("An error occured please try again");
     }
   }, [status, router]);
 

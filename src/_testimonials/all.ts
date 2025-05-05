@@ -1,5 +1,12 @@
 export const testimonials = [
   {
+    reviewer: "Cedrick Baker",
+    rating: 5,
+    review_date: "3 May 2025",
+    review_text:
+      "My friend and I had a blast today. Francisco is an expert at gauging our experience and bring us on trails that are challenging but not impossible to do. As a person, he is amazing: good soul and funny. I cannot recommending him more: if you are looking at a location to do enduro bike, he is the guy and the trails are amazing and very diversified in level of difficulty. It does not matter if you are a beginner or an expert at enduro bikes, Francisco will make sure you have a good time.",
+  },
+  {
     reviewer: "Cyril Marques",
     rating: 5,
     review_date: "14 September 2024",

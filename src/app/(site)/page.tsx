@@ -30,12 +30,8 @@ export default function Home() {
           <Hero className=" w-full  flex flex-col items- md:items-start justify-center md:absolute  md:bottom-0  h-[100%] max-w-6xl mx-auto left-0 right-0 pt-12      text-background" />
         </div>
       </Section>
-
       <EnduroTour />
-
       <Bike />
-      <ExploreArticles />
-
       <Section>
         <Row>
           <h2>Testimonials</h2>
@@ -67,6 +63,7 @@ export default function Home() {
           <TourList tour={tours} />
         </Row>
       </Section>
+      <ExploreArticles />
     </>
   );
 }
@@ -80,7 +77,8 @@ function Hero(props: any) {
             All Inclusive Enduro Experience
           </h1>
           <p className="max-w-[300px] mx-auto md:mx-0  md:text-left">
-            Premium KTM hard enduro <strong>motorbike tours</strong> in Algarve, Portugal
+            Premium KTM hard enduro <strong>motorbike tours</strong> in Algarve,
+            Portugal
           </p>
         </div>
 
@@ -95,7 +93,7 @@ function Hero(props: any) {
             href="/reserve"
             className="bg-foreground text-background w-full p-3 uppercase hover:bg-black/80 font-accent rounded"
           >
-            Reserve for free <span className="font-sans">  {"->"}</span>
+            Reserve for free <span className="font-sans"> {"->"}</span>
           </Link>
         </div>
       </div>
