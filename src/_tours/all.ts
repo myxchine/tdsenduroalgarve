@@ -9,7 +9,7 @@ export const tours = {
   info: "No bike license required off-road.",
   startingPrice: 280,
   packages: [
-    { id: 1, price: 350, days: 1, riders: 1 },
+    { id: 1, price: 380, days: 1, riders: 1 },
     { id: 2, price: 300, days: 1, riders: 2 },
     { id: 3, price: 280, days: 1, riders: 3 },
   ],

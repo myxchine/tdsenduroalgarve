@@ -19,13 +19,12 @@ export default function Home() {
       <Section full>
         <div className="relative  md:bg-black">
           <Image
-            src="/images/enduro.jpg"
+            src="/images/new.jpg"
             alt="TDS Enduro Algarve, Southern Portugal"
             width={1000}
             height={800}
             priority
-            className="object-cover w-full h-[300px] md:h-[700px] lg:h-[900px] object-left"
-            style={{ transform: "scaleX(-1)" }}
+            className="object-cover w-full h-[300px] md:h-[700px] lg:h-[900px] object-center md:opacity-80"
           />
           <Hero className=" w-full  flex flex-col items- md:items-start justify-center md:absolute  md:bottom-0  h-[100%] max-w-6xl mx-auto left-0 right-0 pt-12      text-background" />
         </div>
@@ -76,8 +75,8 @@ function Hero(props: any) {
           <h1 className="text-balance md:text-left">
             All Inclusive Enduro Experience
           </h1>
-          <p className="max-w-[300px] mx-auto md:mx-0  md:text-left">
-            Premium KTM hard enduro <strong>motorbike tours</strong> in Algarve,
+          <p className="max-w-[500px] mx-auto md:mx-0  md:text-left md:text-xl">
+            Premium hard enduro <strong>motorbike tour and rental</strong> in Algarve,
             Portugal
           </p>
         </div>

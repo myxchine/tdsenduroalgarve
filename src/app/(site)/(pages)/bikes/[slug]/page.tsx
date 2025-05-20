@@ -19,14 +19,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const slug = (await params).slug;
   const bike = bikes.find((bike) => bike.slug === slug);
-
   if (!bike) {
     return notFound();
   }
-
   const title = bike.name + " Enduro Tour in Portugal";
   const description = bike.excerpt;
-
   return {
     title: title,
     description: description,
@@ -36,13 +33,11 @@ export async function generateMetadata({
     },
   };
 }
-
 export function generateStaticParams() {
   return bikes.map((bike: any) => ({
     slug: bike.slug,
   }));
 }
-
 export default async function Bikes({
   params,
 }: {

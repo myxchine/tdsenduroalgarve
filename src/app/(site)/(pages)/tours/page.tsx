@@ -64,6 +64,22 @@ export default async function About() {
                 <span className="text-accent">Off-Road Experience</span>
               </h2>
               <p>
+                Start your enduro adventure with us in the morning (in the
+                winter around 9am but in summer around 8am details provided when
+                you request booking) as we take you on a unique expert tour
+                through beautiful terrain, single tracks, hill climbs and more
+                all tailored to your skill level.
+              </p>
+              <p>
+                Everything you need is included such as the bike, tour,
+                traditional lunch, gear and more!
+              </p>
+              <p>
+                The ride will take up most of the day (normally back home around
+                3pm) and you are sure to be satisfied by the end ready to go
+                home and sleep!
+              </p>
+              <p>
                 Whether you're bringing 10 of your{" "}
                 <strong>friends / family on a holiday </strong>
                 ride or if you're a solo <strong>pro</strong> interested in
