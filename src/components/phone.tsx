@@ -7,7 +7,7 @@ export default function Phone() {
         href="/reserve"
         className="w-full hover:text-accent font-accent text-sm text-foreground text-center p-2 border-b border-black/5 lg:p-4 "
       >
-        Rider Hard Enduro
+        Ride Hard Enduro
         <span className="font-sans tracking-normal font-bold"> {"->"}</span>
       </Link>
     </div>

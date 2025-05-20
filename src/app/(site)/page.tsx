@@ -24,7 +24,7 @@ export default function Home() {
             width={1000}
             height={800}
             priority
-            className="object-cover w-full h-[300px] md:h-[700px] lg:h-[900px] object-center md:opacity-80"
+            className="object-cover w-full h-[300px] md:h-[700px] lg:h-[900px] object-center md:opacity-80 rounded-none"
           />
           <Hero className=" w-full  flex flex-col items- md:items-start justify-center md:absolute  md:bottom-0  h-[100%] max-w-6xl mx-auto left-0 right-0 pt-12      text-background" />
         </div>
