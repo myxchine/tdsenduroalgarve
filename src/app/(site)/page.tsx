@@ -24,7 +24,7 @@ export default function Home() {
             width={1000}
             height={800}
             priority
-            className="object-cover w-full h-[300px] md:h-[700px] lg:h-[900px] object-center md:opacity-80 rounded-none"
+            className="object-cover w-full h-[300px] md:h-[700px] lg:h-[900px] object-center md:opacity-60 rounded-none"
           />
           <Hero className=" w-full  flex flex-col items- md:items-start justify-center md:absolute  md:bottom-0  h-[100%] max-w-6xl mx-auto left-0 right-0 pt-12      text-background" />
         </div>
@@ -70,13 +70,14 @@ export default function Home() {
 function Hero(props: any) {
   return (
     <div {...props}>
-      <div className="flex flex-col gap-6 max-w-xl md:px-6  text-center  mx-auto md:mx-0 text-black md:text-white">
+      <div className="flex flex-col gap-6 max-w-2xl md:px-6  text-center  mx-auto md:mx-0 text-black md:text-white">
         <div className="flex flex-col gap-4">
           <h1 className="text-balance md:text-left">
             All Inclusive Enduro Experience
           </h1>
           <p className="max-w-[500px] mx-auto md:mx-0  md:text-left md:text-xl">
-            Premium hard enduro <strong>motorbike tour and rental</strong> in Algarve,
+            Ride with the best bikes, gear, and scenery in the world. Premium hard
+            enduro <strong>motorbike tour and rental</strong> in Algarve,
             Portugal
           </p>
         </div>
@@ -89,10 +90,10 @@ function Hero(props: any) {
             See the Tour
           </Link>
           <Link
-            href="/reserve"
+            href="/articles/whats-enduro"
             className="bg-foreground text-background w-full p-3 uppercase hover:bg-black/80 font-accent rounded"
           >
-            Reserve for free <span className="font-sans"> {"->"}</span>
+           What is Enduro?
           </Link>
         </div>
       </div>
