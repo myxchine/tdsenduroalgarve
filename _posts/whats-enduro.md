@@ -17,7 +17,7 @@ Enduro is an off-road motorcycle discipline that blends elements of endurance ra
 
 Competitions typically involve timed stages through demanding trails, where riders must balance speed, control, and strategy to complete the course efficiently. Originally gaining traction in Europe, Enduro has expanded into a global phenomenon, especially thriving in regions like Spain, Italy, and the UK.
 
-[Learn more about what Enduro is](https://endurowow.com/articles/what-is-enduro)
+<a href="https://endurowow.com/articles/what-is-enduro" target="_blank" rel="noopener noreferrer">Learn more about what Enduro is</a>
 
 ---
 
@@ -31,7 +31,7 @@ The classic format of Enduro features long-distance routes through forests, hill
 ### **2. Hard Enduro**
 This extreme variation is designed to push riders to their limits. Expect steep inclines, rock-laden trails, and nearly impossible obstacles. Legendary events like **Erzbergrodeo** in Austria test the resilience and skill of even the most seasoned riders.
 
-[Explore Hard Enduro](https://endurowow.com/articles/hard-enduro)
+<a href="https://endurowow.com/articles/hard-enduro" target="_blank" rel="noopener noreferrer">Explore Hard Enduro</a>
 
 ### **3. Extreme Enduro**
 Taking difficulty up a notch, Extreme Enduro introduces relentless challenges such as boulder-strewn paths, sharp inclines, and unpredictable terrain. Only the most highly skilled and physically fit riders take on these brutal courses.
@@ -45,9 +45,7 @@ A more fast-paced and compact version of Enduro, Sprint Enduro features short, h
 
 Enduro is a sport that requires a lot of skill, endurance, and a strong mindset. It demands physical fitness, technical skills, and a strong mindset as riders navigate harsh and unpredictable terrains over extended distances. More than just a race, Enduro is about mastering your bike and embracing the wilderness.
 
-**Discover inspiring riders like Billy Bolt and Manuel Lettenbichler** 
-
-[See Top Hard Enduro riders](https://endurowow.com/riders)
+**Discover inspiring riders like Billy Bolt and Manuel Lettenbichler** <a href="https://endurowow.com/riders" target="_blank" rel="noopener noreferrer">See Top Hard Enduro riders</a>
 
 ---
 
@@ -61,12 +59,13 @@ Unlike other motorcycle sports, Enduro thrives on unpredictable terrain. From de
 ### **2. Specialized Motorcycles**
 Enduro bikes are built for durability and versatility. They are lightweight, powerful, and designed with long-travel suspension and knobby tires for superior traction. Some of the top models include **KTM 300 EXC**, **Husqvarna TE 300**, and **Beta RR 300**.
 
-[Check out top Enduro bikes](https://endurowow.com/bikes)
+<a href="https://endurowow.com/bikes" target="_blank" rel="noopener noreferrer">Check out top Enduro bikes</a>
 
 ### **3. Mental and Physical Stamina**
 Riding Enduro requires strength, endurance, and an unbreakable focus. Balancing aggression with control and knowing when to conserve energy is essential for success.
 
-[Learn expert braking techniques to improve control](https://endurowow.com/articles/expert-braking-techniques)
+<a href="https://endurowow.com/articles/expert-braking-techniques" target="_blank" rel="noopener noreferrer">Learn expert braking techniques to improve control</a>
+
 
 ### **4. A Tight-Knit Community**
 Beyond competition, Enduro is a lifestyle embraced by a passionate global community. Riders bond over shared experiences, exchange techniques, and support one another in their adventures.
@@ -89,7 +88,7 @@ Enduro’s appeal lies in the unique experiences it offers:
 Thinking about getting into Enduro? Here’s how to start:
 
 1. **Get the Right Gear** – Invest in an Enduro bike, protective gear (helmet, boots, gloves, and armor), and comfortable riding apparel.
-   [Compare Enduro tire setups for optimal performance](https://endurowow.com/articles/enduro-tires)
+   <a href="https://endurowow.com/articles/enduro-tires" target="_blank" rel="noopener noreferrer">Compare Enduro tire setups for optimal performance</a>
 2. **Join a Riding Group** – Learning from experienced riders can fast-track your skills and boost confidence.
 3. **Start with Easier Trails** – Gradually progress to tougher routes as you gain experience and improve technique.
 4. **Train Regularly** – Physical fitness and consistent riding practice are crucial for mastering Enduro.
