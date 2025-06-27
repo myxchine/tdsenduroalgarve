@@ -29,6 +29,15 @@ export default function Bikes() {
             <strong>we have 7 of them fully kitted out</strong> and ready to
             roll.
           </p>
+
+          <a
+            href="https://endurowow.com/bikes/ktm-300-exc"
+            className="text-accent hover:underline"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Learn more about the KTM EXC 300 {"->"}
+          </a>
         </Row>
         <Row>
           <BikesList bikes={bikes} />

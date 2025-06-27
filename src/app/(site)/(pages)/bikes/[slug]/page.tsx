@@ -64,12 +64,22 @@ export default async function Bikes({
               <Performance bike={bike} />
 
               <p>{bike.excerpt}</p>
-              <Link
-                href={`/tours`}
-                className="hover:underline text-accent mb-4"
-              >
-                See the tour {"->"}
-              </Link>
+              <div className="flex flex-wrap gap-4">
+                <Link
+                  href={`/tours`}
+                  className="hover:underline text-accent mb-4"
+                >
+                  See the tour {"->"}
+                </Link>
+                <a
+                  href="https://endurowow.com/bikes/ktm-300-exc"
+                  className="text-accent hover:underline"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Learn more about the KTM EXC 300 {"->"}
+                </a>
+              </div>
             </div>
 
             <Image
@@ -82,15 +92,6 @@ export default async function Bikes({
               className="w-full h-auto aspect-[13/9] object-cover my-0 max-w-[700px]"
             />
           </div>
-        </Row>
-
-        <Row>
-          <h2> Specifications</h2>
-          <Spces bike={bike} />
-        </Row>
-        <Row>
-          <h2>How the {bike.name} makes us feel</h2>
-          <div dangerouslySetInnerHTML={{ __html: bike.description }} />
         </Row>
       </Section>
       <EnduroTour />
