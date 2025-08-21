@@ -15,6 +15,7 @@ const geistSans = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://tdsenduroalgarve.com"),
   icons: [{ rel: "icon", url: "/favicon.ico" }],
   title: {
     default:
@@ -49,8 +50,45 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const orgJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "TDS Enduro Algarve",
+    url: "https://tdsenduroalgarve.com",
+    logo: "https://tdsenduroalgarve.com/favicon.ico",
+    sameAs: ["https://www.instagram.com/", "https://www.facebook.com/"],
+  };
+
+  const localBusinessJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    name: "TDS Enduro Algarve",
+    url: "https://tdsenduroalgarve.com",
+    telephone: "+351 968 185 407",
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "PT",
+      addressRegion: "Faro",
+      addressLocality: "Algarve",
+    },
+    areaServed: ["Portugal", "United Kingdom", "United States", "Europe"],
+    image: "https://tdsenduroalgarve.com/images/new.jpg",
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessJsonLd),
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable}  ${accent.variable}  antialiased relative`}
       >

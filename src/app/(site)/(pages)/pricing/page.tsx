@@ -25,7 +25,7 @@ export default function Home() {
             training Extreme Enduro. We have it all covered.
           </p>
 
-          <Link href={"/tour"} className="hover:underline text-accent mb-4">
+          <Link href={"/tours"} className="hover:underline text-accent mb-4">
             Learn more about the tour {"->"}
           </Link>
 

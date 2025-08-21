@@ -20,8 +20,34 @@ export default async function ArticlePage({ params }: Params) {
 
   const content = await markdownToHtml(post.content);
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    image: post.coverImage,
+    datePublished: post.date,
+    dateModified: post.date,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://tdsenduroalgarve.com/articles/${post.slug}`,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "TDS Enduro Algarve",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://tdsenduroalgarve.com/favicon.ico",
+      },
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <Section>
         <Row>
           <h1>{post.title}</h1>

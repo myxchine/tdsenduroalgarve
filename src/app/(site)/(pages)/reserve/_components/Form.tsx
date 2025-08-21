@@ -32,6 +32,16 @@ export function Form({
 
   useEffect(() => {
     if (status === true) {
+      // track GA4 lead event if available
+      if (typeof window !== "undefined" && (window as any).gtag) {
+        (window as any).gtag("event", "generate_lead", {
+          event_category: "engagement",
+          method: "contact_form",
+          lead_type: "tour_reservation",
+          riders: formData.riders || "",
+        });
+      }
+
       toast.success("Reservation submitted successfully");
       router.push(
         `/reserve/thankyou?name=${encodeURIComponent(formData.name)}`

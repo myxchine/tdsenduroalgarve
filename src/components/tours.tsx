@@ -29,8 +29,13 @@ export function Pricing({ tour }: { tour: any }) {
       {tour.packages.map((packageItem: any, packageIndex: number) => (
         <div
           key={packageItem.id}
-          className="flex flex-col items-center gap-8 justify-center shadow-lg w-full bg-white border rounded-md p-4 py-6"
+          className="flex flex-col items-center gap-8 justify-center shadow-lg w-full bg-white border rounded-md p-4 py-6 relative"
         >
+          {packageItem.riders === 2 && (
+            <span className="absolute -top-3 right-3 bg-accent text-white text-xs px-2 py-1 rounded shadow">
+              Most Booked
+            </span>
+          )}
           <div className="flex flex-col w-full gap-4">
             <h3 className="text-3xl font-accent">
               {packageItem.riders}
@@ -53,7 +58,7 @@ export function Pricing({ tour }: { tour: any }) {
               </li>
               <li>
                 <Link
-                  href="/about-tour"
+                  href="/tours"
                   className="text-accent text-sm font-bold uppercase hover:underline"
                 >
                   Full Day Tour {`->`}

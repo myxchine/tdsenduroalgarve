@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/server/api";
+import { market } from "@/_market/bikes";
 
 const BASE_URL = "https://tdsenduroalgarve.com";
 
@@ -14,7 +15,6 @@ const staticPages = [
   "/testimonials",
   "/gallery",
   "/pricing",
-  "/contact",
   "/market",
 ];
 
@@ -29,5 +29,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(post.date),
   }));
 
-  return [...pages, ...posts];
+  const marketItems = market.map((item) => ({
+    url: `${BASE_URL}/market/${item.slug}`,
+    lastModified: new Date(),
+  }));
+
+  return [...pages, ...posts, ...marketItems];
 }

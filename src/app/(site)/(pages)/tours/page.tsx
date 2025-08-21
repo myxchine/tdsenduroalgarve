@@ -41,8 +41,82 @@ function Hero(props: any) {
 }
 
 export default async function About() {
+  // JSON-LD blocks
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What’s included in the TDS Enduro tour?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "KTM 300 EXC, premium protective gear, expert guide, fuel, water/snacks, and traditional Portuguese lunch.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do I need a motorcycle license?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "For off-road enduro in Portugal, a bike license is not required. We tailor routes to your skill level.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What group sizes do you support?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "From solo riders to groups of 3+ riders. For larger private groups, contact us to plan a bespoke day.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What time does the tour start and how long is it?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Typically 8–9am start depending on season; riding most of the day with lunch included. Return by mid/late afternoon.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is the tour suitable for beginners?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. We tailor terrain and coaching to your level—from first-timers to advanced hard enduro riders.",
+        },
+      },
+    ],
+  };
+
+  const productsJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "TDS Algarve Enduro Tour (All-Inclusive)",
+    brand: { "@type": "Brand", name: "TDS Enduro Algarve" },
+    description:
+      "All-inclusive premium enduro tour in Algarve: KTM 300 EXC, gear, expert guide, fuel, water/snacks, and lunch included.",
+    offers: {
+      "@type": "AggregateOffer",
+      priceCurrency: "EUR",
+      lowPrice: tours.startingPrice,
+      highPrice: 380,
+      offerCount: tours.packages.length,
+      availability: "https://schema.org/InStock",
+      url: "https://tdsenduroalgarve.com/tours",
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productsJsonLd) }}
+      />
       <Section full>
         <Image
           src="/images/tours/enduro-tour.jpg"
@@ -85,6 +159,14 @@ export default async function About() {
                 ride or if you're a solo <strong>pro</strong> interested in
                 training Extreme Enduro. We have it all covered.
               </p>
+              <ul className="list-disc pl-5 text-black/80">
+                <li>
+                  Exclusive KTM 300 EXC fleet (7 bikes) prepared for Algarve
+                </li>
+                <li>Premium gear across sizes; traditional lunch and drinks</li>
+                <li>Private or small-group guided rides tailored to level</li>
+                <li>Routes ranging from scenic singletrack to hard enduro</li>
+              </ul>
             </div>
 
             <Image
@@ -99,6 +181,49 @@ export default async function About() {
           <Pricing tour={tours} />
         </Row>
       </Section>
+
+      <Section>
+        <Row>
+          <h2>Frequently Asked Questions</h2>
+          <div className="flex flex-col gap-4 max-w-3xl">
+            <details>
+              <summary>Do I need a motorcycle license?</summary>
+              <p>
+                For off-road enduro in Portugal, a bike license is not required.
+              </p>
+            </details>
+            <details>
+              <summary>What’s included?</summary>
+              <p>
+                KTM 300 EXC, premium protective gear, expert guide, fuel,
+                snacks, water, and a traditional lunch.
+              </p>
+            </details>
+            <details>
+              <summary>What group sizes do you support?</summary>
+              <p>
+                Solo riders to groups of 3+ riders. For larger private groups,
+                contact us to customize.
+              </p>
+            </details>
+            <details>
+              <summary>How long is the day?</summary>
+              <p>
+                We start around 8–9am depending on season and ride through the
+                day with a lunch stop.
+              </p>
+            </details>
+            <details>
+              <summary>Is it suitable for beginners?</summary>
+              <p>
+                Yes. Routes and coaching are tailored to your level, from
+                complete beginner to advanced.
+              </p>
+            </details>
+          </div>
+        </Row>
+      </Section>
+
       <Section>
         <Row>
           <h2>TDS Experiences</h2>

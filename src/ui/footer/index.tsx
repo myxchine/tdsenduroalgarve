@@ -8,7 +8,7 @@ const navItems = [
   { label: "Bikes", href: "/bikes" },
   { label: "Articles", href: "/articles" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: "Reserve", href: "/reserve" },
 ];
 const tourItems = [
   { label: "Reserve a tour", href: "/reserve" },

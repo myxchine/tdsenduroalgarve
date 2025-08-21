@@ -39,15 +39,15 @@ function Gallery() {
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 justify-center items-start w-full ">
       {images.map((image, index) => (
-        <img
+        <Image
           key={index}
           src={`/images/gallery/${image}`}
           alt={image}
-          width={200}
-          height={200}
+          width={400}
+          height={400}
           loading="lazy"
           className="object-cover w-full aspect-square"
-          draggable={true}
+          sizes="(max-width: 768px) 50vw, 33vw"
         />
       ))}
     </div>
