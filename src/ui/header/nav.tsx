@@ -11,8 +11,12 @@ const navigation = [
   { name: "About", href: "/about" },
 ];
 
+// Routes where nav items should be black on desktop
+const blackNavRoutes = ["/"];
+
 export default function Nav(props: any) {
   const pathname = usePathname();
+  const isBlackNavRoute = blackNavRoutes.includes(pathname);
 
   return (
     <nav {...props}>
@@ -22,8 +26,12 @@ export default function Nav(props: any) {
           href={item.href}
           scroll={false}
           className={`  rounded   hover:text-accent font-accent  w-fit items-center text-center ${
-            pathname === item.href ? "text-accent" : ""
-          }`}
+            pathname === item.href
+              ? "text-accent"
+              : isBlackNavRoute
+              ? "md:text-background"
+              : "md:text-foreground"
+          } `}
         >
           {item.name}
         </Link>

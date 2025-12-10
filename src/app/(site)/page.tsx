@@ -45,16 +45,22 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Section full>
-        <div className="relative  md:bg-black">
+        <div className="relative md:bg-black md:pt-12 ">
+          {/* Background Image */}
           <Image
-            src="/images/new.jpg"
-            alt="TDS Enduro Algarve, Southern Portugal"
+            src="/images/herotds.jpg"
+            alt="TDS Enduro Tours Algarve, Southern Portugal"
             width={1000}
             height={800}
             priority
-            className="object-cover w-full h-[300px] md:h-[700px] lg:h-[900px] object-center md:opacity-60 rounded-none"
+            className="object-cover md:absolute inset-0 h-full w-full md:opacity-90"
           />
-          <Hero className=" w-full  flex flex-col items- md:items-start justify-center md:absolute  md:bottom-0  h-[100%] max-w-6xl mx-auto left-0 right-0 pt-12      text-background" />
+
+          {/* Gradient Overlay */}
+          <div className="absolute hidden md:block inset-0 bg-gradient-to-r from-black/70 via-black/60 to-black/10 z-[1] w-[100%]" />
+
+          {/* Hero Content */}
+          <Hero className="relative w-full flex flex-col items-center md:items-start justify-center max-w-6xl mx-auto pt-12 md:py-32 z-[2] text-background px-4 md:px-6" />
         </div>
       </Section>
 
@@ -185,12 +191,12 @@ function Hero(props: any) {
       <div className="flex flex-col gap-6 max-w-2xl md:px-6  text-center  mx-auto md:mx-0 text-black md:text-white">
         <div className="flex flex-col gap-4">
           <h1 className="text-balance md:text-left">
-            All‑Inclusive Luxury Enduro Experience in Portugal
+            Premium Enduro Tour in Portugal
           </h1>
           <p className="max-w-[500px] mx-auto md:mx-0  md:text-left md:text-xl">
-            Ride with the best bikes, gear, and scenery in the world. Premium
-            hard enduro <strong>motorbike tour and rental</strong> in Algarve,
-            Portugal—tailored to your level.
+            Ride with the best bikes, gear, and scenery in the world. We offer an all-inclusive
+            hard enduro <strong>motorbike adventure</strong> in Algarve,
+            Portugal. Tailored to your level and objectives.
           </p>
         </div>
 
@@ -203,13 +209,13 @@ function Hero(props: any) {
           </Link>
           <Link
             href="/reserve"
-            className="bg-foreground text-background w-full p-3 uppercase hover:bg-black/80 font-accent rounded"
+            className="bg-black text-white w-full p-3 uppercase hover:bg-black/80 font-accent rounded md:bg-white md:text-black md:hover:bg-white/80"
           >
             Reserve Now
           </Link>
           <Link
             href="/articles/whats-enduro"
-            className="bg-foreground text-background w-full p-3 uppercase hover:bg-black/80 font-accent rounded"
+            className="bg-black text-white w-full p-3 uppercase hover:bg-black/80 font-accent rounded md:bg-white md:text-black md:hover:bg-white/80"
           >
             What is Enduro?
           </Link>

@@ -28,7 +28,7 @@ export default function MobileMenu() {
   return (
     <div className={`w-full block md:hidden `}>
       <div
-        className={`flex flex-row items-center justify-between w-full p-4 py-3`}
+        className={`flex flex-row items-center justify-between w-full h-fit p-4 py-3`}
       >
         <Logo />
 
@@ -46,16 +46,16 @@ export default function MobileMenu() {
 
 function Buttons({ open, setIsOpen }: { open: boolean; setIsOpen: any }) {
   return (
-    <>
+    <div className="p-2 rounded bg-white/80 h-fit flex items-center justify-center">
       {!open ? (
         <button aria-label="Mobile Menu Open" onClick={() => setIsOpen(true)}>
-          <MenuIcon className="h-6 w-6 text-foreground" stroke="black" />
+          <MenuIcon className="size-6 text-foreground" stroke="black" />
         </button>
       ) : (
         <button aria-label="Mobile Menu Close" onClick={() => setIsOpen(false)}>
-          <CloseIcon stroke="black" className="  h-6 w-6" />
+          <CloseIcon stroke="black" className="  size-6" />
         </button>
       )}
-    </>
+    </div>
   );
 }
