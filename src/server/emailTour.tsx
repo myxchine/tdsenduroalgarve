@@ -5,6 +5,10 @@ interface EmailData {
     name: string;
     email: string;
   };
+  replyTo: {
+    name: string;
+    email: string;
+  };
   to: {
     name: string;
     email: string;
@@ -24,7 +28,8 @@ export default async function sendBookingConfirmationEmail(
   requestedRiders: string
 ): Promise<boolean> {
   const confirmationEmailData: EmailData = {
-    sender: { name: customerName, email: customerEmail },
+    sender: { name: customerName, email: "noreply@couturer.com" },
+    replyTo: { name: customerName, email: customerEmail },
     to: [
       { name: "Francisco", email: "francisco@tdsenduroalgarve.com" },
       { name: "Michael", email: "michael.dozzantoz@gmail.com" },

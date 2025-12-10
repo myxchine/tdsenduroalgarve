@@ -8,7 +8,7 @@ import TestimonialsList from "@/components/testimonials";
 import { testimonials } from "@/_testimonials/all";
 import ExploreArticles from "@/components/explorearticles";
 export const metadata: Metadata = {
-  title: "Reserve an Enduro Portugal Off Road Motorbike Experience",
+  title: "Reserve an Off Road Enduro Motorbike Tour in Portugal",
   description:
     "TDS offers an all inclusive service for those who want nothing but the best. A truly curated experience that combines the best bikes, gear, and routes for the ultimate enduro adventure. With one-on-one service tailored to you, bike, gear, lunch and drinks included. Whether you're bringing 10 of your friends / family on a holiday ride or if you're a solo pro interested in training Extreme Enduro. We have it all covered..",
 };
@@ -27,7 +27,7 @@ export default async function Contact({
         <Row>
           <h1>
             <strong className="text-accent font-normal">Reserve</strong> an
-            Enduro Portugal Off Road Motorbike Experience
+            Off Road Enduro Motorbike Tour in Portugal
           </h1>
 
           <p className="max-w-2xl">

@@ -92,7 +92,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable}  ${accent.variable}  antialiased relative`}
       >
-        <Phone />
         <Header />
         <main id="tds-main">{children}</main>
         <Footer />
