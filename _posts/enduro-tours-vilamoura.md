@@ -44,7 +44,7 @@ We ride nothing but the best. The KTM EXC 300, known as the ultimate hard enduro
 
 We provide everything you need for an epic ride:
 - Top-tier protective gear for safety and comfort.
-- Fuel, snacks, and drinks throughout the day.
+- Fuel and water throughout the day.
 - A delicious traditional Portuguese lunch at a local restaurant.
 - Expert guides who tailor routes to your skill level.
 

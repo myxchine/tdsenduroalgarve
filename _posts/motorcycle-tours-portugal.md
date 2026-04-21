@@ -1,6 +1,6 @@
 ---
-title: "Motrocycle Tours in Portugal"
-excerpt: "Experience the ultimate motorcycle tours in Portugal with TDS Enduro Algarve! Ride top-tier KTM bikes through stunning landscapes, from flowing single tracks and beautiful views to tough river beds and hill climbs. All-inclusive packages with expert guides, premium gear, and traditional Portuguese lunches."
+title: "Motorcycle Tours in Portugal — All-Inclusive Off-Road Adventures in the Algarve"
+excerpt: "Guided motorcycle tours in Portugal on KTM 300 EXC bikes. All-inclusive packages with expert guides, premium gear, and traditional Portuguese lunches. Ride the Algarve's best trails — from scenic singletrack to challenging hill climbs."
 coverImage: "/images/articles/3.JPG"
 date: "2025-01-11T17:16:13.122Z"
 ogImage:
@@ -62,7 +62,7 @@ Our tours are led by experienced guides who know the Algarve’s trails inside o
 We take care of everything, so you can focus on the ride:
 -	Fully equipped KTM bikes
 -	Protective riding gear
--	Snacks, drinks, and fuel
+-	Water and fuel
 -	A traditional Portuguese lunch at a local restaurant
 
 ### 4. Customizable Tours

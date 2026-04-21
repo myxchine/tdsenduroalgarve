@@ -25,7 +25,7 @@ Expect a day filled with variety: flowing single-track trails through cork fores
 
 ## All-Inclusive, All About You
 
-Everything is taken care of. From the moment you arrive, TDS Enduro Algarve ensures a smooth and personalized experience. The ride is fully guided by professionals who know the Algarve's hidden paths like the back of their hand. You don’t need to bring anything, premium gear, fuel, drinks, and even snacks are included.
+Everything is taken care of. From the moment you arrive, TDS Enduro Algarve ensures a smooth and personalized experience. The ride is fully guided by professionals who know the Algarve's hidden paths like the back of their hand. You don’t need to bring anything, premium gear, fuel, and water are all included.
 
 But the highlight for many is what happens **after** the dust settles: lunch.
 

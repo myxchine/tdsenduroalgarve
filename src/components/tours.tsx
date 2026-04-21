@@ -67,7 +67,7 @@ export function Pricing({ tour }: { tour: any }) {
 
               <li>All protective and riding equipment</li>
               <li>Fuel</li>
-              <li>Water and snacks</li>
+              <li>Water</li>
               <li>Traditional Lunch</li>
             </ul>
           </div>

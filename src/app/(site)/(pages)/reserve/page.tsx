@@ -10,7 +10,7 @@ import ExploreArticles from "@/components/explorearticles";
 export const metadata: Metadata = {
   title: "Reserve an Off Road Enduro Motorbike Tour in Portugal",
   description:
-    "TDS offers an all inclusive service for those who want nothing but the best. A truly curated experience that combines the best bikes, gear, and routes for the ultimate enduro adventure. With one-on-one service tailored to you, bike, gear, lunch and drinks included. Whether you're bringing 10 of your friends / family on a holiday ride or if you're a solo pro interested in training Extreme Enduro. We have it all covered..",
+    "Reserve your all-inclusive enduro tour in Algarve, Portugal. From €290/rider — KTM 300 EXC, gear, expert guide, and lunch included. Tailored to your level.",
 };
 
 export const dynamic = "force-static";
@@ -31,10 +31,12 @@ export default async function Contact({
           </h1>
 
           <p className="max-w-2xl">
-            TDS offers an all inclusive service (best bikes, gear, and routes
-            included) for those who want <strong>nothing but the best.</strong>{" "}
-            A curated experience for friends, family or pro riders creatin a
-            unique tailored experience to your needs.
+            All-inclusive enduro tours from <strong>€290/rider</strong> — KTM 300
+            EXC, gear, expert guide, and lunch included. A curated experience
+            for friends, family, or pro riders tailored to your needs.
+          </p>
+          <p className="text-sm text-black/60 max-w-2xl">
+            Trusted by riders from 40+ countries · 90% return rate
           </p>
 
           <Link href={`/tours`} className=" hover:underline mb-4 text-accent">

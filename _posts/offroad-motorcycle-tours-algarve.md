@@ -43,7 +43,7 @@ Our fleet of **KTM EXC 300** bikes is the backbone of our operation. Known as th
 We take care of everything so you can focus on the thrill of the ride. Our all-inclusive tours include:  
 - Fully serviced **KTM EXC 300** bikes  
 - Top-quality protective and riding gear  
-- Fuel, water, and snacks throughout the day  
+- Fuel and water throughout the day  
 - A hearty **traditional Portuguese lunch** at a local restaurant  
 - Expert guides who tailor each route to your skill level and preferences  
 

@@ -39,7 +39,7 @@ export default function Footer() {
         <p>
           TDS offers a truly curated experience that combines the best bikes,
           gear, and routes for the ultimate enduro adventure. With one-on-one
-          service tailored to you, bike, gear, lunch and drinks included.
+          service tailored to you — bike, gear, and lunch included.
         </p>
 
         <Link href="/tours" className="hover:underline text-accent ">

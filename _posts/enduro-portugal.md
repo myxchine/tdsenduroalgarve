@@ -1,6 +1,6 @@
 ---
-title: "Enduro Portugal"
-excerpt: "Explore the thrill of Enduro in Portugal with TDS Enduro Algarve! Ride world-class KTM EXC 300 bikes through diverse terrains, guided by experts. Experience all-inclusive tours with premium gear, scenic routes, and traditional Portuguese lunches. Perfect for riders of all levels."
+title: "Enduro Portugal — Guided Off-Road Tours in the Algarve"
+excerpt: "Ride enduro in Portugal on KTM 300 EXC bikes through the Algarve's diverse terrain. All-inclusive guided tours with premium gear, scenic routes, and traditional Portuguese lunches. Tailored for beginners through advanced riders."
 coverImage: "/images/articles/0.jpg"
 date: "2025-01-10T17:16:13.122Z"
 ogImage:
@@ -44,7 +44,7 @@ We ride nothing but the best. The KTM EXC 300, known as the ultimate hard enduro
 
 We provide everything you need for an epic ride:
 - Top-tier protective gear for safety and comfort.
-- Fuel, snacks, and drinks throughout the day.
+- Fuel and water throughout the day.
 - A delicious traditional Portuguese lunch at a local restaurant.
 - Expert guides who tailor routes to your skill level.
 

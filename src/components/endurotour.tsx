@@ -18,8 +18,8 @@ export default function EnduroTour() {
         <p>
           A truly curated experience that combines the{" "}
           <strong>best bikes, gear, and routes</strong> for the ultimate enduro
-          adventure. With one-on-one service tailored to you, bike, gear, lunch
-          and drinks included.
+          adventure. With one-on-one service tailored to you — bike, gear, and
+          lunch included.
         </p>
         <p>
           Whether you're bringing 10 of your{" "}

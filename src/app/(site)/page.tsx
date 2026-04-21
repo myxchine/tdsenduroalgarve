@@ -24,7 +24,7 @@ export default function Home() {
         name: "What’s included in the tour?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "KTM 300 EXC, premium protective gear, expert guide, fuel, water/snacks, and a traditional Portuguese lunch.",
+          text: "KTM 300 EXC, premium protective gear, expert guide, fuel, water, and a traditional Portuguese lunch.",
         },
       },
       {
@@ -71,7 +71,7 @@ export default function Home() {
             <div className="flex flex-col gap-2 border border-black/10 rounded-xl shadow p-4 md:p-6">
               <h3>All‑Inclusive & Premium</h3>
               <p>
-                KTM 300 EXC fleet, top‑tier gear, expert guide, fuel, water, and
+                KTM 300 EXC fleet, top‑tier gear, expert guide, fuel, and
                 traditional lunch included.
               </p>
             </div>
@@ -126,13 +126,26 @@ export default function Home() {
         </Row>
       </Section>
 
-      <EnduroTour />
-      <Bike />
+      <Section>
+        <Row>
+          <h2>Pricing</h2>
+          <p>
+            Solo riders, friends, or family — we tailor every tour to your group
+            and skill level. All-inclusive, no hidden costs.
+          </p>
+
+          <Link href={"/tours"} className="hover:underline text-accent mb-4">
+            Learn more about the tour {"->"}
+          </Link>
+
+          <TourList tour={tours} />
+        </Row>
+      </Section>
       <Section>
         <Row>
           <h2>Testimonials</h2>
           <p>
-            Hear from our customers about their experiences with our tours and
+            Hear from riders who have experienced TDS firsthand.
           </p>
           <Link
             href={"/testimonials"}
@@ -143,22 +156,8 @@ export default function Home() {
           <TestimonialsList testimonials={testimonials} h3 lineclamp />
         </Row>
       </Section>
-      <Section>
-        <Row>
-          <h2>Pricing</h2>
-          <p>
-            TDS offers curated tours whether you're bringing 10 of your friends
-            / family on a holiday ride or if you're a solo pro interested in
-            training Extreme Enduro. We have it all covered.
-          </p>
-
-          <Link href={"/tours"} className="hover:underline text-accent mb-4">
-            Learn more about the tour {"->"}
-          </Link>
-
-          <TourList tour={tours} />
-        </Row>
-      </Section>
+      <EnduroTour />
+      <Bike />
       <Section>
         <Row>
           <h2>FAQs</h2>
@@ -173,7 +172,7 @@ export default function Home() {
             <details>
               <summary>What’s included?</summary>
               <p>
-                Bike, gear, guide, fuel, water/snacks, and a traditional
+                Bike, gear, guide, fuel, water, and a traditional
                 Portuguese lunch.
               </p>
             </details>
@@ -188,36 +187,34 @@ export default function Home() {
 function Hero(props: any) {
   return (
     <div {...props}>
-      <div className="flex flex-col gap-6 max-w-2xl md:px-6  text-center  mx-auto md:mx-0 text-black md:text-white">
+      <div className="flex flex-col gap-6 max-w-2xl md:px-6 text-center mx-auto md:mx-0 text-black md:text-white">
         <div className="flex flex-col gap-4">
           <h1 className="text-balance md:text-left">
-            Premium Enduro Tour in Portugal
+            Premium Enduro Tours in Algarve, Portugal
           </h1>
-          <p className="max-w-[500px] mx-auto md:mx-0  md:text-left md:text-xl">
-            Ride with the best bikes, gear, and scenery in the world. We offer an all-inclusive
-            hard enduro <strong>motorbike adventure</strong> in Algarve,
-            Portugal. Tailored to your level and objectives.
+          <p className="max-w-[500px] mx-auto md:mx-0 md:text-left md:text-xl">
+            All-inclusive guided <strong>motorbike adventure</strong> on KTM 300
+            EXC bikes. Gear, lunch, and expert guide included. Tailored to your
+            level — from first ride to hard enduro.
+          </p>
+          <p className="max-w-[500px] mx-auto md:mx-0 md:text-left text-sm md:text-base opacity-90">
+            From <strong>€290/rider</strong> · Trusted by riders from 40+
+            countries
           </p>
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 px-4 md:px-0">
           <Link
-            href="/tours"
-            className={`bg-accent text-background w-full  px-8 p-3 uppercase hover:bg-accent/80 mx-auto font-accent rounded `}
-          >
-            See the Tour
-          </Link>
-          <Link
             href="/reserve"
-            className="bg-black text-white w-full p-3 uppercase hover:bg-black/80 font-accent rounded md:bg-white md:text-black md:hover:bg-white/80"
+            className="bg-accent text-background w-full px-8 p-3 uppercase hover:bg-accent/80 mx-auto font-accent rounded"
           >
             Reserve Now
           </Link>
           <Link
-            href="/articles/whats-enduro"
+            href="/tours"
             className="bg-black text-white w-full p-3 uppercase hover:bg-black/80 font-accent rounded md:bg-white md:text-black md:hover:bg-white/80"
           >
-            What is Enduro?
+            See the Tour
           </Link>
         </div>
       </div>

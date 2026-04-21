@@ -10,31 +10,41 @@ import { Pricing } from "@/components/tours";
 import { tours } from "@/_tours/all";
 import TestimonialsList from "@/components/testimonials";
 export const metadata: Metadata = {
-  title: "Enduro Tours Portugal",
+  title: "Enduro Tours in Algarve, Portugal",
   description:
-    "All enclusive premium enduro tours in Southern Portugal (Algarve) for those who want nothing but the best. We offer the beautiful Algarve experience whilst making sure you have a great time with everything prepared for you.",
+    "All-inclusive premium enduro tours in Southern Portugal (Algarve). KTM 300 EXC, expert guide, gear, and lunch included. From €290/rider. Tailored to your level.",
   openGraph: {
-    title: "Enduro Tours Portugal",
+    title: "Enduro Tours in Algarve, Portugal",
     description:
-      "All enclusive premium enduro tours in Southern Portugal (Algarve) for those who want nothing but the best. We offer the beautiful Algarve experience whilst making sure you have a great time with everything prepared for you.",
+      "All-inclusive premium enduro tours in Southern Portugal (Algarve). KTM 300 EXC, expert guide, gear, and lunch included. From €290/rider. Tailored to your level.",
   },
 };
 
 function Hero(props: any) {
   return (
     <div {...props}>
-      <div className="flex flex-col gap-6 max-w-xl  text-center mx-auto ">
+      <div className="flex flex-col gap-6 max-w-xl text-center mx-auto">
         <h1 className="text-balance">
-          Enduro <span className="text-accent">Tours</span> Portugal
+          Enduro <span className="text-accent">Tours</span> in Algarve,
+          Portugal
         </h1>
         <p>
-          All enclusive{" "}
+          All-inclusive{" "}
           <strong>premium enduro tours in Southern Portugal (Algarve).</strong>{" "}
-          A truly curated experience that combines the{" "}
+          A curated experience combining the{" "}
           <strong>best bikes, gear, and routes</strong> for the ultimate enduro
-          adventure. With one-on-one service tailored to you, bike, gear, lunch
-          and drinks included.
+          adventure. One-on-one service tailored to you — bike, gear, and lunch
+          included.
         </p>
+        <p className="text-sm opacity-80">
+          From <strong>€290/rider</strong> · All-inclusive
+        </p>
+        <Link
+          href="/reserve"
+          className="bg-accent text-white px-8 py-3 uppercase hover:bg-accent/80 font-accent rounded mx-auto"
+        >
+          Reserve Now
+        </Link>
       </div>
     </div>
   );
@@ -51,7 +61,7 @@ export default async function About() {
         name: "What’s included in the TDS Enduro tour?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "KTM 300 EXC, premium protective gear, expert guide, fuel, water/snacks, and traditional Portuguese lunch.",
+          text: "KTM 300 EXC, premium protective gear, expert guide, fuel, water, and traditional Portuguese lunch.",
         },
       },
       {
@@ -95,12 +105,12 @@ export default async function About() {
     name: "TDS Algarve Enduro Tour (All-Inclusive)",
     brand: { "@type": "Brand", name: "TDS Enduro Algarve" },
     description:
-      "All-inclusive premium enduro tour in Algarve: KTM 300 EXC, gear, expert guide, fuel, water/snacks, and lunch included.",
+      "All-inclusive premium enduro tour in Algarve: KTM 300 EXC, gear, expert guide, fuel, water, and lunch included.",
     offers: {
       "@type": "AggregateOffer",
       priceCurrency: "EUR",
       lowPrice: tours.startingPrice,
-      highPrice: 380,
+      highPrice: 390,
       offerCount: tours.packages.length,
       availability: "https://schema.org/InStock",
       url: "https://tdsenduroalgarve.com/tours",
@@ -163,7 +173,7 @@ export default async function About() {
                 <li>
                   Exclusive KTM 300 EXC fleet (7 bikes) prepared for Algarve
                 </li>
-                <li>Premium gear across sizes; traditional lunch and drinks</li>
+                <li>Premium gear across sizes; traditional lunch included</li>
                 <li>Private or small-group guided rides tailored to level</li>
                 <li>Routes ranging from scenic singletrack to hard enduro</li>
               </ul>
@@ -196,7 +206,7 @@ export default async function About() {
               <summary>What’s included?</summary>
               <p>
                 KTM 300 EXC, premium protective gear, expert guide, fuel,
-                snacks, water, and a traditional lunch.
+                water, and a traditional lunch.
               </p>
             </details>
             <details>

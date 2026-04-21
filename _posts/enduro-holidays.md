@@ -1,6 +1,6 @@
 ---
-title: "Enduro Holidays in Portugal"
-excerpt: "Discover the ultimate enduro holidays with TDS Enduro Algarve! Explore stunning trails in southern Portugal on top-of-the-line KTM EXC 300 bikes. Enjoy all-inclusive packages with expert guides, premium gear, and traditional Portuguese lunches. Perfect for solo pros or group adventures—tailored to your skill level."
+title: "Enduro Holidays in Portugal — Your All-Inclusive Adventure in the Algarve"
+excerpt: "Plan the ultimate enduro holiday in Southern Portugal. Ride KTM 300 EXC bikes through the Algarve's best trails with expert guides, premium gear, and traditional lunches included. Perfect for solo riders or group adventures."
 coverImage: "/images/articles/1.JPG"
 date: "2025-01-08T17:16:13.122Z"
 ogImage:
@@ -20,7 +20,7 @@ With our all-inclusive service, you’ll enjoy the best bikes, top-notch gear, e
 ## What Makes TDS Enduro Holidays Special?
 - Top-of-the-Line Bikes: Ride the legendary KTM EXC 300, trusted by elite riders worldwide. These machines are kitted out for performance and reliability, so you can conquer any terrain with confidence.
 - Expert Guides: Francisco and the TDS team bring their extensive knowledge of the Algarve terrain to craft routes that match your skill level while challenging and inspiring you.
-- All-Inclusive Service: From bike and gear to snacks, drinks, and a traditional Portuguese lunch, we take care of everything so you can focus on the thrill of the ride.
+- All-Inclusive Service: From bike and gear to water and a traditional Portuguese lunch, we take care of everything so you can focus on the thrill of the ride.
 - Tailored for Everyone: Whether you’re a solo pro training for extreme races or a group looking for an adrenaline-filled holiday, our tours are customized for you.
   
 
@@ -34,7 +34,7 @@ Our tours offer a mix of breathtaking trails, technical challenges, and scenic r
 - Full day of guided riding
 - All protective and riding equipment
 - Fuel
-- Water and snacks during the ride
+- Water during the ride
 - A traditional Portuguese lunch at a local restaurant
 
 [See the bikes](/bikes)

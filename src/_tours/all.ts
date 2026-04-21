@@ -7,16 +7,16 @@ export const tours = {
   bikeSlug: "ktm-300-exc",
   bikeImage: "ktm-300-exc.jpg",
   info: "No bike license required off-road.",
-  startingPrice: 280,
+  startingPrice: 290,
   packages: [
-    { id: 1, price: 380, days: 1, riders: 1 },
-    { id: 2, price: 300, days: 1, riders: 2 },
-    { id: 3, price: 280, days: 1, riders: 3 },
+    { id: 1, price: 390, days: 1, riders: 1 },
+    { id: 2, price: 310, days: 1, riders: 2 },
+    { id: 3, price: 290, days: 1, riders: 3 },
   ],
   included: [
     "All protective and riding equipment",
     "Lunch",
-    "Water and snacks",
+    "Water",
     "Fuel",
   ],
 };

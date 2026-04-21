@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | TDS KTM Motorbike Tours in Southern Portugal, Algarve",
   },
   description:
-    "Hard Enduro motorbike tour in Algarve. TDS offers an all inclusive service (best bikes, gear, and routes included) for those who want nothing but the best. A curated experience for friends, family or pro riders creatin a unique tailored experience to your needs.",
+    "All-inclusive hard enduro motorbike tours in Algarve, Portugal. KTM 300 EXC, expert guide, gear, and lunch included. From €290/rider. Tailored to beginners through advanced riders.",
 
   openGraph: {
     type: "website",
@@ -56,7 +56,10 @@ export default function RootLayout({
     name: "TDS Enduro Algarve",
     url: "https://tdsenduroalgarve.com",
     logo: "https://tdsenduroalgarve.com/favicon.ico",
-    sameAs: ["https://www.instagram.com/", "https://www.facebook.com/"],
+    sameAs: [
+      "https://www.instagram.com/tdsenduroalgarve",
+      "https://www.facebook.com/tdsenduroalgarve",
+    ],
   };
 
   const localBusinessJsonLd = {
