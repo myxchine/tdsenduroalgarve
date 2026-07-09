@@ -12,11 +12,11 @@ import TestimonialsList from "@/components/testimonials";
 export const metadata: Metadata = {
   title: "Enduro Tours in Algarve, Portugal",
   description:
-    "All-inclusive premium enduro tours in Southern Portugal (Algarve). KTM 300 EXC, expert guide, gear, and lunch included. From €290/rider. Tailored to your level.",
+    "All-inclusive premium enduro tours in Southern Portugal (Algarve). KTM 300 EXC, expert guide, gear, and lunch included. From €300/rider. Tailored to your level.",
   openGraph: {
     title: "Enduro Tours in Algarve, Portugal",
     description:
-      "All-inclusive premium enduro tours in Southern Portugal (Algarve). KTM 300 EXC, expert guide, gear, and lunch included. From €290/rider. Tailored to your level.",
+      "All-inclusive premium enduro tours in Southern Portugal (Algarve). KTM 300 EXC, expert guide, gear, and lunch included. From €300/rider. Tailored to your level.",
   },
 };
 
@@ -37,7 +37,7 @@ function Hero(props: any) {
           included.
         </p>
         <p className="text-sm opacity-80">
-          From <strong>€290/rider</strong> · All-inclusive
+          From <strong>€300/rider</strong> · All-inclusive
         </p>
         <Link
           href="/reserve"
@@ -110,7 +110,7 @@ export default async function About() {
       "@type": "AggregateOffer",
       priceCurrency: "EUR",
       lowPrice: tours.startingPrice,
-      highPrice: 390,
+      highPrice: 410,
       offerCount: tours.packages.length,
       availability: "https://schema.org/InStock",
       url: "https://tdsenduroalgarve.com/tours",

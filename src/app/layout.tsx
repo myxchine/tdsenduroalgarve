@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | TDS KTM Motorbike Tours in Southern Portugal, Algarve",
   },
   description:
-    "All-inclusive hard enduro motorbike tours in Algarve, Portugal. KTM 300 EXC, expert guide, gear, and lunch included. From €290/rider. Tailored to beginners through advanced riders.",
+    "All-inclusive hard enduro motorbike tours in Algarve, Portugal. KTM 300 EXC, expert guide, gear, and lunch included. From €300/rider. Tailored to beginners through advanced riders.",
 
   openGraph: {
     type: "website",

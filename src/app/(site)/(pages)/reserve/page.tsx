@@ -10,7 +10,7 @@ import ExploreArticles from "@/components/explorearticles";
 export const metadata: Metadata = {
   title: "Reserve an Off Road Enduro Motorbike Tour in Portugal",
   description:
-    "Reserve your all-inclusive enduro tour in Algarve, Portugal. From €290/rider — KTM 300 EXC, gear, expert guide, and lunch included. Tailored to your level.",
+    "Reserve your all-inclusive enduro tour in Algarve, Portugal. From €300/rider — KTM 300 EXC, gear, expert guide, and lunch included. Tailored to your level.",
 };
 
 export const dynamic = "force-static";
@@ -31,7 +31,7 @@ export default async function Contact({
           </h1>
 
           <p className="max-w-2xl">
-            All-inclusive enduro tours from <strong>€290/rider</strong> — KTM 300
+            All-inclusive enduro tours from <strong>€300/rider</strong> — KTM 300
             EXC, gear, expert guide, and lunch included. A curated experience
             for friends, family, or pro riders tailored to your needs.
           </p>

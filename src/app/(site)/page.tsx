@@ -198,7 +198,7 @@ function Hero(props: any) {
             level — from first ride to hard enduro.
           </p>
           <p className="max-w-[500px] mx-auto md:mx-0 md:text-left text-sm md:text-base opacity-90">
-            From <strong>€290/rider</strong> · Trusted by riders from 40+
+            From <strong>€300/rider</strong> · Trusted by riders from 40+
             countries
           </p>
         </div>
