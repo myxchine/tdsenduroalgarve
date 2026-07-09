@@ -110,7 +110,7 @@ export default async function About() {
       "@type": "AggregateOffer",
       priceCurrency: "EUR",
       lowPrice: tours.startingPrice,
-      highPrice: 410,
+      highPrice: 420,
       offerCount: tours.packages.length,
       availability: "https://schema.org/InStock",
       url: "https://tdsenduroalgarve.com/tours",
